@@ -25,7 +25,6 @@ GrandPrix_list = [
  'Abu Dhabi Grand Prix',
 ]
 
-race_history = {}
 driver_names = [
     "George Russell",
     "Kimi Antonelli",
