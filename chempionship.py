@@ -1,11 +1,20 @@
 import random
 
+from data import (
+    drivers,
+    teams,
+    car_performance,
+    race_points_list,
+    GrandPrix_list,
+    race_history
+)
+
 
 def simulate_race(drivers, car_performance):
     race_results = {}
     for pilot in drivers:
         car_power = car_performance[drivers[pilot]["team_name"]]
-        result = 0.3*drivers[pilot]["pace"] + 0.7*car_power + random.uniform(-5, 5)
+        result = 0.3*drivers[pilot]["pace"] + 0.5*car_power + random.uniform(-5, 5)
         race_results[pilot] = result
     race_results = dict(sorted(race_results.items(), key=lambda item: item[1], reverse=True))
     award_points(race_results, drivers)
@@ -13,118 +22,54 @@ def simulate_race(drivers, car_performance):
 
 def award_points(race_results, drivers):
     for place, pilot in enumerate(race_results):
-        if place < len(race_points):
-            drivers[pilot]['total_score'] += race_points[place]
+        if place < len(race_points_list):
+            drivers[pilot]['total_score'] += race_points_list[place]
+
+def constructor_standings(teams, drivers):
+    teams_total_score = {"Mercedes": 0,
+    "Ferrari": 0,
+    "McLaren": 0,
+    "Red Bull": 0,
+    "Racing Bulls": 0,
+    "Alpine": 0,
+    "Haas": 0,
+    "Audi": 0,
+    "Williams": 0,
+    "Aston Martin": 0,
+    "Cadillac": 0}
+    for team in teams:
+        for pilot in teams[team]:
+            teams_total_score[team]+=drivers[pilot]['total_score']
+    return dict(sorted(teams_total_score.items(), key = lambda item: item[1], reverse = True))
+
+def podiums_of_each_race():
+    print('The Podium Of Each Race: ')
+    for race, pilots in race_history.items():
+        print(f'{race}: first - {list(pilots)[0]}, second - {list(pilots)[1]}, third - {list(pilots)[2]}')
+
+def winner_of_each_race():
+    print('The Winner Of Each Race: ')
+    for race, pilots in race_history.items():
+        print(f'{race}: first - {list(pilots)[0]}')
 
 
 
-race_points = [25, 18, 15, 12, 10, 8, 6, 4, 2, 1]
-driver_names = [
-    "George Russell",
-    "Kimi Antonelli",
-    "Charles Leclerc",
-    "Lewis Hamilton",
-    "Lando Norris",
-    "Oscar Piastri",
-    "Max Verstappen",
-    "Isack Hadjar",
-    "Liam Lawson",
-    "Arvid Lindblad",
-    "Pierre Gasly",
-    "Franco Colapinto",
-    "Esteban Ocon",
-    "Oliver Bearman",
-    "Nico Hulkenberg",
-    "Gabriel Bortoleto",
-    "Carlos Sainz",
-    "Alexander Albon",
-    "Fernando Alonso",
-    "Lance Stroll",
-    "Sergio Perez",
-    "Valtteri Bottas"
-]
-teams = {
-    "Mercedes": ["George Russell", "Kimi Antonelli"],
-    "Ferrari": ["Charles Leclerc", "Lewis Hamilton"],
-    "McLaren": ["Lando Norris", "Oscar Piastri"],
-    "Red Bull": ["Max Verstappen", "Isack Hadjar"],
-    "Racing Bulls": ["Liam Lawson", "Arvid Lindblad"],
-    "Alpine": ["Pierre Gasly", "Franco Colapinto"],
-    "Haas": ["Esteban Ocon", "Oliver Bearman"],
-    "Audi": ["Nico Hulkenberg", "Gabriel Bortoleto"],
-    "Williams": ["Carlos Sainz", "Alexander Albon"],
-    "Aston Martin": ["Fernando Alonso", "Lance Stroll"],
-    "Cadillac": ["Sergio Perez", "Valtteri Bottas"]
-}
-skills = {"George Russell": {"pace": 94, "consistency": 94, "aggression": 76},
-    "Kimi Antonelli": {"pace": 97, "consistency": 87, "aggression": 86},
 
-    "Charles Leclerc": {"pace": 94, "consistency": 89, "aggression": 82},
-    "Lewis Hamilton": {"pace": 96, "consistency": 91, "aggression": 79},
-
-    "Lando Norris": {"pace": 96, "consistency": 93, "aggression": 74},
-    "Oscar Piastri": {"pace": 94, "consistency": 91, "aggression": 81},
-
-    "Max Verstappen": {"pace": 99, "consistency": 96, "aggression": 94},
-    "Isack Hadjar": {"pace": 88, "consistency": 82, "aggression": 88},
-
-    "Liam Lawson": {"pace": 83, "consistency": 80, "aggression": 86},
-    "Arvid Lindblad": {"pace": 84, "consistency": 74, "aggression": 84},
-
-    "Pierre Gasly": {"pace": 89, "consistency": 88, "aggression": 81},
-    "Franco Colapinto": {"pace": 82, "consistency": 77, "aggression": 87},
-
-    "Esteban Ocon": {"pace": 85, "consistency": 84, "aggression": 88},
-    "Oliver Bearman": {"pace": 87, "consistency": 82, "aggression": 85},
-
-    "Nico Hulkenberg": {"pace": 87, "consistency": 91, "aggression": 73},
-    "Gabriel Bortoleto": {"pace": 86, "consistency": 84, "aggression": 79},
-
-    "Carlos Sainz": {"pace": 91, "consistency": 93, "aggression": 77},
-    "Alexander Albon": {"pace": 88, "consistency": 88, "aggression": 78},
-
-    "Fernando Alonso": {"pace": 93, "consistency": 95, "aggression": 90},
-    "Lance Stroll": {"pace": 79, "consistency": 76, "aggression": 75},
-
-    "Sergio Perez": {"pace": 83, "consistency": 82, "aggression": 75},
-    "Valtteri Bottas": {"pace": 85, "consistency": 89, "aggression": 69}}
-car_performance = {
-    "Mercedes": 98,
-    "Ferrari": 94,
-    "McLaren": 92,
-    "Red Bull": 92,
-    "Racing Bulls": 83,
-    "Alpine": 81,
-    "Haas": 76,
-    "Audi": 74,
-    "Williams": 72,
-    "Aston Martin": 69,
-    "Cadillac": 65
-}
-drivers = {
-    name: {
-        "team_name": None,
-        "total_score": 0,
-        "pace": skills[name]['pace'],
-        "consistency": skills[name]['consistency'],
-        "aggression": skills[name]['aggression']
-    }
-    for name in driver_names
-}
-
-for team, players in teams.items():
-    for player in players:
-        drivers[player]["team_name"] = team
-
-for _ in range(23):
-    simulate_race(drivers, car_performance)
+for name_of_track in GrandPrix_list:
+    current_race = simulate_race(drivers, car_performance)
+    race_history[name_of_track] = current_race
 championship = sorted(
     drivers.items(),
     key=lambda item: item[1]["total_score"],
-    reverse=True
-)
-print(f'--- The World Chempion of 2026 is {championship[0][0]} ---')
+    reverse=True)
+
+
+print(f'--- The World Champion 2026 is {championship[0][0]} ---')
+print(f'--- The Winner of Constructor Standings 2026 is {list(constructor_standings(teams, drivers))[0]}---')
+
 for place, (pilot, stats) in enumerate(championship, 1):
     print(f"{place}. {pilot} — {stats['total_score']} points")
+
+podiums_of_each_race()
 
 
