@@ -63,51 +63,51 @@ teams = {
     "Cadillac": ["Sergio Perez", "Valtteri Bottas"]
 }
 skills = {
-    "George Russell": {"pace": 94, "consistency": 94, "aggression": 76, "skill": 94},
-    "Kimi Antonelli": {"pace": 95, "consistency": 87, "aggression": 86, "skill": 89},
+    "George Russell": {"pace": 95.7, "consistency": 94, "aggression": 76, "skill": 94},
+    "Kimi Antonelli": {"pace": 96.4, "consistency": 93, "aggression": 86, "skill": 94},
 
-    "Charles Leclerc": {"pace": 95, "consistency": 89, "aggression": 82, "skill": 95},
+    "Charles Leclerc": {"pace": 95.7, "consistency": 91, "aggression": 82, "skill": 95},
     "Lewis Hamilton": {"pace": 96, "consistency": 91, "aggression": 79, "skill": 97},
 
     "Lando Norris": {"pace": 95.7, "consistency": 93, "aggression": 74, "skill": 94},
-    "Oscar Piastri": {"pace": 94, "consistency": 91, "aggression": 81, "skill": 93},
+    "Oscar Piastri": {"pace": 95, "consistency": 92, "aggression": 81, "skill": 94},
 
-    "Max Verstappen": {"pace": 96.3, "consistency": 96,"aggression": 94,"skill": 99},
+    "Max Verstappen": {"pace": 97, "consistency": 96, "aggression": 94, "skill": 99},
     "Isack Hadjar": {"pace": 90, "consistency": 82, "aggression": 88, "skill": 86},
 
-    "Liam Lawson": {"pace": 83, "consistency": 80, "aggression": 86, "skill": 83},
-    "Arvid Lindblad": {"pace": 84, "consistency": 74, "aggression": 84, "skill": 78},
+    "Liam Lawson": {"pace": 89.5, "consistency": 85, "aggression": 86, "skill": 85},
+    "Arvid Lindblad": {"pace": 87.5, "consistency": 82, "aggression": 84, "skill": 82},
 
-    "Pierre Gasly": {"pace": 89, "consistency": 88, "aggression": 81, "skill": 90},
-    "Franco Colapinto": {"pace": 82, "consistency": 77, "aggression": 87, "skill": 81},
+    "Pierre Gasly": {"pace": 90, "consistency": 88, "aggression": 81, "skill": 90},
+    "Franco Colapinto": {"pace": 86.5, "consistency": 82, "aggression": 87, "skill": 84},
 
-    "Esteban Ocon": {"pace": 85, "consistency": 84, "aggression": 88, "skill": 86},
-    "Oliver Bearman": {"pace": 87, "consistency": 82, "aggression": 85, "skill": 86},
+    "Esteban Ocon": {"pace": 86, "consistency": 84, "aggression": 88, "skill": 86},
+    "Oliver Bearman": {"pace": 88, "consistency": 84, "aggression": 85, "skill": 87},
 
-    "Nico Hulkenberg": {"pace": 87, "consistency": 91, "aggression": 73, "skill": 91},
-    "Gabriel Bortoleto": {"pace": 86, "consistency": 84, "aggression": 79, "skill": 85},
+    "Nico Hulkenberg": {"pace": 88, "consistency": 91, "aggression": 73, "skill": 91},
+    "Gabriel Bortoleto": {"pace": 87, "consistency": 85, "aggression": 79, "skill": 86},
 
     "Carlos Sainz": {"pace": 91, "consistency": 93, "aggression": 77, "skill": 93},
     "Alexander Albon": {"pace": 88, "consistency": 88, "aggression": 78, "skill": 90},
 
     "Fernando Alonso": {"pace": 93, "consistency": 95, "aggression": 90, "skill": 98},
-    "Lance Stroll": {"pace": 79, "consistency": 76, "aggression": 75, "skill": 76},
+    "Lance Stroll": {"pace": 81, "consistency": 79, "aggression": 75, "skill": 78},
 
-    "Sergio Perez": {"pace": 83, "consistency": 82, "aggression": 75, "skill": 87},
+    "Sergio Perez": {"pace": 84, "consistency": 84, "aggression": 75, "skill": 87},
     "Valtteri Bottas": {"pace": 85, "consistency": 89, "aggression": 69, "skill": 91}
 }
 car_performance = {
-    "Mercedes": 96.8,
-    "Ferrari": 96,
-    "McLaren": 96,
+    "Mercedes": 97.3,
+    "Ferrari": 96.4,
+    "McLaren": 96.5,
     "Red Bull": 96,
-    "Racing Bulls": 90,
-    "Alpine": 86,
-    "Haas": 80,
-    "Audi": 80,
-    "Williams": 78,
-    "Aston Martin": 73,
-    "Cadillac": 70
+    "Racing Bulls": 94.8,
+    "Alpine": 93.8,
+    "Haas": 92.9,
+    "Audi": 92.6,
+    "Williams": 90.5,
+    "Aston Martin": 88.5,
+    "Cadillac": 87.0
 }
 car_reliability = {
     "Mercedes": 97,
@@ -133,7 +133,100 @@ drivers = {
     }
     for name in driver_names
 }
-
+tracks = {
+    "Australian Grand Prix": {
+        "length_km": 5.278, "difficulty": 75, "overtaking": 70,
+        "skill_importance": 75, "crash_risk": 70, "rain_chance": 0.20
+    },
+    "Chinese Grand Prix": {
+        "length_km": 5.451, "difficulty": 70, "overtaking": 80,
+        "skill_importance": 68, "crash_risk": 55, "rain_chance": 0.22
+    },
+    "Japanese Grand Prix": {
+        "length_km": 5.807, "difficulty": 95, "overtaking": 50,
+        "skill_importance": 95, "crash_risk": 82, "rain_chance": 0.25
+    },
+    "Miami Grand Prix": {
+        "length_km": 5.412, "difficulty": 70, "overtaking": 75,
+        "skill_importance": 70, "crash_risk": 65, "rain_chance": 0.25
+    },
+    "Canadian Grand Prix": {
+        "length_km": 4.361, "difficulty": 80, "overtaking": 80,
+        "skill_importance": 82, "crash_risk": 80, "rain_chance": 0.30
+    },
+    "Monaco Grand Prix": {
+        "length_km": 3.337, "difficulty": 98, "overtaking": 8,
+        "skill_importance": 95, "crash_risk": 90, "rain_chance": 0.18
+    },
+    "Barcelona Grand Prix": {
+        "length_km": 4.657, "difficulty": 85, "overtaking": 55,
+        "skill_importance": 85, "crash_risk": 60, "rain_chance": 0.15
+    },
+    "Austrian Grand Prix": {
+        "length_km": 4.326, "difficulty": 72, "overtaking": 85,
+        "skill_importance": 75, "crash_risk": 65, "rain_chance": 0.28
+    },
+    "British Grand Prix": {
+        "length_km": 5.891, "difficulty": 92, "overtaking": 75,
+        "skill_importance": 90, "crash_risk": 72, "rain_chance": 0.35
+    },
+    "Belgian Grand Prix": {
+        "length_km": 7.004, "difficulty": 96, "overtaking": 80,
+        "skill_importance": 96, "crash_risk": 80, "rain_chance": 0.43
+    },
+    "Hungarian Grand Prix": {
+        "length_km": 4.381, "difficulty": 83, "overtaking": 30,
+        "skill_importance": 88, "crash_risk": 60, "rain_chance": 0.18
+    },
+    "Dutch Grand Prix": {
+        "length_km": 4.259, "difficulty": 90, "overtaking": 30,
+        "skill_importance": 95, "crash_risk": 80, "rain_chance": 0.32
+    },
+    "Italian Grand Prix": {
+        "length_km": 5.793, "difficulty": 65, "overtaking": 88,
+        "skill_importance": 65, "crash_risk": 65, "rain_chance": 0.20
+    },
+    "Spanish Grand Prix": {
+        "length_km": 5.414, "difficulty": 84, "overtaking": 50,
+        "skill_importance": 85, "crash_risk": 72, "rain_chance": 0.15
+    },
+    "Azerbaijan Grand Prix": {
+        "length_km": 6.003, "difficulty": 85, "overtaking": 75,
+        "skill_importance": 88, "crash_risk": 90, "rain_chance": 0.15
+    },
+    "Bahrain Grand Prix": {
+        "length_km": 5.543, "difficulty": 88, "overtaking": 85,
+        "skill_importance": 88, "crash_risk": 78, "rain_chance": 0.52
+    },
+    "Singapore Grand Prix": {
+        "length_km": 4.927, "difficulty": 92, "overtaking": 35,
+        "skill_importance": 95, "crash_risk": 88, "rain_chance": 0.35
+    },
+    "United States Grand Prix": {
+        "length_km": 5.513, "difficulty": 85, "overtaking": 80,
+        "skill_importance": 85, "crash_risk": 70, "rain_chance": 0.20
+    },
+    "Mexico City Grand Prix": {
+        "length_km": 4.304, "difficulty": 70, "overtaking": 70,
+        "skill_importance": 75, "crash_risk": 63, "rain_chance": 0.16
+    },
+    "Brazilian Grand Prix": {
+        "length_km": 4.309, "difficulty": 87, "overtaking": 85,
+        "skill_importance": 87, "crash_risk": 75, "rain_chance": 0.42
+    },
+    "Las Vegas Grand Prix": {
+        "length_km": 6.201, "difficulty": 72, "overtaking": 90,
+        "skill_importance": 78, "crash_risk": 73, "rain_chance": 0.08
+    },
+    "Qatar Grand Prix": {
+        "length_km": 5.419, "difficulty": 87, "overtaking": 55,
+        "skill_importance": 88, "crash_risk": 65, "rain_chance": 0.05
+    },
+    "Abu Dhabi Grand Prix": {
+        "length_km": 5.281, "difficulty": 70, "overtaking": 60,
+        "skill_importance": 75, "crash_risk": 55, "rain_chance": 0.03
+    }
+}
 for team, players in teams.items():
     for player in players:
         drivers[player]["team_name"] = team
