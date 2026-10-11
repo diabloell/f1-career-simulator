@@ -16,11 +16,12 @@ race_history = {}
 championship_history = {}
 qualifying_history = {}
 weather_history = {}
+race_events_history = {}
 
 
 def simulate_race(drivers, car_performance, qualifying_results, name_of_track, is_rainy):
     race_results = {}
-
+    race_events_history[name_of_track] = {}
     starting_grid = {
         pilot: position
         for position, pilot in enumerate(qualifying_results, 1)
@@ -31,6 +32,7 @@ def simulate_race(drivers, car_performance, qualifying_results, name_of_track, i
     skill_importance = tracks[name_of_track]['skill_importance']
 
     for pilot in drivers:
+        race_events_history[name_of_track][pilot] = {"mistake": False, "dnf_reason": None}
         car_power = car_performance[drivers[pilot]["team_name"]]
         start_position = starting_grid[pilot]
         qualifying_bonus = (11.5 - start_position) * overtaking_coefficient
@@ -54,6 +56,7 @@ def simulate_race(drivers, car_performance, qualifying_results, name_of_track, i
         ):
             result -= random.uniform(2, 5)
             pilot_stats[pilot]["mistakes"] += 1
+            race_events_history[name_of_track][pilot]["mistake"] = True
 
         dnf_reason = get_dnf_reason(
             drivers[pilot]["aggression"],
@@ -66,6 +69,7 @@ def simulate_race(drivers, car_performance, qualifying_results, name_of_track, i
         if dnf_reason is not None:
             result = 0
             pilot_stats[pilot]["dnfs"] += 1
+            race_events_history[name_of_track][pilot]["dnf_reason"] = dnf_reason
 
             if dnf_reason == "technical":
                 pilot_stats[pilot]["technical_dnfs"] += 1
@@ -74,11 +78,7 @@ def simulate_race(drivers, car_performance, qualifying_results, name_of_track, i
 
         race_results[pilot] = result
 
-    race_results = dict(sorted(
-        race_results.items(),
-        key=lambda item: item[1],
-        reverse=True
-    ))
+    race_results = dict(sorted(race_results.items(), key=lambda item: item[1], reverse=True))
 
     award_points(race_results, drivers, race_points_list)
 
@@ -358,6 +358,306 @@ def rain_bonus(skill, consistency, aggression):
     return (skill - 85) * 0.16 + (consistency - 85) * 0.10 - max(0, aggression - 80) * 0.05
 
 
+def show_race_weekend(name_of_track, player_name=None):
+    qualifying = qualifying_history[name_of_track]
+    race = race_history[name_of_track]
+    events = race_events_history[name_of_track]
+
+    starting_grid = {pilot: position for position, pilot in enumerate(qualifying, 1)}
+
+    print(f'\n==================== {name_of_track.upper()} ====================')
+    print(f'Weather: {weather_history[name_of_track]}')
+
+    print('\n========== QUALIFYING ==========\n')
+
+    for place, pilot in enumerate(qualifying, 1):
+        print(f'{place:>2}. {pilot}')
+
+    print('\n========== RACE RESULTS ==========\n')
+    print(f'{"Pos":<5} {"Driver":<23} {"Grid":<6} {"Change":<8} {"Events"}')
+
+    for place, pilot in enumerate(race, 1):
+        start = starting_grid[pilot]
+        mistake = events[pilot]["mistake"]
+        dnf_reason = events[pilot]["dnf_reason"]
+
+        if race[pilot] == 0:
+            position = "DNF"
+            change = "-"
+        else:
+            position = str(place)
+            change = f'{start - place:+}'
+
+        event_info = []
+
+        if mistake: event_info.append("Mistake")
+        if dnf_reason: event_info.append(dnf_reason.capitalize())
+
+        print(f'{position:<5} {pilot:<23} {start:<6} {change:<8} {", ".join(event_info) or "-"}')
+
+    print('\n========== RACE NEWS ==========\n')
+
+    winner = next(iter(race))
+    pole = next(iter(qualifying))
+
+    print(f'{winner} wins the {name_of_track}!')
+
+    if winner == pole:
+        print(f'{winner} converts pole position into victory!')
+    else:
+        print(f'{pole} fails to convert pole position into victory.')
+
+    position_gains = {
+        pilot: starting_grid[pilot] - place
+        for place, pilot in enumerate(race, 1)
+        if race[pilot] > 0
+    }
+
+    best_driver = max(position_gains, key=position_gains.get)
+    best_gain = position_gains[best_driver]
+
+    if best_gain > 0:
+        print(f'{best_driver} gains {best_gain} positions!')
+
+    for pilot in events:
+        if events[pilot]["dnf_reason"] == "technical":
+            print(f'{pilot} retires due to a technical failure!')
+        elif events[pilot]["dnf_reason"] == "crash":
+            print(f'{pilot} crashes out of the race!')
+
+    if player_name:
+        print('\n========== YOUR DRIVER NEWS ==========\n')
+        show_player_race_news(name_of_track, player_name)
+
+    print('\n========== CHAMPIONSHIP AFTER RACE ==========\n')
+
+    show_championship_after_race(name_of_track, championship_history)
+
+
+def race_archive(player_name=None):
+    while True:
+        print('\n========== RACE ARCHIVE ==========\n')
+
+        for number, race in enumerate(GrandPrix_list, 1):
+            print(f'{number:>2}. {race}')
+
+        print('\n0. Back')
+
+        choice = input('\nSelect Grand Prix: ')
+
+        if choice == '0':
+            return
+
+        if choice.isdigit() and 1 <= int(choice) <= len(GrandPrix_list):
+            name_of_track = GrandPrix_list[int(choice) - 1]
+            show_race_weekend(name_of_track, player_name)
+            input('\nPress Enter to return to archive...')
+        else:
+            print('Invalid option. Try again.')
+
+
+def post_season_menu(player_name=None):
+    while True:
+        print('\n========== SEASON COMPLETED ==========')
+        print('1. Race Archive')
+
+        if player_name:
+            print('2. My Driver Statistics')
+            print('3. Exit')
+        else:
+            print('2. Exit')
+
+        choice = input('\n> ')
+
+        if choice == '1':
+            race_archive(player_name)
+        elif choice == '2' and player_name:
+            show_player_statistics(player_name)
+        elif (choice == '3' and player_name) or (choice == '2' and not player_name):
+            return
+        else:
+            print('Invalid option. Try again.')
+
+
+def show_player_race_news(name_of_track, player_name):
+    qualifying = qualifying_history[name_of_track]
+    race = race_history[name_of_track]
+    events = race_events_history[name_of_track][player_name]
+
+    start_position = list(qualifying).index(player_name) + 1
+
+    if race[player_name] == 0:
+        reason = events["dnf_reason"]
+
+        if reason == "crash":
+            print(f'{player_name} crashes out of the {name_of_track}!')
+        elif reason == "technical":
+            print(f'{player_name} retires due to a technical failure!')
+
+    else:
+        finish_position = list(race).index(player_name) + 1
+        change = start_position - finish_position
+
+        if finish_position == 1:
+            print(f'{player_name} wins the {name_of_track}!')
+        elif finish_position <= 3:
+            print(f'{player_name} finishes on the podium in P{finish_position}!')
+        elif finish_position <= 10:
+            print(f'{player_name} scores points with a P{finish_position} finish!')
+        else:
+            print(f'{player_name} finishes P{finish_position}.')
+
+        if change > 0:
+            print(f'{player_name} gains {change} positions from P{start_position}!')
+        elif change < 0:
+            print(f'{player_name} loses {abs(change)} positions from P{start_position}.')
+        else:
+            print(f'{player_name} finishes in the same position as qualifying.')
+
+    if events["mistake"]:
+        print(f'{player_name} makes a mistake during the race!')
+
+
+def show_player_statistics(player_name):
+    wins = 0
+    podiums = 0
+    poles = 0
+    points_finishes = 0
+    finishes = 0
+    best_finish = None
+    best_race = None
+    biggest_gain = 0
+    biggest_gain_race = None
+
+    for name_of_track in race_history:
+        qualifying = qualifying_history[name_of_track]
+        race = race_history[name_of_track]
+
+        start_position = list(qualifying).index(player_name) + 1
+
+        if start_position == 1:
+            poles += 1
+
+        if race[player_name] == 0:
+            continue
+
+        finish_position = list(race).index(player_name) + 1
+        finishes += 1
+
+        if finish_position == 1: wins += 1
+        if finish_position <= 3: podiums += 1
+        if finish_position <= 10: points_finishes += 1
+
+        if best_finish is None or finish_position < best_finish:
+            best_finish = finish_position
+            best_race = name_of_track
+
+        change = start_position - finish_position
+
+        if change > biggest_gain:
+            biggest_gain = change
+            biggest_gain_race = name_of_track
+
+    championship_position = sorted(
+        drivers,
+        key=lambda pilot: drivers[pilot]["total_score"],
+        reverse=True
+    ).index(player_name) + 1
+
+    stats = pilot_stats[player_name]
+    team = drivers[player_name]["team_name"]
+
+    print('\n========== MY DRIVER STATISTICS ==========\n')
+    print(f'Name: {player_name}')
+    print(f'Team: {team}')
+    print(f'Championship position: P{championship_position}')
+    print(f'Championship points: {drivers[player_name]["total_score"]}')
+
+    print('\n========== SEASON RESULTS ==========\n')
+    print(f'Grand Prix entered: {len(race_history)}')
+    print(f'Race finishes: {finishes}')
+    print(f'Wins: {wins}')
+    print(f'Podiums: {podiums}')
+    print(f'Poles: {poles}')
+    print(f'Points finishes: {points_finishes}')
+
+    print('\n========== RACE HIGHLIGHTS ==========\n')
+
+    if best_race:
+        print(f'Best finish: P{best_finish} - {best_race}')
+
+    if biggest_gain_race:
+        print(f'Biggest position gain: +{biggest_gain} - {biggest_gain_race}')
+
+    print('\n========== INCIDENTS ==========\n')
+    print(f'Mistakes: {stats["mistakes"]}')
+    print(f'Total DNFs: {stats["dnfs"]}')
+    print(f'Technical DNFs: {stats["technical_dnfs"]}')
+    print(f'Crash DNFs: {stats["crash_dnfs"]}')
+    show_teammate_comparison(player_name)
+
+def show_teammate_comparison(player_name):
+    team = drivers[player_name]["team_name"]
+    teammate = next(pilot for pilot in teams[team] if pilot != player_name)
+
+    player_qualifying_wins = 0
+    teammate_qualifying_wins = 0
+
+    player_race_wins = 0
+    teammate_race_wins = 0
+    both_dnfs = 0
+
+    player_wins = 0
+    teammate_wins = 0
+    player_podiums = 0
+    teammate_podiums = 0
+
+    for name_of_track in race_history:
+        qualifying = list(qualifying_history[name_of_track])
+        race_results = race_history[name_of_track]
+        race = list(race_results)
+
+        if qualifying.index(player_name) < qualifying.index(teammate):
+            player_qualifying_wins += 1
+        else:
+            teammate_qualifying_wins += 1
+
+        if race_results[player_name] == 0 and race_results[teammate] == 0:
+            both_dnfs += 1
+        elif race_results[teammate] == 0 or (race_results[player_name] > 0 and race.index(player_name) < race.index(teammate)):
+            player_race_wins += 1
+        else:
+            teammate_race_wins += 1
+
+        if race_results[player_name] > 0:
+            position = race.index(player_name) + 1
+            if position == 1: player_wins += 1
+            if position <= 3: player_podiums += 1
+
+        if race_results[teammate] > 0:
+            position = race.index(teammate) + 1
+            if position == 1: teammate_wins += 1
+            if position <= 3: teammate_podiums += 1
+
+    print('\n========== TEAMMATE COMPARISON ==========\n')
+    print(f'Team: {team}')
+    print(f'Your driver: {player_name}')
+    print(f'Teammate: {teammate}')
+
+    print()
+    print(f'{"Statistic":<25} {player_name:>18} {teammate:>18}')
+    print('-' * 65)
+    print(f'{"Championship points":<25} {drivers[player_name]["total_score"]:>18} {drivers[teammate]["total_score"]:>18}')
+    print(f'{"Qualifying H2H":<25} {player_qualifying_wins:>18} {teammate_qualifying_wins:>18}')
+    print(f'{"Race H2H":<25} {player_race_wins:>18} {teammate_race_wins:>18}')
+    print(f'{"Race wins":<25} {player_wins:>18} {teammate_wins:>18}')
+    print(f'{"Podiums":<25} {player_podiums:>18} {teammate_podiums:>18}')
+    print(f'{"DNFs":<25} {pilot_stats[player_name]["dnfs"]:>18} {pilot_stats[teammate]["dnfs"]:>18}')
+
+    if both_dnfs:
+        print(f'\nBoth drivers retired in {both_dnfs} races (excluded from Race H2H).')
+
+
 def choose_option(options, title):
     print(f'\n{title}')
 
@@ -393,40 +693,37 @@ def create_driver():
         'Select driver to replace:'
     )
 
-    reference_drivers = [
-        "Max Verstappen",
-        "George Russell",
-        "Kimi Antonelli",
-        "Lewis Hamilton",
-        "Charles Leclerc",
-        "Lando Norris",
-        "Oscar Piastri"
-    ]
-
     new_driver = {
         "team_name": team,
         "total_score": 0
     }
 
     for stat in ["pace", "consistency", "aggression", "skill"]:
-        options = [
-            (f'{pilot} — {drivers[pilot][stat]}', drivers[pilot][stat])
-            for pilot in reference_drivers
-        ]
+        options = [(f'{pilot} — {drivers[pilot][stat]}', drivers[pilot][stat]) for pilot in drivers]
+        options.append(("Enter custom value (0-100)", None))
 
-        new_driver[stat] = choose_option(options, f'Choose your {stat.upper()}:')
+        value = choose_option(options, f'Choose your {stat.upper()}:')
 
-    # Заменяем пилота в составе команды
+        if value is None:
+            while True:
+                try:
+                    value = float(input(f'Enter {stat.upper()} (0-100): ').replace(",", "."))
+                    if 0 <= value <= 100:
+                        break
+                    print('Value must be between 0 and 100.')
+                except ValueError:
+                    print('Invalid number. Try again.')
+
+        new_driver[stat] = value
+
     teams[team][teams[team].index(replaced)] = name
 
-    # Обновляем список участников
     driver_names[driver_names.index(replaced)] = name
 
-    # Заменяем характеристики пилота
     del drivers[replaced]
+
     drivers[name] = new_driver
 
-    # Создаём статистику нового пилота
     pilot_stats[name] = {stat: 0 for stat in pilot_stats[replaced]}
     del pilot_stats[replaced]
 
@@ -446,24 +743,16 @@ def main():
     print('1. Generate Championship')
     print('2. Create Your Driver')
     print('3. Exit')
-
     mode = input('\n> ')
-
     while mode not in ('1', '2', '3'):
         mode = input('Invalid option. Try again: ')
-
     if mode == '3':
         return
-
     player_name = None
-
     if mode == '2':
         player_name = create_driver()
-
     championship2026 = simulate_championship(drivers, car_performance, GrandPrix_list)
-
     show_championship(championship2026, teams, drivers, race_history, championship_history)
-
     if player_name:
         position = next(
             place for place, (pilot, stats) in enumerate(championship2026, 1)
@@ -475,6 +764,8 @@ def main():
         print(f'Points: {drivers[player_name]["total_score"]}')
         print(f'Team: {drivers[player_name]["team_name"]}')
         print(f'DNFs: {pilot_stats[player_name]["dnfs"]}')
+    post_season_menu()
+    post_season_menu(player_name)
 
 
 if __name__ == '__main__':
