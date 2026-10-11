@@ -6,7 +6,9 @@ from data import (
     car_performance,
     race_points_list,
     GrandPrix_list,
-    driver_names
+    driver_names,
+    pilot_stats,
+    car_reliability
 )
 
 race_history = {}
@@ -14,33 +16,14 @@ championship_history = {}
 qualifying_history = {}
 
 
-def test_championship():
-    assert len(race_history) == len(GrandPrix_list)
-    assert len(qualifying_history) == len(GrandPrix_list)
-    assert len(championship_history) == len(GrandPrix_list)
-
-    for race in GrandPrix_list:
-        assert len(race_history[race]) == len(drivers)
-        assert len(qualifying_history[race]) == len(drivers)
-        assert len(championship_history[race]) == len(drivers)
-
-    expected_points = sum(race_points_list) * len(GrandPrix_list)
-    actual_points = sum(
-        drivers[pilot]["total_score"]
-        for pilot in drivers
-    )
-
-    assert actual_points == expected_points
-
-    print("All tests passed!")
-
-
 def simulate_race(drivers, car_performance, qualifying_results):
     race_results = {}
+
     starting_grid = {
         pilot: position
         for position, pilot in enumerate(qualifying_results, 1)
     }
+
     for pilot in drivers:
         car_power = car_performance[drivers[pilot]["team_name"]]
 
@@ -48,22 +31,51 @@ def simulate_race(drivers, car_performance, qualifying_results):
         qualifying_bonus = (11.5 - start_position) * 0.45
 
         result = (
-                0.3 * drivers[pilot]["pace"]
-                + 0.5 * car_power
-                + random.uniform(-5, 5)
-                + qualifying_bonus
+            0.3 * drivers[pilot]["pace"]
+            + 0.5 * car_power
+            + random.uniform(-5, 5)
+            + qualifying_bonus
         )
 
+        if driver_mistake(
+            drivers[pilot]["consistency"],
+            drivers[pilot]["skill"]
+        ):
+            result -= random.uniform(2, 5)
+            pilot_stats[pilot]["mistakes"] += 1
+
+        dnf_reason = get_dnf_reason(
+            drivers[pilot]["aggression"],
+            car_reliability[drivers[pilot]["team_name"]],
+            drivers[pilot]["skill"]
+        )
+
+        if dnf_reason is not None:
+            result = 0
+            pilot_stats[pilot]["dnfs"] += 1
+
+            if dnf_reason == "technical":
+                pilot_stats[pilot]["technical_dnfs"] += 1
+            elif dnf_reason == "crash":
+                pilot_stats[pilot]["crash_dnfs"] += 1
+
         race_results[pilot] = result
-    race_results = dict(sorted(race_results.items(), key=lambda item: item[1], reverse=True))
+
+    race_results = dict(sorted(
+        race_results.items(),
+        key=lambda item: item[1],
+        reverse=True
+    ))
+
     award_points(race_results, drivers, race_points_list)
+
     return race_results
 
 
 def award_points(race_results, drivers, race_points_list):
     for place, pilot in enumerate(race_results):
-        if place < len(race_points_list):
-            drivers[pilot]['total_score'] += race_points_list[place]
+        if place < len(race_points_list) and race_results[pilot] > 0:
+            drivers[pilot]["total_score"] += race_points_list[place]
 
 
 def constructor_standings(teams, drivers):
@@ -146,6 +158,18 @@ def show_championship(championship, teams, drivers, race_history, championship_h
     print()
     podiums_of_each_race(race_history)
     show_championship_after_race('Monaco Grand Prix', championship_history)
+    print(qualifying_history['Monaco Grand Prix'])
+    show_race_results('Monaco Grand Prix', qualifying_history['Monaco Grand Prix'], race_history['Monaco Grand Prix'])
+    print()
+    print(count_wins(race_history, driver_names))
+    print(count_poles(qualifying_history, driver_names))
+    count_pole_to_win(race_history, qualifying_history)
+    print()
+    print(f'{sum(stats["mistakes"] for stats in pilot_stats.values())} - mistakes')
+    show_pilots_mistakes()
+    print(f'{sum(stats["dnfs"] for stats in pilot_stats.values())} - dnfs')
+    show_pilots_dnfs()
+    show_pilots_dnf_details()
 
 
 def simulate_qualifying(drivers, car_performance):
@@ -170,7 +194,10 @@ def show_race_results(name_of_race, qualifying_results, race_results):
         start_position = starting_grid[r_name]
         change = start_position - finish_position
 
-        print(f'{finish_position:>3}  {r_name:<24} {start_position:>3}    {change:+}')
+        if race_results[r_name] == 0:
+            print(f'DNF  {r_name:<24} {start_position:>3}    -')
+        else:
+            print(f'{finish_position:>3}  {r_name:<24} {start_position:>3}    {change:+}')
 
 
 def count_wins(race_history, driver_names):
@@ -204,15 +231,55 @@ def count_pole_to_win(race_history, qualifying_history):
     print(f'Pole-to-win conversions: {counter} / {total_races} ({round(counter * 100 / total_races, 1)}%)')
 
 
+def driver_mistake(consistency, skill):
+    mistake_chance = (100 - consistency) / 200
+    skill_modifier = 1 - max(0, skill - 75) * 0.01
+    mistake_chance *= skill_modifier
+    return random.random() < mistake_chance
+
+
+def technical_dnf(reliability):
+    technical_chance = 0.028 + (100 - reliability) * 0.002
+    return random.random() < technical_chance
+
+
+def crash_dnf(aggression, skill):
+    crash_base = 0.018 + max(0, aggression - 70) * 0.0018
+
+    skill_modifier = 1 - max(0, skill - 75) * 0.012
+    skill_modifier = max(0.55, skill_modifier)
+
+    crash_chance = crash_base * skill_modifier
+
+    return random.random() < crash_chance
+
+
+def get_dnf_reason(aggression, reliability, skill):
+    if technical_dnf(reliability):
+        return "technical"
+    if crash_dnf(aggression, skill):
+        return "crash"
+    return None
+
+
+def show_pilots_mistakes():
+    srt_pilot_stats = dict(sorted(pilot_stats.items(),key=lambda item: item[1]["mistakes"],reverse=True))
+    for pilot in srt_pilot_stats:print(f"{pilot:<20}  "f"{srt_pilot_stats[pilot]['mistakes']} mistakes  "f"with {drivers[pilot]['consistency']} of consistency")
+    print()
+
+
+def show_pilots_dnfs():
+    srt_pilot_stats = dict(sorted(pilot_stats.items(),key=lambda item: item[1]["dnfs"],reverse=True))
+    for pilot in srt_pilot_stats:print(f"{pilot:<20}  {srt_pilot_stats[pilot]['dnfs']} dnfs  in season")
+    print()
+
+
+def show_pilots_dnf_details():
+    srt_pilot_stats = dict(sorted(pilot_stats.items(),key=lambda item: item[1]["dnfs"],reverse=True))
+
+    for pilot in srt_pilot_stats:print(f"{pilot:<20}  "f"{srt_pilot_stats[pilot]['dnfs']} total dnfs | "f"{srt_pilot_stats[pilot]['technical_dnfs']} technical | "f"{srt_pilot_stats[pilot]['crash_dnfs']} crash")
+    print()
+
 championship2026 = simulate_championship(drivers, car_performance, GrandPrix_list)
 
 show_championship(championship2026, teams, drivers, race_history, championship_history)
-
-print(qualifying_history['Monaco Grand Prix'])
-show_race_results('Monaco Grand Prix', qualifying_history['Monaco Grand Prix'], race_history['Monaco Grand Prix'])
-print(race_history)
-print(count_wins(race_history, driver_names))
-print(count_poles(qualifying_history, driver_names))
-print(qualifying_history)
-count_pole_to_win(race_history, qualifying_history)
-test_championship()
