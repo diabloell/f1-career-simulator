@@ -1,0 +1,423 @@
+{
+  "year": 2025,
+  "teams": {
+    "McLaren": [
+      "Lando Norris",
+      "Oscar Piastri"
+    ],
+    "Ferrari": [
+      "Charles Leclerc",
+      "Lewis Hamilton"
+    ],
+    "Red Bull": [
+      "Max Verstappen",
+      "Liam Lawson"
+    ],
+    "Mercedes": [
+      "George Russell",
+      "Kimi Antonelli"
+    ],
+    "Aston Martin": [
+      "Fernando Alonso",
+      "Lance Stroll"
+    ],
+    "Alpine": [
+      "Pierre Gasly",
+      "Jack Doohan"
+    ],
+    "Haas": [
+      "Esteban Ocon",
+      "Oliver Bearman"
+    ],
+    "Racing Bulls": [
+      "Yuki Tsunoda",
+      "Isack Hadjar"
+    ],
+    "Williams": [
+      "Alexander Albon",
+      "Carlos Sainz"
+    ],
+    "Kick Sauber": [
+      "Nico Hulkenberg",
+      "Gabriel Bortoleto"
+    ]
+  },
+  "skills": {
+    "Lando Norris": {
+      "pace": 96.0,
+      "consistency": 93,
+      "aggression": 74,
+      "skill": 95
+    },
+    "Oscar Piastri": {
+      "pace": 96.3,
+      "consistency": 92,
+      "aggression": 80,
+      "skill": 94
+    },
+    "Charles Leclerc": {
+      "pace": 96.0,
+      "consistency": 93,
+      "aggression": 82,
+      "skill": 96
+    },
+    "Lewis Hamilton": {
+      "pace": 93.5,
+      "consistency": 91,
+      "aggression": 77,
+      "skill": 97
+    },
+    "Max Verstappen": {
+      "pace": 99.0,
+      "consistency": 96,
+      "aggression": 92,
+      "skill": 99
+    },
+    "Liam Lawson": {
+      "pace": 88.5,
+      "consistency": 84,
+      "aggression": 86,
+      "skill": 85
+    },
+    "George Russell": {
+      "pace": 95.7,
+      "consistency": 94,
+      "aggression": 76,
+      "skill": 95
+    },
+    "Kimi Antonelli": {
+      "pace": 94.0,
+      "consistency": 83,
+      "aggression": 85,
+      "skill": 91
+    },
+    "Fernando Alonso": {
+      "pace": 89.8,
+      "consistency": 94,
+      "aggression": 89,
+      "skill": 98
+    },
+    "Lance Stroll": {
+      "pace": 89.0,
+      "consistency": 87,
+      "aggression": 76,
+      "skill": 89
+    },
+    "Pierre Gasly": {
+      "pace": 91.0,
+      "consistency": 89,
+      "aggression": 80,
+      "skill": 91
+    },
+    "Jack Doohan": {
+      "pace": 85.0,
+      "consistency": 78,
+      "aggression": 84,
+      "skill": 82
+    },
+    "Esteban Ocon": {
+      "pace": 88.5,
+      "consistency": 86,
+      "aggression": 86,
+      "skill": 87
+    },
+    "Oliver Bearman": {
+      "pace": 89.0,
+      "consistency": 84,
+      "aggression": 85,
+      "skill": 88
+    },
+    "Yuki Tsunoda": {
+      "pace": 89.8,
+      "consistency": 86,
+      "aggression": 86,
+      "skill": 89
+    },
+    "Isack Hadjar": {
+      "pace": 89.7,
+      "consistency": 84,
+      "aggression": 88,
+      "skill": 87
+    },
+    "Alexander Albon": {
+      "pace": 90.5,
+      "consistency": 91,
+      "aggression": 78,
+      "skill": 91
+    },
+    "Carlos Sainz": {
+      "pace": 91.2,
+      "consistency": 93,
+      "aggression": 77,
+      "skill": 93
+    },
+    "Nico Hulkenberg": {
+      "pace": 88.7,
+      "consistency": 91,
+      "aggression": 73,
+      "skill": 92
+    },
+    "Gabriel Bortoleto": {
+      "pace": 88.6,
+      "consistency": 85,
+      "aggression": 80,
+      "skill": 87
+    }
+  },
+  "tracks": {
+    "Australian Grand Prix": {
+      "length_km": 5.278,
+      "difficulty": 75,
+      "overtaking": 70,
+      "skill_importance": 75,
+      "crash_risk": 70,
+      "rain_chance": 0.20
+    },
+    "Chinese Grand Prix": {
+      "length_km": 5.451,
+      "difficulty": 70,
+      "overtaking": 80,
+      "skill_importance": 68,
+      "crash_risk": 55,
+      "rain_chance": 0.22
+    },
+    "Japanese Grand Prix": {
+      "length_km": 5.807,
+      "difficulty": 95,
+      "overtaking": 50,
+      "skill_importance": 95,
+      "crash_risk": 82,
+      "rain_chance": 0.25
+    },
+    "Bahrain Grand Prix": {
+      "length_km": 5.412,
+      "difficulty": 78,
+      "overtaking": 85,
+      "skill_importance": 78,
+      "crash_risk": 65,
+      "rain_chance": 0.02
+    },
+    "Saudi Arabian Grand Prix": {
+      "length_km": 6.174,
+      "difficulty": 92,
+      "overtaking": 65,
+      "skill_importance": 90,
+      "crash_risk": 90,
+      "rain_chance": 0.02
+    },
+    "Miami Grand Prix": {
+      "length_km": 5.412,
+      "difficulty": 70,
+      "overtaking": 75,
+      "skill_importance": 70,
+      "crash_risk": 65,
+      "rain_chance": 0.25
+    },
+    "Emilia Romagna Grand Prix": {
+      "length_km": 4.909,
+      "difficulty": 88,
+      "overtaking": 35,
+      "skill_importance": 90,
+      "crash_risk": 75,
+      "rain_chance": 0.20
+    },
+    "Monaco Grand Prix": {
+      "length_km": 3.337,
+      "difficulty": 98,
+      "overtaking": 8,
+      "skill_importance": 95,
+      "crash_risk": 90,
+      "rain_chance": 0.18
+    },
+    "Spanish Grand Prix": {
+      "length_km": 4.657,
+      "difficulty": 85,
+      "overtaking": 55,
+      "skill_importance": 85,
+      "crash_risk": 60,
+      "rain_chance": 0.15
+    },
+    "Canadian Grand Prix": {
+      "length_km": 4.361,
+      "difficulty": 80,
+      "overtaking": 80,
+      "skill_importance": 82,
+      "crash_risk": 80,
+      "rain_chance": 0.30
+    },
+    "Austrian Grand Prix": {
+      "length_km": 4.326,
+      "difficulty": 72,
+      "overtaking": 85,
+      "skill_importance": 75,
+      "crash_risk": 65,
+      "rain_chance": 0.28
+    },
+    "British Grand Prix": {
+      "length_km": 5.891,
+      "difficulty": 92,
+      "overtaking": 75,
+      "skill_importance": 90,
+      "crash_risk": 72,
+      "rain_chance": 0.35
+    },
+    "Belgian Grand Prix": {
+      "length_km": 7.004,
+      "difficulty": 96,
+      "overtaking": 80,
+      "skill_importance": 96,
+      "crash_risk": 80,
+      "rain_chance": 0.43
+    },
+    "Hungarian Grand Prix": {
+      "length_km": 4.381,
+      "difficulty": 83,
+      "overtaking": 30,
+      "skill_importance": 88,
+      "crash_risk": 60,
+      "rain_chance": 0.18
+    },
+    "Dutch Grand Prix": {
+      "length_km": 4.259,
+      "difficulty": 90,
+      "overtaking": 30,
+      "skill_importance": 95,
+      "crash_risk": 80,
+      "rain_chance": 0.32
+    },
+    "Italian Grand Prix": {
+      "length_km": 5.793,
+      "difficulty": 65,
+      "overtaking": 88,
+      "skill_importance": 65,
+      "crash_risk": 65,
+      "rain_chance": 0.20
+    },
+    "Azerbaijan Grand Prix": {
+      "length_km": 6.003,
+      "difficulty": 85,
+      "overtaking": 75,
+      "skill_importance": 88,
+      "crash_risk": 90,
+      "rain_chance": 0.15
+    },
+    "Singapore Grand Prix": {
+      "length_km": 4.927,
+      "difficulty": 92,
+      "overtaking": 35,
+      "skill_importance": 95,
+      "crash_risk": 88,
+      "rain_chance": 0.35
+    },
+    "United States Grand Prix": {
+      "length_km": 5.513,
+      "difficulty": 85,
+      "overtaking": 80,
+      "skill_importance": 85,
+      "crash_risk": 70,
+      "rain_chance": 0.20
+    },
+    "Mexico City Grand Prix": {
+      "length_km": 4.304,
+      "difficulty": 70,
+      "overtaking": 70,
+      "skill_importance": 75,
+      "crash_risk": 63,
+      "rain_chance": 0.16
+    },
+    "Brazilian Grand Prix": {
+      "length_km": 4.309,
+      "difficulty": 87,
+      "overtaking": 85,
+      "skill_importance": 87,
+      "crash_risk": 75,
+      "rain_chance": 0.42
+    },
+    "Las Vegas Grand Prix": {
+      "length_km": 6.201,
+      "difficulty": 72,
+      "overtaking": 90,
+      "skill_importance": 78,
+      "crash_risk": 73,
+      "rain_chance": 0.08
+    },
+    "Qatar Grand Prix": {
+      "length_km": 5.419,
+      "difficulty": 87,
+      "overtaking": 55,
+      "skill_importance": 88,
+      "crash_risk": 65,
+      "rain_chance": 0.05
+    },
+    "Abu Dhabi Grand Prix": {
+      "length_km": 5.281,
+      "difficulty": 70,
+      "overtaking": 60,
+      "skill_importance": 75,
+      "crash_risk": 55,
+      "rain_chance": 0.03
+    }
+  },
+  "car_performance": {
+    "McLaren": 98.2,
+    "Ferrari": 95.7,
+    "Red Bull": 96.0,
+    "Mercedes": 96.5,
+    "Aston Martin": 92.7,
+    "Alpine": 91.6,
+    "Haas": 94.0,
+    "Racing Bulls": 93.9,
+    "Williams": 93.2,
+    "Kick Sauber": 93.6
+  },
+  "car_reliability": {
+    "McLaren": 97,
+    "Ferrari": 95,
+    "Red Bull": 94,
+    "Mercedes": 96,
+    "Aston Martin": 89,
+    "Alpine": 88,
+    "Haas": 89,
+    "Racing Bulls": 90,
+    "Williams": 92,
+    "Kick Sauber": 89
+  },
+  "GrandPrix_list": [
+    "Australian Grand Prix",
+    "Chinese Grand Prix",
+    "Japanese Grand Prix",
+    "Bahrain Grand Prix",
+    "Saudi Arabian Grand Prix",
+    "Miami Grand Prix",
+    "Emilia Romagna Grand Prix",
+    "Monaco Grand Prix",
+    "Spanish Grand Prix",
+    "Canadian Grand Prix",
+    "Austrian Grand Prix",
+    "British Grand Prix",
+    "Belgian Grand Prix",
+    "Hungarian Grand Prix",
+    "Dutch Grand Prix",
+    "Italian Grand Prix",
+    "Azerbaijan Grand Prix",
+    "Singapore Grand Prix",
+    "United States Grand Prix",
+    "Mexico City Grand Prix",
+    "Brazilian Grand Prix",
+    "Las Vegas Grand Prix",
+    "Qatar Grand Prix",
+    "Abu Dhabi Grand Prix"
+  ],
+  "race_points_list": [
+    25,
+    18,
+    15,
+    12,
+    10,
+    8,
+    6,
+    4,
+    2,
+    1
+  ]
+}

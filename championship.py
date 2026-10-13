@@ -1,16 +1,6 @@
 import random
 
-from data import (
-    drivers,
-    teams,
-    car_performance,
-    race_points_list,
-    GrandPrix_list,
-    driver_names,
-    pilot_stats,
-    car_reliability,
-    tracks
-)
+from season_loader import load_season, build_drivers
 
 race_history = {}
 championship_history = {}
@@ -35,7 +25,7 @@ def simulate_race(drivers, car_performance, qualifying_results, name_of_track, i
         race_events_history[name_of_track][pilot] = {"mistake": False, "dnf_reason": None}
         car_power = car_performance[drivers[pilot]["team_name"]]
         start_position = starting_grid[pilot]
-        qualifying_bonus = (11.5 - start_position) * overtaking_coefficient
+        qualifying_bonus = ((len(drivers) + 1) / 2 - start_position) * overtaking_coefficient
         skill_bonus = (drivers[pilot]["skill"] - 85) * (skill_importance - 50) * 0.003
 
         result = (0.3 * drivers[pilot]["pace"] + 0.5 * car_power + random.uniform(-5,
@@ -92,17 +82,7 @@ def award_points(race_results, drivers, race_points_list):
 
 
 def constructor_standings(teams, drivers):
-    teams_total_score = {"Mercedes": 0,
-                         "Ferrari": 0,
-                         "McLaren": 0,
-                         "Red Bull": 0,
-                         "Racing Bulls": 0,
-                         "Alpine": 0,
-                         "Haas": 0,
-                         "Audi": 0,
-                         "Williams": 0,
-                         "Aston Martin": 0,
-                         "Cadillac": 0}
+    teams_total_score = {x: 0 for x in teams}
     for team in teams:
         for pilot in teams[team]:
             teams_total_score[team] += drivers[pilot]['total_score']
@@ -110,10 +90,25 @@ def constructor_standings(teams, drivers):
 
 
 def podiums_of_each_race(race_history):
-    print('The Podium Of Each Race:')
-    print()
-    for race, pilots in race_history.items():
-        print(f'{race}: first - {list(pilots)[0]}, second - {list(pilots)[1]}, third - {list(pilots)[2]}')
+    if not race_history:
+        print('No race results yet.')
+        return
+
+    race_width = max(18, max(len(race.removesuffix(' Grand Prix')) for race in race_history))
+    driver_width = max(20, max(len(pilot) for results in race_history.values() for pilot in list(results)[:3]))
+
+    header = f'{"#":>2}  {"GRAND PRIX":<{race_width}} │ {"1ST PLACE":<{driver_width}} │ {"2ND PLACE":<{driver_width}} │ {"3RD PLACE":<{driver_width}}'
+    print('─' * len(header))
+    print(header)
+    print('─' * len(header))
+
+    for number, (race, results) in enumerate(race_history.items(), 1):
+        race_name = race.removesuffix(' Grand Prix')
+        podium = list(results)[:3]
+        print(
+            f'{number:>2}  {race_name:<{race_width}} │ {podium[0]:<{driver_width}} │ {podium[1]:<{driver_width}} │ {podium[2]:<{driver_width}}')
+
+    print('─' * len(header))
     print()
 
 
@@ -163,11 +158,12 @@ def simulate_championship(drivers, car_performance, GrandPrix_list):
 
 def show_championship(championship, teams, drivers, race_history, championship_history):
     print()
-    print('==================== SEASON 2026 ====================')
+    print(f'==================== SEASON {season["year"]} ====================')
     print()
-    print(f'--- The World Champion 2026 is {championship[0][0]} ---')
+    print(f'--- The World Champion {season["year"]} is {championship[0][0]} ---')
     print()
-    print(f'--- The Winner of Constructor Standings 2026 is {list(constructor_standings(teams, drivers))[0]} ---')
+    print(
+        f'--- The Winner of Constructor Standings {season["year"]} is {list(constructor_standings(teams, drivers))[0]} ---')
 
     print('\n==================== DRIVER STANDINGS ====================\n')
 
@@ -204,20 +200,6 @@ def show_championship(championship, teams, drivers, race_history, championship_h
     print('\n==================== RACE RESULTS ====================\n')
 
     podiums_of_each_race(race_history)
-
-    print('\n==================== MONACO GRAND PRIX ====================\n')
-
-    print(f"Weather: {weather_history['Monaco Grand Prix']}")
-
-    print('QUALIFYING:')
-    for place, pilot in enumerate(qualifying_history['Monaco Grand Prix'], 1):
-        print(f'{place:>2}. {pilot}')
-
-    print()
-    show_race_results('Monaco Grand Prix', qualifying_history['Monaco Grand Prix'], race_history['Monaco Grand Prix'])
-
-    print('\nCHAMPIONSHIP STANDINGS AFTER MONACO:\n')
-    show_championship_after_race('Monaco Grand Prix', championship_history)
 
     print('\n==================== END OF SEASON ====================')
 
@@ -502,7 +484,7 @@ def show_player_race_news(name_of_track, player_name):
             print(f'{player_name} wins the {name_of_track}!')
         elif finish_position <= 3:
             print(f'{player_name} finishes on the podium in P{finish_position}!')
-        elif finish_position <= 10:
+        elif finish_position <= len(race_points_list):
             print(f'{player_name} scores points with a P{finish_position} finish!')
         else:
             print(f'{player_name} finishes P{finish_position}.')
@@ -546,7 +528,7 @@ def show_player_statistics(player_name):
 
         if finish_position == 1: wins += 1
         if finish_position <= 3: podiums += 1
-        if finish_position <= 10: points_finishes += 1
+        if finish_position <= len(race_points_list): points_finishes += 1
 
         if best_finish is None or finish_position < best_finish:
             best_finish = finish_position
@@ -596,6 +578,7 @@ def show_player_statistics(player_name):
     print(f'Crash DNFs: {stats["crash_dnfs"]}')
     show_teammate_comparison(player_name)
 
+
 def show_teammate_comparison(player_name):
     team = drivers[player_name]["team_name"]
     teammate = next(pilot for pilot in teams[team] if pilot != player_name)
@@ -624,7 +607,8 @@ def show_teammate_comparison(player_name):
 
         if race_results[player_name] == 0 and race_results[teammate] == 0:
             both_dnfs += 1
-        elif race_results[teammate] == 0 or (race_results[player_name] > 0 and race.index(player_name) < race.index(teammate)):
+        elif race_results[teammate] == 0 or (
+                race_results[player_name] > 0 and race.index(player_name) < race.index(teammate)):
             player_race_wins += 1
         else:
             teammate_race_wins += 1
@@ -647,7 +631,8 @@ def show_teammate_comparison(player_name):
     print()
     print(f'{"Statistic":<25} {player_name:>18} {teammate:>18}')
     print('-' * 65)
-    print(f'{"Championship points":<25} {drivers[player_name]["total_score"]:>18} {drivers[teammate]["total_score"]:>18}')
+    print(
+        f'{"Championship points":<25} {drivers[player_name]["total_score"]:>18} {drivers[teammate]["total_score"]:>18}')
     print(f'{"Qualifying H2H":<25} {player_qualifying_wins:>18} {teammate_qualifying_wins:>18}')
     print(f'{"Race H2H":<25} {player_race_wins:>18} {teammate_race_wins:>18}')
     print(f'{"Race wins":<25} {player_wins:>18} {teammate_wins:>18}')
@@ -675,7 +660,7 @@ def choose_option(options, title):
 
 def create_driver():
     print('\n========== CREATE YOUR DRIVER ==========')
-    print('\nAvailable season: 2026')
+    print(f'\nAvailable season: {season["year"]}')
 
     name = input('\nEnter your driver name: ').strip()
 
@@ -738,6 +723,43 @@ def create_driver():
     return name
 
 
+def choose_season():
+    from pathlib import Path
+    seasons_folder = Path(__file__).parent / "seasons"
+    presets = sorted(seasons_folder.glob("*.json"))
+    print('\n========== CHOOSE THE SEASON ==========')
+    for pos, el in enumerate(presets):
+        print(f'{pos + 1}. {el.stem}')
+    preset = input('\n> ')
+    while not preset.isdigit() or int(preset) not in range(1, len(presets) + 1):
+        preset = input('Invalid option. Try again: ')
+    year_of_season = int(presets[int(preset) - 1].stem)
+    return year_of_season
+
+
+def setup_season(year):
+    global season, teams, GrandPrix_list, tracks
+    global car_performance, car_reliability, race_points_list
+    global drivers, driver_names, pilot_stats
+
+    season = load_season(year)
+    teams = season["teams"]
+    race_points_list = season["race_points_list"]
+    GrandPrix_list = season["GrandPrix_list"]
+    tracks = season["tracks"]
+    car_performance = season["car_performance"]
+    car_reliability = season["car_reliability"]
+    drivers = build_drivers(season)
+    driver_names = list(drivers)
+    pilot_stats = {pilot: {"wins": 0,
+                           "poles": 0,
+                           "podiums": 0,
+                           "mistakes": 0,
+                           "dnfs": 0,
+                           "technical_dnfs": 0,
+                           "crash_dnfs": 0} for pilot in driver_names}
+
+
 def main():
     print('\n========== F1 CHAMPIONSHIP GENERATOR ==========')
     print('1. Generate Championship')
@@ -748,14 +770,16 @@ def main():
         mode = input('Invalid option. Try again: ')
     if mode == '3':
         return
+    year = choose_season()
+    setup_season(year)
     player_name = None
     if mode == '2':
         player_name = create_driver()
-    championship2026 = simulate_championship(drivers, car_performance, GrandPrix_list)
-    show_championship(championship2026, teams, drivers, race_history, championship_history)
+    championship = simulate_championship(drivers, car_performance, GrandPrix_list)
+    show_championship(championship, teams, drivers, race_history, championship_history)
     if player_name:
         position = next(
-            place for place, (pilot, stats) in enumerate(championship2026, 1)
+            place for place, (pilot, stats) in enumerate(championship, 1)
             if pilot == player_name
         )
 
@@ -764,8 +788,83 @@ def main():
         print(f'Points: {drivers[player_name]["total_score"]}')
         print(f'Team: {drivers[player_name]["team_name"]}')
         print(f'DNFs: {pilot_stats[player_name]["dnfs"]}')
-    post_season_menu()
     post_season_menu(player_name)
+
+
+def reset_test_season(year):
+    setup_season(year)
+    race_history.clear()
+    championship_history.clear()
+    qualifying_history.clear()
+    weather_history.clear()
+    race_events_history.clear()
+
+
+def test_balance(number_of_seasons=10000, year=2025):
+    setup_season(year)
+    driver_titles = {pilot: 0 for pilot in drivers}
+    constructor_titles = {team: 0 for team in teams}
+
+    for _ in range(number_of_seasons):
+        reset_test_season(year)
+        championship = simulate_championship(drivers, car_performance, GrandPrix_list)
+
+        driver_champion = championship[0][0]
+        constructor_champion = next(iter(constructor_standings(teams, drivers)))
+
+        driver_titles[driver_champion] += 1
+        constructor_titles[constructor_champion] += 1
+
+    print(f'\n========== {year} BALANCE TEST: {number_of_seasons} SEASONS ==========')
+
+    print('\nDRIVER CHAMPIONSHIPS:\n')
+    for pilot, titles in sorted(driver_titles.items(), key=lambda item: item[1], reverse=True):
+        if titles: print(f'{pilot:<23} {titles:>6} titles | {titles / number_of_seasons * 100:.2f}%')
+
+    print('\nCONSTRUCTOR CHAMPIONSHIPS:\n')
+    for team, titles in sorted(constructor_titles.items(), key=lambda item: item[1], reverse=True):
+        if titles: print(f'{team:<23} {titles:>6} titles | {titles / number_of_seasons * 100:.2f}%')
+
+
+def test_midfield_balance(number_of_seasons=10000, year=2025):
+    setup_season(year)
+    driver_points = {pilot: 0 for pilot in drivers}
+    constructor_points = {team: 0 for team in teams}
+
+    for _ in range(number_of_seasons):
+        reset_test_season(year)
+        simulate_championship(drivers, car_performance, GrandPrix_list)
+
+        for pilot in drivers:
+            driver_points[pilot] += drivers[pilot]["total_score"]
+
+        for team in teams:
+            constructor_points[team] += sum(drivers[pilot]["total_score"] for pilot in teams[team])
+
+    total_points = sum(constructor_points.values())
+
+    print(f'\n========== {year} POINTS TEST: {number_of_seasons} SEASONS ==========')
+
+    print('\nAVERAGE DRIVER POINTS:\n')
+    for pilot, points in sorted(driver_points.items(), key=lambda item: item[1], reverse=True):
+        print(f'{pilot:<23} {points / number_of_seasons:>8.2f}')
+
+    print('\nAVERAGE CONSTRUCTOR POINTS:\n')
+    for team, points in sorted(constructor_points.items(), key=lambda item: item[1], reverse=True):
+        share = points / total_points * 100 if total_points else 0
+        print(f'{team:<23} {points / number_of_seasons:>8.2f} pts | {share:>6.2f}%')
+
+    sorted_teams = sorted(constructor_points, key=constructor_points.get, reverse=True)
+    top4 = sorted_teams[:4]
+    midfield = sorted_teams[4:]
+
+    top4_points = sum(constructor_points[team] for team in top4)
+    midfield_points = sum(constructor_points[team] for team in midfield)
+
+    print('\n========== POINT DISTRIBUTION ==========\n')
+    print(f'Top 4 teams: {", ".join(top4)}')
+    print(f'Top 4 points share: {top4_points / total_points * 100:.2f}%')
+    print(f'Remaining teams share: {midfield_points / total_points * 100:.2f}%')
 
 
 if __name__ == '__main__':
