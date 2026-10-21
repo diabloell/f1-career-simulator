@@ -1,0 +1,3641 @@
+{
+  "1999": {
+    "races": 16,
+    "drivers": {
+      "Eddie Irvine": {
+        "wins": 4,
+        "podiums": 9,
+        "entries": 16,
+        "starts": 16,
+        "race_points": 74.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Heinz-Harald Frentzen": {
+        "wins": 2,
+        "podiums": 6,
+        "entries": 16,
+        "starts": 16,
+        "race_points": 54.0,
+        "grid_firsts": 1,
+        "technical_status_count": 4
+      },
+      "Ralf Schumacher": {
+        "wins": 0,
+        "podiums": 3,
+        "entries": 16,
+        "starts": 16,
+        "race_points": 35.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Giancarlo Fisichella": {
+        "wins": 0,
+        "podiums": 1,
+        "entries": 16,
+        "starts": 16,
+        "race_points": 13.0,
+        "grid_firsts": 0,
+        "technical_status_count": 5
+      },
+      "Rubens Barrichello": {
+        "wins": 0,
+        "podiums": 3,
+        "entries": 16,
+        "starts": 16,
+        "race_points": 21.0,
+        "grid_firsts": 1,
+        "technical_status_count": 4
+      },
+      "Pedro de la Rosa": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 16,
+        "starts": 15,
+        "race_points": 1.0,
+        "grid_firsts": 0,
+        "technical_status_count": 7
+      },
+      "Toranosuke Takagi": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 16,
+        "starts": 16,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 9
+      },
+      "Michael Schumacher": {
+        "wins": 2,
+        "podiums": 6,
+        "entries": 10,
+        "starts": 10,
+        "race_points": 44.0,
+        "grid_firsts": 3,
+        "technical_status_count": 1
+      },
+      "Ricardo Zonta": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 12,
+        "starts": 12,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 7
+      },
+      "Luca Badoer": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 15,
+        "starts": 15,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 6
+      },
+      "Alexander Wurz": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 16,
+        "starts": 16,
+        "race_points": 3.0,
+        "grid_firsts": 0,
+        "technical_status_count": 3
+      },
+      "Pedro Diniz": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 16,
+        "starts": 16,
+        "race_points": 3.0,
+        "grid_firsts": 0,
+        "technical_status_count": 4
+      },
+      "Marc Gene": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 16,
+        "starts": 16,
+        "race_points": 1.0,
+        "grid_firsts": 0,
+        "technical_status_count": 2
+      },
+      "Jarno Trulli": {
+        "wins": 0,
+        "podiums": 1,
+        "entries": 16,
+        "starts": 16,
+        "race_points": 7.0,
+        "grid_firsts": 0,
+        "technical_status_count": 5
+      },
+      "Olivier Panis": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 16,
+        "starts": 16,
+        "race_points": 2.0,
+        "grid_firsts": 0,
+        "technical_status_count": 7
+      },
+      "Mika Hakkinen": {
+        "wins": 5,
+        "podiums": 10,
+        "entries": 16,
+        "starts": 16,
+        "race_points": 76.0,
+        "grid_firsts": 11,
+        "technical_status_count": 3
+      },
+      "Alessandro Zanardi": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 16,
+        "starts": 16,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 8
+      },
+      "David Coulthard": {
+        "wins": 2,
+        "podiums": 6,
+        "entries": 16,
+        "starts": 16,
+        "race_points": 48.0,
+        "grid_firsts": 0,
+        "technical_status_count": 6
+      },
+      "Jacques Villeneuve": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 16,
+        "starts": 16,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 10
+      },
+      "Damon Hill": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 16,
+        "starts": 16,
+        "race_points": 7.0,
+        "grid_firsts": 0,
+        "technical_status_count": 4
+      },
+      "Jean Alesi": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 16,
+        "starts": 16,
+        "race_points": 2.0,
+        "grid_firsts": 0,
+        "technical_status_count": 7
+      },
+      "Johnny Herbert": {
+        "wins": 1,
+        "podiums": 1,
+        "entries": 16,
+        "starts": 16,
+        "race_points": 15.0,
+        "grid_firsts": 0,
+        "technical_status_count": 9
+      },
+      "Stephane Sarrazin": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 1,
+        "starts": 1,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 0
+      },
+      "Mika Salo": {
+        "wins": 0,
+        "podiums": 2,
+        "entries": 9,
+        "starts": 9,
+        "race_points": 10.0,
+        "grid_firsts": 0,
+        "technical_status_count": 2
+      }
+    },
+    "appearances_by_team": {
+      "Ferrari": {
+        "Eddie Irvine": {
+          "entries": 16,
+          "starts": 16,
+          "points": 74.0
+        },
+        "Michael Schumacher": {
+          "entries": 10,
+          "starts": 10,
+          "points": 44.0
+        },
+        "Mika Salo": {
+          "entries": 6,
+          "starts": 6,
+          "points": 10.0
+        }
+      },
+      "Jordan": {
+        "Heinz-Harald Frentzen": {
+          "entries": 16,
+          "starts": 16,
+          "points": 54.0
+        },
+        "Damon Hill": {
+          "entries": 16,
+          "starts": 16,
+          "points": 7.0
+        }
+      },
+      "Williams": {
+        "Ralf Schumacher": {
+          "entries": 16,
+          "starts": 16,
+          "points": 35.0
+        },
+        "Alessandro Zanardi": {
+          "entries": 16,
+          "starts": 16,
+          "points": 0.0
+        }
+      },
+      "Benetton": {
+        "Giancarlo Fisichella": {
+          "entries": 16,
+          "starts": 16,
+          "points": 13.0
+        },
+        "Alexander Wurz": {
+          "entries": 16,
+          "starts": 16,
+          "points": 3.0
+        }
+      },
+      "Stewart": {
+        "Rubens Barrichello": {
+          "entries": 16,
+          "starts": 16,
+          "points": 21.0
+        },
+        "Johnny Herbert": {
+          "entries": 16,
+          "starts": 16,
+          "points": 15.0
+        }
+      },
+      "Arrows": {
+        "Pedro de la Rosa": {
+          "entries": 16,
+          "starts": 15,
+          "points": 1.0
+        },
+        "Toranosuke Takagi": {
+          "entries": 16,
+          "starts": 16,
+          "points": 0.0
+        }
+      },
+      "BAR": {
+        "Ricardo Zonta": {
+          "entries": 12,
+          "starts": 12,
+          "points": 0.0
+        },
+        "Jacques Villeneuve": {
+          "entries": 16,
+          "starts": 16,
+          "points": 0.0
+        },
+        "Mika Salo": {
+          "entries": 3,
+          "starts": 3,
+          "points": 0.0
+        }
+      },
+      "Minardi": {
+        "Luca Badoer": {
+          "entries": 15,
+          "starts": 15,
+          "points": 0.0
+        },
+        "Marc Gene": {
+          "entries": 16,
+          "starts": 16,
+          "points": 1.0
+        },
+        "Stephane Sarrazin": {
+          "entries": 1,
+          "starts": 1,
+          "points": 0.0
+        }
+      },
+      "Sauber": {
+        "Pedro Diniz": {
+          "entries": 16,
+          "starts": 16,
+          "points": 3.0
+        },
+        "Jean Alesi": {
+          "entries": 16,
+          "starts": 16,
+          "points": 2.0
+        }
+      },
+      "Prost": {
+        "Jarno Trulli": {
+          "entries": 16,
+          "starts": 16,
+          "points": 7.0
+        },
+        "Olivier Panis": {
+          "entries": 16,
+          "starts": 16,
+          "points": 2.0
+        }
+      },
+      "McLaren": {
+        "Mika Hakkinen": {
+          "entries": 16,
+          "starts": 16,
+          "points": 76.0
+        },
+        "David Coulthard": {
+          "entries": 16,
+          "starts": 16,
+          "points": 48.0
+        }
+      }
+    },
+    "official_driver_standings": [
+      {
+        "position": "1",
+        "driver": "Mika Hakkinen",
+        "points": 76.0,
+        "wins": 5
+      },
+      {
+        "position": "2",
+        "driver": "Eddie Irvine",
+        "points": 74.0,
+        "wins": 4
+      },
+      {
+        "position": "3",
+        "driver": "Heinz-Harald Frentzen",
+        "points": 54.0,
+        "wins": 2
+      },
+      {
+        "position": "4",
+        "driver": "David Coulthard",
+        "points": 48.0,
+        "wins": 2
+      },
+      {
+        "position": "5",
+        "driver": "Michael Schumacher",
+        "points": 44.0,
+        "wins": 2
+      },
+      {
+        "position": "6",
+        "driver": "Ralf Schumacher",
+        "points": 35.0,
+        "wins": 0
+      },
+      {
+        "position": "7",
+        "driver": "Rubens Barrichello",
+        "points": 21.0,
+        "wins": 0
+      },
+      {
+        "position": "8",
+        "driver": "Johnny Herbert",
+        "points": 15.0,
+        "wins": 1
+      },
+      {
+        "position": "9",
+        "driver": "Giancarlo Fisichella",
+        "points": 13.0,
+        "wins": 0
+      },
+      {
+        "position": "10",
+        "driver": "Mika Salo",
+        "points": 10.0,
+        "wins": 0
+      },
+      {
+        "position": "11",
+        "driver": "Jarno Trulli",
+        "points": 7.0,
+        "wins": 0
+      },
+      {
+        "position": "12",
+        "driver": "Damon Hill",
+        "points": 7.0,
+        "wins": 0
+      },
+      {
+        "position": "13",
+        "driver": "Alexander Wurz",
+        "points": 3.0,
+        "wins": 0
+      },
+      {
+        "position": "14",
+        "driver": "Pedro Diniz",
+        "points": 3.0,
+        "wins": 0
+      },
+      {
+        "position": "15",
+        "driver": "Jean Alesi",
+        "points": 2.0,
+        "wins": 0
+      },
+      {
+        "position": "16",
+        "driver": "Olivier Panis",
+        "points": 2.0,
+        "wins": 0
+      },
+      {
+        "position": "17",
+        "driver": "Marc Gene",
+        "points": 1.0,
+        "wins": 0
+      },
+      {
+        "position": "18",
+        "driver": "Pedro de la Rosa",
+        "points": 1.0,
+        "wins": 0
+      },
+      {
+        "position": "-",
+        "driver": "Alessandro Zanardi",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "-",
+        "driver": "Toranosuke Takagi",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "-",
+        "driver": "Jacques Villeneuve",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "-",
+        "driver": "Ricardo Zonta",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "-",
+        "driver": "Luca Badoer",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "-",
+        "driver": "Stephane Sarrazin",
+        "points": 0.0,
+        "wins": 0
+      }
+    ],
+    "official_constructor_standings": [
+      {
+        "position": "1",
+        "team": "Ferrari",
+        "points": 128.0,
+        "wins": 6
+      },
+      {
+        "position": "2",
+        "team": "McLaren",
+        "points": 124.0,
+        "wins": 7
+      },
+      {
+        "position": "3",
+        "team": "Jordan",
+        "points": 61.0,
+        "wins": 2
+      },
+      {
+        "position": "4",
+        "team": "Stewart",
+        "points": 36.0,
+        "wins": 1
+      },
+      {
+        "position": "5",
+        "team": "Williams",
+        "points": 35.0,
+        "wins": 0
+      },
+      {
+        "position": "6",
+        "team": "Benetton",
+        "points": 16.0,
+        "wins": 0
+      },
+      {
+        "position": "7",
+        "team": "Prost",
+        "points": 9.0,
+        "wins": 0
+      },
+      {
+        "position": "8",
+        "team": "Sauber",
+        "points": 5.0,
+        "wins": 0
+      },
+      {
+        "position": "9",
+        "team": "Arrows",
+        "points": 1.0,
+        "wins": 0
+      },
+      {
+        "position": "10",
+        "team": "Minardi",
+        "points": 1.0,
+        "wins": 0
+      },
+      {
+        "position": "-",
+        "team": "BAR",
+        "points": 0.0,
+        "wins": 0
+      }
+    ],
+    "sources": [
+      "https://www.formula1.com/en/results/1999/drivers",
+      "https://www.formula1.com/en/results/1999/team",
+      "https://www.formula1.com/en/results/1999/races",
+      "https://api.jolpi.ca/ergast/f1/1999/results/",
+      "https://www.formula1.com/en/results/1999/awards/pole-positions"
+    ],
+    "notes": "Race points exclude sprints; official standings include them. Grid firsts are not always official qualifying poles (penalties, sprint grids). Entries include DNS/DNQ. Technical status counts are estimates and exclude ambiguous Retired statuses.",
+    "official_poles": {
+      "Mika Hakkinen": 11,
+      "Michael Schumacher": 3,
+      "Rubens Barrichello": 1,
+      "Heinz-Harald Frentzen": 1
+    }
+  },
+  "2007": {
+    "races": 17,
+    "drivers": {
+      "Kimi Raikkonen": {
+        "wins": 6,
+        "podiums": 12,
+        "entries": 17,
+        "starts": 17,
+        "race_points": 110.0,
+        "grid_firsts": 3,
+        "technical_status_count": 2
+      },
+      "Fernando Alonso": {
+        "wins": 4,
+        "podiums": 12,
+        "entries": 17,
+        "starts": 17,
+        "race_points": 109.0,
+        "grid_firsts": 2,
+        "technical_status_count": 0
+      },
+      "Lewis Hamilton": {
+        "wins": 4,
+        "podiums": 12,
+        "entries": 17,
+        "starts": 17,
+        "race_points": 109.0,
+        "grid_firsts": 6,
+        "technical_status_count": 0
+      },
+      "Nick Heidfeld": {
+        "wins": 0,
+        "podiums": 2,
+        "entries": 17,
+        "starts": 17,
+        "race_points": 61.0,
+        "grid_firsts": 0,
+        "technical_status_count": 3
+      },
+      "Giancarlo Fisichella": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 17,
+        "starts": 17,
+        "race_points": 21.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Felipe Massa": {
+        "wins": 3,
+        "podiums": 10,
+        "entries": 17,
+        "starts": 17,
+        "race_points": 94.0,
+        "grid_firsts": 6,
+        "technical_status_count": 1
+      },
+      "Nico Rosberg": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 17,
+        "starts": 17,
+        "race_points": 20.0,
+        "grid_firsts": 0,
+        "technical_status_count": 3
+      },
+      "Ralf Schumacher": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 17,
+        "starts": 17,
+        "race_points": 5.0,
+        "grid_firsts": 0,
+        "technical_status_count": 3
+      },
+      "Jarno Trulli": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 17,
+        "starts": 17,
+        "race_points": 8.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Heikki Kovalainen": {
+        "wins": 0,
+        "podiums": 1,
+        "entries": 17,
+        "starts": 17,
+        "race_points": 30.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Rubens Barrichello": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 17,
+        "starts": 17,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Takuma Sato": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 17,
+        "starts": 17,
+        "race_points": 4.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Mark Webber": {
+        "wins": 0,
+        "podiums": 1,
+        "entries": 17,
+        "starts": 17,
+        "race_points": 10.0,
+        "grid_firsts": 0,
+        "technical_status_count": 6
+      },
+      "Vitantonio Liuzzi": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 17,
+        "starts": 17,
+        "race_points": 3.0,
+        "grid_firsts": 0,
+        "technical_status_count": 4
+      },
+      "Jenson Button": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 17,
+        "starts": 17,
+        "race_points": 6.0,
+        "grid_firsts": 0,
+        "technical_status_count": 5
+      },
+      "Anthony Davidson": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 17,
+        "starts": 17,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 4
+      },
+      "Adrian Sutil": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 17,
+        "starts": 17,
+        "race_points": 1.0,
+        "grid_firsts": 0,
+        "technical_status_count": 3
+      },
+      "Alexander Wurz": {
+        "wins": 0,
+        "podiums": 1,
+        "entries": 16,
+        "starts": 16,
+        "race_points": 13.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "David Coulthard": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 17,
+        "starts": 17,
+        "race_points": 14.0,
+        "grid_firsts": 0,
+        "technical_status_count": 4
+      },
+      "Robert Kubica": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 16,
+        "starts": 16,
+        "race_points": 39.0,
+        "grid_firsts": 0,
+        "technical_status_count": 2
+      },
+      "Scott Speed": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 10,
+        "starts": 10,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 3
+      },
+      "Christijan Albers": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 9,
+        "starts": 9,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 4
+      },
+      "Sebastian Vettel": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 8,
+        "starts": 8,
+        "race_points": 6.0,
+        "grid_firsts": 0,
+        "technical_status_count": 2
+      },
+      "Markus Winkelhock": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 1,
+        "starts": 1,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Sakon Yamamoto": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 7,
+        "starts": 7,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 0
+      },
+      "Kazuki Nakajima": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 1,
+        "starts": 1,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 0
+      }
+    },
+    "appearances_by_team": {
+      "Ferrari": {
+        "Kimi Raikkonen": {
+          "entries": 17,
+          "starts": 17,
+          "points": 110.0
+        },
+        "Felipe Massa": {
+          "entries": 17,
+          "starts": 17,
+          "points": 94.0
+        }
+      },
+      "McLaren": {
+        "Fernando Alonso": {
+          "entries": 17,
+          "starts": 17,
+          "points": 109.0
+        },
+        "Lewis Hamilton": {
+          "entries": 17,
+          "starts": 17,
+          "points": 109.0
+        }
+      },
+      "BMW Sauber": {
+        "Nick Heidfeld": {
+          "entries": 17,
+          "starts": 17,
+          "points": 61.0
+        },
+        "Robert Kubica": {
+          "entries": 16,
+          "starts": 16,
+          "points": 39.0
+        },
+        "Sebastian Vettel": {
+          "entries": 1,
+          "starts": 1,
+          "points": 1.0
+        }
+      },
+      "Renault": {
+        "Giancarlo Fisichella": {
+          "entries": 17,
+          "starts": 17,
+          "points": 21.0
+        },
+        "Heikki Kovalainen": {
+          "entries": 17,
+          "starts": 17,
+          "points": 30.0
+        }
+      },
+      "Williams": {
+        "Nico Rosberg": {
+          "entries": 17,
+          "starts": 17,
+          "points": 20.0
+        },
+        "Alexander Wurz": {
+          "entries": 16,
+          "starts": 16,
+          "points": 13.0
+        },
+        "Kazuki Nakajima": {
+          "entries": 1,
+          "starts": 1,
+          "points": 0.0
+        }
+      },
+      "Toyota": {
+        "Ralf Schumacher": {
+          "entries": 17,
+          "starts": 17,
+          "points": 5.0
+        },
+        "Jarno Trulli": {
+          "entries": 17,
+          "starts": 17,
+          "points": 8.0
+        }
+      },
+      "Honda": {
+        "Rubens Barrichello": {
+          "entries": 17,
+          "starts": 17,
+          "points": 0.0
+        },
+        "Jenson Button": {
+          "entries": 17,
+          "starts": 17,
+          "points": 6.0
+        }
+      },
+      "Super Aguri": {
+        "Takuma Sato": {
+          "entries": 17,
+          "starts": 17,
+          "points": 4.0
+        },
+        "Anthony Davidson": {
+          "entries": 17,
+          "starts": 17,
+          "points": 0.0
+        }
+      },
+      "Red Bull": {
+        "Mark Webber": {
+          "entries": 17,
+          "starts": 17,
+          "points": 10.0
+        },
+        "David Coulthard": {
+          "entries": 17,
+          "starts": 17,
+          "points": 14.0
+        }
+      },
+      "Toro Rosso": {
+        "Vitantonio Liuzzi": {
+          "entries": 17,
+          "starts": 17,
+          "points": 3.0
+        },
+        "Scott Speed": {
+          "entries": 10,
+          "starts": 10,
+          "points": 0.0
+        },
+        "Sebastian Vettel": {
+          "entries": 7,
+          "starts": 7,
+          "points": 5.0
+        }
+      },
+      "Spyker": {
+        "Adrian Sutil": {
+          "entries": 17,
+          "starts": 17,
+          "points": 1.0
+        },
+        "Christijan Albers": {
+          "entries": 9,
+          "starts": 9,
+          "points": 0.0
+        },
+        "Markus Winkelhock": {
+          "entries": 1,
+          "starts": 1,
+          "points": 0.0
+        },
+        "Sakon Yamamoto": {
+          "entries": 7,
+          "starts": 7,
+          "points": 0.0
+        }
+      }
+    },
+    "official_driver_standings": [
+      {
+        "position": "1",
+        "driver": "Kimi Raikkonen",
+        "points": 110.0,
+        "wins": 6
+      },
+      {
+        "position": "2",
+        "driver": "Lewis Hamilton",
+        "points": 109.0,
+        "wins": 4
+      },
+      {
+        "position": "3",
+        "driver": "Fernando Alonso",
+        "points": 109.0,
+        "wins": 4
+      },
+      {
+        "position": "4",
+        "driver": "Felipe Massa",
+        "points": 94.0,
+        "wins": 3
+      },
+      {
+        "position": "5",
+        "driver": "Nick Heidfeld",
+        "points": 61.0,
+        "wins": 0
+      },
+      {
+        "position": "6",
+        "driver": "Robert Kubica",
+        "points": 39.0,
+        "wins": 0
+      },
+      {
+        "position": "7",
+        "driver": "Heikki Kovalainen",
+        "points": 30.0,
+        "wins": 0
+      },
+      {
+        "position": "8",
+        "driver": "Giancarlo Fisichella",
+        "points": 21.0,
+        "wins": 0
+      },
+      {
+        "position": "9",
+        "driver": "Nico Rosberg",
+        "points": 20.0,
+        "wins": 0
+      },
+      {
+        "position": "10",
+        "driver": "David Coulthard",
+        "points": 14.0,
+        "wins": 0
+      },
+      {
+        "position": "11",
+        "driver": "Alexander Wurz",
+        "points": 13.0,
+        "wins": 0
+      },
+      {
+        "position": "12",
+        "driver": "Mark Webber",
+        "points": 10.0,
+        "wins": 0
+      },
+      {
+        "position": "13",
+        "driver": "Jarno Trulli",
+        "points": 8.0,
+        "wins": 0
+      },
+      {
+        "position": "14",
+        "driver": "Sebastian Vettel",
+        "points": 6.0,
+        "wins": 0
+      },
+      {
+        "position": "15",
+        "driver": "Jenson Button",
+        "points": 6.0,
+        "wins": 0
+      },
+      {
+        "position": "16",
+        "driver": "Ralf Schumacher",
+        "points": 5.0,
+        "wins": 0
+      },
+      {
+        "position": "17",
+        "driver": "Takuma Sato",
+        "points": 4.0,
+        "wins": 0
+      },
+      {
+        "position": "18",
+        "driver": "Vitantonio Liuzzi",
+        "points": 3.0,
+        "wins": 0
+      },
+      {
+        "position": "19",
+        "driver": "Adrian Sutil",
+        "points": 1.0,
+        "wins": 0
+      },
+      {
+        "position": "20",
+        "driver": "Rubens Barrichello",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "21",
+        "driver": "Scott Speed",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "22",
+        "driver": "Kazuki Nakajima",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "23",
+        "driver": "Anthony Davidson",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "24",
+        "driver": "Sakon Yamamoto",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "25",
+        "driver": "Christijan Albers",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "-",
+        "driver": "Markus Winkelhock",
+        "points": 0.0,
+        "wins": 0
+      }
+    ],
+    "official_constructor_standings": [
+      {
+        "position": "1",
+        "team": "Ferrari",
+        "points": 204.0,
+        "wins": 9
+      },
+      {
+        "position": "2",
+        "team": "BMW Sauber",
+        "points": 101.0,
+        "wins": 0
+      },
+      {
+        "position": "3",
+        "team": "Renault",
+        "points": 51.0,
+        "wins": 0
+      },
+      {
+        "position": "4",
+        "team": "Williams",
+        "points": 33.0,
+        "wins": 0
+      },
+      {
+        "position": "5",
+        "team": "Red Bull",
+        "points": 24.0,
+        "wins": 0
+      },
+      {
+        "position": "6",
+        "team": "Toyota",
+        "points": 13.0,
+        "wins": 0
+      },
+      {
+        "position": "7",
+        "team": "Toro Rosso",
+        "points": 8.0,
+        "wins": 0
+      },
+      {
+        "position": "8",
+        "team": "Honda",
+        "points": 6.0,
+        "wins": 0
+      },
+      {
+        "position": "9",
+        "team": "Super Aguri",
+        "points": 4.0,
+        "wins": 0
+      },
+      {
+        "position": "10",
+        "team": "Spyker",
+        "points": 1.0,
+        "wins": 0
+      },
+      {
+        "position": "E",
+        "team": "McLaren",
+        "points": 0.0,
+        "wins": 8
+      }
+    ],
+    "sources": [
+      "https://www.formula1.com/en/results/2007/drivers",
+      "https://www.formula1.com/en/results/2007/team",
+      "https://www.formula1.com/en/results/2007/races",
+      "https://api.jolpi.ca/ergast/f1/2007/results/",
+      "https://www.formula1.com/en/results/2007/awards/pole-positions"
+    ],
+    "notes": "Race points exclude sprints; official standings include them. Grid firsts are not always official qualifying poles (penalties, sprint grids). Entries include DNS/DNQ. Technical status counts are estimates and exclude ambiguous Retired statuses.",
+    "official_poles": {
+      "Felipe Massa": 6,
+      "Lewis Hamilton": 6,
+      "Kimi Raikkonen": 3,
+      "Fernando Alonso": 2
+    }
+  },
+  "2010": {
+    "races": 19,
+    "drivers": {
+      "Fernando Alonso": {
+        "wins": 5,
+        "podiums": 10,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 252.0,
+        "grid_firsts": 2,
+        "technical_status_count": 1
+      },
+      "Felipe Massa": {
+        "wins": 0,
+        "podiums": 5,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 144.0,
+        "grid_firsts": 0,
+        "technical_status_count": 0
+      },
+      "Lewis Hamilton": {
+        "wins": 3,
+        "podiums": 9,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 240.0,
+        "grid_firsts": 1,
+        "technical_status_count": 2
+      },
+      "Sebastian Vettel": {
+        "wins": 5,
+        "podiums": 10,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 256.0,
+        "grid_firsts": 10,
+        "technical_status_count": 2
+      },
+      "Nico Rosberg": {
+        "wins": 0,
+        "podiums": 3,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 142.0,
+        "grid_firsts": 0,
+        "technical_status_count": 2
+      },
+      "Michael Schumacher": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 72.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Jenson Button": {
+        "wins": 2,
+        "podiums": 7,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 214.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Mark Webber": {
+        "wins": 4,
+        "podiums": 10,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 242.0,
+        "grid_firsts": 5,
+        "technical_status_count": 0
+      },
+      "Vitantonio Liuzzi": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 21.0,
+        "grid_firsts": 0,
+        "technical_status_count": 2
+      },
+      "Rubens Barrichello": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 47.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Robert Kubica": {
+        "wins": 0,
+        "podiums": 3,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 136.0,
+        "grid_firsts": 0,
+        "technical_status_count": 2
+      },
+      "Adrian Sutil": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 47.0,
+        "grid_firsts": 0,
+        "technical_status_count": 2
+      },
+      "Jaime Alguersuari": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 5.0,
+        "grid_firsts": 0,
+        "technical_status_count": 2
+      },
+      "Nico Hulkenberg": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 22.0,
+        "grid_firsts": 1,
+        "technical_status_count": 2
+      },
+      "Heikki Kovalainen": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 4
+      },
+      "Sebastien Buemi": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 8.0,
+        "grid_firsts": 0,
+        "technical_status_count": 2
+      },
+      "Jarno Trulli": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 10
+      },
+      "Pedro de la Rosa": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 14,
+        "starts": 14,
+        "race_points": 6.0,
+        "grid_firsts": 0,
+        "technical_status_count": 5
+      },
+      "Bruno Senna": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 18,
+        "starts": 18,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 5
+      },
+      "Timo Glock": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 7
+      },
+      "Vitaly Petrov": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 27.0,
+        "grid_firsts": 0,
+        "technical_status_count": 3
+      },
+      "Kamui Kobayashi": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 32.0,
+        "grid_firsts": 0,
+        "technical_status_count": 4
+      },
+      "Lucas di Grassi": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 7
+      },
+      "Karun Chandhok": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 10,
+        "starts": 10,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 2
+      },
+      "Sakon Yamamoto": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 7,
+        "starts": 7,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Nick Heidfeld": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 5,
+        "starts": 5,
+        "race_points": 6.0,
+        "grid_firsts": 0,
+        "technical_status_count": 0
+      },
+      "Christian Klien": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 3,
+        "starts": 3,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      }
+    },
+    "appearances_by_team": {
+      "Ferrari": {
+        "Fernando Alonso": {
+          "entries": 19,
+          "starts": 19,
+          "points": 252.0
+        },
+        "Felipe Massa": {
+          "entries": 19,
+          "starts": 19,
+          "points": 144.0
+        }
+      },
+      "McLaren": {
+        "Lewis Hamilton": {
+          "entries": 19,
+          "starts": 19,
+          "points": 240.0
+        },
+        "Jenson Button": {
+          "entries": 19,
+          "starts": 19,
+          "points": 214.0
+        }
+      },
+      "Red Bull": {
+        "Sebastian Vettel": {
+          "entries": 19,
+          "starts": 19,
+          "points": 256.0
+        },
+        "Mark Webber": {
+          "entries": 19,
+          "starts": 19,
+          "points": 242.0
+        }
+      },
+      "Mercedes": {
+        "Nico Rosberg": {
+          "entries": 19,
+          "starts": 19,
+          "points": 142.0
+        },
+        "Michael Schumacher": {
+          "entries": 19,
+          "starts": 19,
+          "points": 72.0
+        }
+      },
+      "Force India": {
+        "Vitantonio Liuzzi": {
+          "entries": 19,
+          "starts": 19,
+          "points": 21.0
+        },
+        "Adrian Sutil": {
+          "entries": 19,
+          "starts": 19,
+          "points": 47.0
+        }
+      },
+      "Williams": {
+        "Rubens Barrichello": {
+          "entries": 19,
+          "starts": 19,
+          "points": 47.0
+        },
+        "Nico Hulkenberg": {
+          "entries": 19,
+          "starts": 19,
+          "points": 22.0
+        }
+      },
+      "Renault": {
+        "Robert Kubica": {
+          "entries": 19,
+          "starts": 19,
+          "points": 136.0
+        },
+        "Vitaly Petrov": {
+          "entries": 19,
+          "starts": 19,
+          "points": 27.0
+        }
+      },
+      "Toro Rosso": {
+        "Jaime Alguersuari": {
+          "entries": 19,
+          "starts": 19,
+          "points": 5.0
+        },
+        "Sebastien Buemi": {
+          "entries": 19,
+          "starts": 19,
+          "points": 8.0
+        }
+      },
+      "Lotus": {
+        "Heikki Kovalainen": {
+          "entries": 19,
+          "starts": 19,
+          "points": 0.0
+        },
+        "Jarno Trulli": {
+          "entries": 19,
+          "starts": 19,
+          "points": 0.0
+        }
+      },
+      "Sauber": {
+        "Pedro de la Rosa": {
+          "entries": 14,
+          "starts": 14,
+          "points": 6.0
+        },
+        "Kamui Kobayashi": {
+          "entries": 19,
+          "starts": 19,
+          "points": 32.0
+        },
+        "Nick Heidfeld": {
+          "entries": 5,
+          "starts": 5,
+          "points": 6.0
+        }
+      },
+      "HRT": {
+        "Bruno Senna": {
+          "entries": 18,
+          "starts": 18,
+          "points": 0.0
+        },
+        "Karun Chandhok": {
+          "entries": 10,
+          "starts": 10,
+          "points": 0.0
+        },
+        "Sakon Yamamoto": {
+          "entries": 7,
+          "starts": 7,
+          "points": 0.0
+        },
+        "Christian Klien": {
+          "entries": 3,
+          "starts": 3,
+          "points": 0.0
+        }
+      },
+      "Virgin": {
+        "Timo Glock": {
+          "entries": 19,
+          "starts": 19,
+          "points": 0.0
+        },
+        "Lucas di Grassi": {
+          "entries": 19,
+          "starts": 19,
+          "points": 0.0
+        }
+      }
+    },
+    "official_driver_standings": [
+      {
+        "position": "1",
+        "driver": "Sebastian Vettel",
+        "points": 256.0,
+        "wins": 5
+      },
+      {
+        "position": "2",
+        "driver": "Fernando Alonso",
+        "points": 252.0,
+        "wins": 5
+      },
+      {
+        "position": "3",
+        "driver": "Mark Webber",
+        "points": 242.0,
+        "wins": 4
+      },
+      {
+        "position": "4",
+        "driver": "Lewis Hamilton",
+        "points": 240.0,
+        "wins": 3
+      },
+      {
+        "position": "5",
+        "driver": "Jenson Button",
+        "points": 214.0,
+        "wins": 2
+      },
+      {
+        "position": "6",
+        "driver": "Felipe Massa",
+        "points": 144.0,
+        "wins": 0
+      },
+      {
+        "position": "7",
+        "driver": "Nico Rosberg",
+        "points": 142.0,
+        "wins": 0
+      },
+      {
+        "position": "8",
+        "driver": "Robert Kubica",
+        "points": 136.0,
+        "wins": 0
+      },
+      {
+        "position": "9",
+        "driver": "Michael Schumacher",
+        "points": 72.0,
+        "wins": 0
+      },
+      {
+        "position": "10",
+        "driver": "Rubens Barrichello",
+        "points": 47.0,
+        "wins": 0
+      },
+      {
+        "position": "11",
+        "driver": "Adrian Sutil",
+        "points": 47.0,
+        "wins": 0
+      },
+      {
+        "position": "12",
+        "driver": "Kamui Kobayashi",
+        "points": 32.0,
+        "wins": 0
+      },
+      {
+        "position": "13",
+        "driver": "Vitaly Petrov",
+        "points": 27.0,
+        "wins": 0
+      },
+      {
+        "position": "14",
+        "driver": "Nico Hulkenberg",
+        "points": 22.0,
+        "wins": 0
+      },
+      {
+        "position": "15",
+        "driver": "Vitantonio Liuzzi",
+        "points": 21.0,
+        "wins": 0
+      },
+      {
+        "position": "16",
+        "driver": "Sebastien Buemi",
+        "points": 8.0,
+        "wins": 0
+      },
+      {
+        "position": "17",
+        "driver": "Pedro de la Rosa",
+        "points": 6.0,
+        "wins": 0
+      },
+      {
+        "position": "18",
+        "driver": "Nick Heidfeld",
+        "points": 6.0,
+        "wins": 0
+      },
+      {
+        "position": "19",
+        "driver": "Jaime Alguersuari",
+        "points": 5.0,
+        "wins": 0
+      },
+      {
+        "position": "20",
+        "driver": "Heikki Kovalainen",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "21",
+        "driver": "Jarno Trulli",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "22",
+        "driver": "Karun Chandhok",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "23",
+        "driver": "Bruno Senna",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "24",
+        "driver": "Lucas di Grassi",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "25",
+        "driver": "Timo Glock",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "26",
+        "driver": "Sakon Yamamoto",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "27",
+        "driver": "Christian Klien",
+        "points": 0.0,
+        "wins": 0
+      }
+    ],
+    "official_constructor_standings": [
+      {
+        "position": "1",
+        "team": "Red Bull",
+        "points": 498.0,
+        "wins": 9
+      },
+      {
+        "position": "2",
+        "team": "McLaren",
+        "points": 454.0,
+        "wins": 5
+      },
+      {
+        "position": "3",
+        "team": "Ferrari",
+        "points": 396.0,
+        "wins": 5
+      },
+      {
+        "position": "4",
+        "team": "Mercedes",
+        "points": 214.0,
+        "wins": 0
+      },
+      {
+        "position": "5",
+        "team": "Renault",
+        "points": 163.0,
+        "wins": 0
+      },
+      {
+        "position": "6",
+        "team": "Williams",
+        "points": 69.0,
+        "wins": 0
+      },
+      {
+        "position": "7",
+        "team": "Force India",
+        "points": 68.0,
+        "wins": 0
+      },
+      {
+        "position": "8",
+        "team": "Sauber",
+        "points": 44.0,
+        "wins": 0
+      },
+      {
+        "position": "9",
+        "team": "Toro Rosso",
+        "points": 13.0,
+        "wins": 0
+      },
+      {
+        "position": "10",
+        "team": "Lotus",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "11",
+        "team": "HRT",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "12",
+        "team": "Virgin",
+        "points": 0.0,
+        "wins": 0
+      }
+    ],
+    "sources": [
+      "https://www.formula1.com/en/results/2010/drivers",
+      "https://www.formula1.com/en/results/2010/team",
+      "https://www.formula1.com/en/results/2010/races",
+      "https://api.jolpi.ca/ergast/f1/2010/results/",
+      "https://www.formula1.com/en/results/2010/awards/pole-positions"
+    ],
+    "notes": "Race points exclude sprints; official standings include them. Grid firsts are not always official qualifying poles (penalties, sprint grids). Entries include DNS/DNQ. Technical status counts are estimates and exclude ambiguous Retired statuses.",
+    "official_poles": {
+      "Sebastian Vettel": 10,
+      "Mark Webber": 5,
+      "Fernando Alonso": 2,
+      "Lewis Hamilton": 1,
+      "Nico Hulkenberg": 1
+    }
+  },
+  "2012": {
+    "races": 20,
+    "drivers": {
+      "Jenson Button": {
+        "wins": 3,
+        "podiums": 6,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 188.0,
+        "grid_firsts": 1,
+        "technical_status_count": 2
+      },
+      "Sebastian Vettel": {
+        "wins": 5,
+        "podiums": 10,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 281.0,
+        "grid_firsts": 6,
+        "technical_status_count": 2
+      },
+      "Lewis Hamilton": {
+        "wins": 4,
+        "podiums": 7,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 190.0,
+        "grid_firsts": 7,
+        "technical_status_count": 3
+      },
+      "Mark Webber": {
+        "wins": 2,
+        "podiums": 4,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 179.0,
+        "grid_firsts": 2,
+        "technical_status_count": 2
+      },
+      "Fernando Alonso": {
+        "wins": 3,
+        "podiums": 13,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 278.0,
+        "grid_firsts": 2,
+        "technical_status_count": 0
+      },
+      "Kamui Kobayashi": {
+        "wins": 0,
+        "podiums": 1,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 60.0,
+        "grid_firsts": 0,
+        "technical_status_count": 0
+      },
+      "Kimi Raikkonen": {
+        "wins": 1,
+        "podiums": 7,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 207.0,
+        "grid_firsts": 0,
+        "technical_status_count": 0
+      },
+      "Sergio Perez": {
+        "wins": 0,
+        "podiums": 3,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 66.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Daniel Ricciardo": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 10.0,
+        "grid_firsts": 0,
+        "technical_status_count": 0
+      },
+      "Paul di Resta": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 46.0,
+        "grid_firsts": 0,
+        "technical_status_count": 0
+      },
+      "Jean-Eric Vergne": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 16.0,
+        "grid_firsts": 0,
+        "technical_status_count": 2
+      },
+      "Nico Rosberg": {
+        "wins": 1,
+        "podiums": 2,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 93.0,
+        "grid_firsts": 1,
+        "technical_status_count": 0
+      },
+      "Pastor Maldonado": {
+        "wins": 1,
+        "podiums": 1,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 45.0,
+        "grid_firsts": 1,
+        "technical_status_count": 3
+      },
+      "Timo Glock": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 20,
+        "starts": 19,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Charles Pic": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 3
+      },
+      "Bruno Senna": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 31.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Felipe Massa": {
+        "wins": 0,
+        "podiums": 2,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 122.0,
+        "grid_firsts": 0,
+        "technical_status_count": 0
+      },
+      "Heikki Kovalainen": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Vitaly Petrov": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 3
+      },
+      "Michael Schumacher": {
+        "wins": 0,
+        "podiums": 1,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 49.0,
+        "grid_firsts": 0,
+        "technical_status_count": 4
+      },
+      "Romain Grosjean": {
+        "wins": 0,
+        "podiums": 3,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 96.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Nico Hulkenberg": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 63.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Narain Karthikeyan": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 4
+      },
+      "Pedro de la Rosa": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 19,
+        "starts": 19,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 2
+      },
+      "Jerome d'Ambrosio": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 1,
+        "starts": 1,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 0
+      }
+    },
+    "appearances_by_team": {
+      "McLaren": {
+        "Jenson Button": {
+          "entries": 20,
+          "starts": 20,
+          "points": 188.0
+        },
+        "Lewis Hamilton": {
+          "entries": 20,
+          "starts": 20,
+          "points": 190.0
+        }
+      },
+      "Red Bull": {
+        "Sebastian Vettel": {
+          "entries": 20,
+          "starts": 20,
+          "points": 281.0
+        },
+        "Mark Webber": {
+          "entries": 20,
+          "starts": 20,
+          "points": 179.0
+        }
+      },
+      "Ferrari": {
+        "Fernando Alonso": {
+          "entries": 20,
+          "starts": 20,
+          "points": 278.0
+        },
+        "Felipe Massa": {
+          "entries": 20,
+          "starts": 20,
+          "points": 122.0
+        }
+      },
+      "Sauber": {
+        "Kamui Kobayashi": {
+          "entries": 20,
+          "starts": 20,
+          "points": 60.0
+        },
+        "Sergio Perez": {
+          "entries": 20,
+          "starts": 20,
+          "points": 66.0
+        }
+      },
+      "Lotus": {
+        "Kimi Raikkonen": {
+          "entries": 20,
+          "starts": 20,
+          "points": 207.0
+        },
+        "Romain Grosjean": {
+          "entries": 19,
+          "starts": 19,
+          "points": 96.0
+        },
+        "Jerome d'Ambrosio": {
+          "entries": 1,
+          "starts": 1,
+          "points": 0.0
+        }
+      },
+      "Toro Rosso": {
+        "Daniel Ricciardo": {
+          "entries": 20,
+          "starts": 20,
+          "points": 10.0
+        },
+        "Jean-Eric Vergne": {
+          "entries": 20,
+          "starts": 20,
+          "points": 16.0
+        }
+      },
+      "Force India": {
+        "Paul di Resta": {
+          "entries": 20,
+          "starts": 20,
+          "points": 46.0
+        },
+        "Nico Hulkenberg": {
+          "entries": 20,
+          "starts": 20,
+          "points": 63.0
+        }
+      },
+      "Mercedes": {
+        "Nico Rosberg": {
+          "entries": 20,
+          "starts": 20,
+          "points": 93.0
+        },
+        "Michael Schumacher": {
+          "entries": 20,
+          "starts": 20,
+          "points": 49.0
+        }
+      },
+      "Williams": {
+        "Pastor Maldonado": {
+          "entries": 20,
+          "starts": 20,
+          "points": 45.0
+        },
+        "Bruno Senna": {
+          "entries": 20,
+          "starts": 20,
+          "points": 31.0
+        }
+      },
+      "Marussia": {
+        "Timo Glock": {
+          "entries": 20,
+          "starts": 19,
+          "points": 0.0
+        },
+        "Charles Pic": {
+          "entries": 20,
+          "starts": 20,
+          "points": 0.0
+        }
+      },
+      "Caterham": {
+        "Heikki Kovalainen": {
+          "entries": 20,
+          "starts": 20,
+          "points": 0.0
+        },
+        "Vitaly Petrov": {
+          "entries": 20,
+          "starts": 20,
+          "points": 0.0
+        }
+      },
+      "HRT": {
+        "Narain Karthikeyan": {
+          "entries": 19,
+          "starts": 19,
+          "points": 0.0
+        },
+        "Pedro de la Rosa": {
+          "entries": 19,
+          "starts": 19,
+          "points": 0.0
+        }
+      }
+    },
+    "official_driver_standings": [
+      {
+        "position": "1",
+        "driver": "Sebastian Vettel",
+        "points": 281.0,
+        "wins": 5
+      },
+      {
+        "position": "2",
+        "driver": "Fernando Alonso",
+        "points": 278.0,
+        "wins": 3
+      },
+      {
+        "position": "3",
+        "driver": "Kimi Raikkonen",
+        "points": 207.0,
+        "wins": 1
+      },
+      {
+        "position": "4",
+        "driver": "Lewis Hamilton",
+        "points": 190.0,
+        "wins": 4
+      },
+      {
+        "position": "5",
+        "driver": "Jenson Button",
+        "points": 188.0,
+        "wins": 3
+      },
+      {
+        "position": "6",
+        "driver": "Mark Webber",
+        "points": 179.0,
+        "wins": 2
+      },
+      {
+        "position": "7",
+        "driver": "Felipe Massa",
+        "points": 122.0,
+        "wins": 0
+      },
+      {
+        "position": "8",
+        "driver": "Romain Grosjean",
+        "points": 96.0,
+        "wins": 0
+      },
+      {
+        "position": "9",
+        "driver": "Nico Rosberg",
+        "points": 93.0,
+        "wins": 1
+      },
+      {
+        "position": "10",
+        "driver": "Sergio Perez",
+        "points": 66.0,
+        "wins": 0
+      },
+      {
+        "position": "11",
+        "driver": "Nico Hulkenberg",
+        "points": 63.0,
+        "wins": 0
+      },
+      {
+        "position": "12",
+        "driver": "Kamui Kobayashi",
+        "points": 60.0,
+        "wins": 0
+      },
+      {
+        "position": "13",
+        "driver": "Michael Schumacher",
+        "points": 49.0,
+        "wins": 0
+      },
+      {
+        "position": "14",
+        "driver": "Paul di Resta",
+        "points": 46.0,
+        "wins": 0
+      },
+      {
+        "position": "15",
+        "driver": "Pastor Maldonado",
+        "points": 45.0,
+        "wins": 1
+      },
+      {
+        "position": "16",
+        "driver": "Bruno Senna",
+        "points": 31.0,
+        "wins": 0
+      },
+      {
+        "position": "17",
+        "driver": "Jean-Eric Vergne",
+        "points": 16.0,
+        "wins": 0
+      },
+      {
+        "position": "18",
+        "driver": "Daniel Ricciardo",
+        "points": 10.0,
+        "wins": 0
+      },
+      {
+        "position": "19",
+        "driver": "Vitaly Petrov",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "20",
+        "driver": "Timo Glock",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "21",
+        "driver": "Charles Pic",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "22",
+        "driver": "Heikki Kovalainen",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "23",
+        "driver": "Jerome d'Ambrosio",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "24",
+        "driver": "Narain Karthikeyan",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "25",
+        "driver": "Pedro de la Rosa",
+        "points": 0.0,
+        "wins": 0
+      }
+    ],
+    "official_constructor_standings": [
+      {
+        "position": "1",
+        "team": "Red Bull",
+        "points": 460.0,
+        "wins": 7
+      },
+      {
+        "position": "2",
+        "team": "Ferrari",
+        "points": 400.0,
+        "wins": 3
+      },
+      {
+        "position": "3",
+        "team": "McLaren",
+        "points": 378.0,
+        "wins": 7
+      },
+      {
+        "position": "4",
+        "team": "Lotus F1",
+        "points": 303.0,
+        "wins": 1
+      },
+      {
+        "position": "5",
+        "team": "Mercedes",
+        "points": 142.0,
+        "wins": 1
+      },
+      {
+        "position": "6",
+        "team": "Sauber",
+        "points": 126.0,
+        "wins": 0
+      },
+      {
+        "position": "7",
+        "team": "Force India",
+        "points": 109.0,
+        "wins": 0
+      },
+      {
+        "position": "8",
+        "team": "Williams",
+        "points": 76.0,
+        "wins": 1
+      },
+      {
+        "position": "9",
+        "team": "Toro Rosso",
+        "points": 26.0,
+        "wins": 0
+      },
+      {
+        "position": "10",
+        "team": "Caterham",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "11",
+        "team": "Marussia",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "12",
+        "team": "HRT",
+        "points": 0.0,
+        "wins": 0
+      }
+    ],
+    "sources": [
+      "https://www.formula1.com/en/results/2012/drivers",
+      "https://www.formula1.com/en/results/2012/team",
+      "https://www.formula1.com/en/results/2012/races",
+      "https://api.jolpi.ca/ergast/f1/2012/results/",
+      "https://www.formula1.com/en/results/2012/awards/pole-positions"
+    ],
+    "notes": "Race points exclude sprints; official standings include them. Grid firsts are not always official qualifying poles (penalties, sprint grids). Entries include DNS/DNQ. Technical status counts are estimates and exclude ambiguous Retired statuses.",
+    "official_poles": {
+      "Lewis Hamilton": 7,
+      "Sebastian Vettel": 6,
+      "Mark Webber": 2,
+      "Fernando Alonso": 2,
+      "Nico Rosberg": 1,
+      "Pastor Maldonado": 1,
+      "Jenson Button": 1
+    }
+  },
+  "2021": {
+    "races": 22,
+    "drivers": {
+      "Lewis Hamilton": {
+        "wins": 8,
+        "podiums": 17,
+        "entries": 22,
+        "starts": 22,
+        "race_points": 385.5,
+        "grid_firsts": 5,
+        "technical_status_count": 0
+      },
+      "Max Verstappen": {
+        "wins": 10,
+        "podiums": 18,
+        "entries": 22,
+        "starts": 22,
+        "race_points": 388.5,
+        "grid_firsts": 10,
+        "technical_status_count": 0
+      },
+      "Valtteri Bottas": {
+        "wins": 1,
+        "podiums": 11,
+        "entries": 22,
+        "starts": 22,
+        "race_points": 219.0,
+        "grid_firsts": 4,
+        "technical_status_count": 2
+      },
+      "Lando Norris": {
+        "wins": 0,
+        "podiums": 4,
+        "entries": 22,
+        "starts": 22,
+        "race_points": 160.0,
+        "grid_firsts": 1,
+        "technical_status_count": 0
+      },
+      "Sergio Perez": {
+        "wins": 1,
+        "podiums": 5,
+        "entries": 22,
+        "starts": 22,
+        "race_points": 190.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Charles Leclerc": {
+        "wins": 0,
+        "podiums": 1,
+        "entries": 22,
+        "starts": 22,
+        "race_points": 159.0,
+        "grid_firsts": 2,
+        "technical_status_count": 1
+      },
+      "Daniel Ricciardo": {
+        "wins": 1,
+        "podiums": 1,
+        "entries": 22,
+        "starts": 22,
+        "race_points": 114.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Carlos Sainz": {
+        "wins": 0,
+        "podiums": 4,
+        "entries": 22,
+        "starts": 22,
+        "race_points": 163.5,
+        "grid_firsts": 0,
+        "technical_status_count": 0
+      },
+      "Yuki Tsunoda": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 22,
+        "starts": 22,
+        "race_points": 32.0,
+        "grid_firsts": 0,
+        "technical_status_count": 3
+      },
+      "Lance Stroll": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 22,
+        "starts": 22,
+        "race_points": 34.0,
+        "grid_firsts": 0,
+        "technical_status_count": 0
+      },
+      "Kimi Raikkonen": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 20,
+        "starts": 20,
+        "race_points": 10.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Antonio Giovinazzi": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 22,
+        "starts": 22,
+        "race_points": 3.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Esteban Ocon": {
+        "wins": 1,
+        "podiums": 1,
+        "entries": 22,
+        "starts": 22,
+        "race_points": 74.0,
+        "grid_firsts": 0,
+        "technical_status_count": 2
+      },
+      "George Russell": {
+        "wins": 0,
+        "podiums": 1,
+        "entries": 22,
+        "starts": 22,
+        "race_points": 16.0,
+        "grid_firsts": 0,
+        "technical_status_count": 4
+      },
+      "Sebastian Vettel": {
+        "wins": 0,
+        "podiums": 1,
+        "entries": 22,
+        "starts": 22,
+        "race_points": 43.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Mick Schumacher": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 22,
+        "starts": 22,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Pierre Gasly": {
+        "wins": 0,
+        "podiums": 1,
+        "entries": 22,
+        "starts": 22,
+        "race_points": 110.0,
+        "grid_firsts": 0,
+        "technical_status_count": 2
+      },
+      "Nicholas Latifi": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 22,
+        "starts": 22,
+        "race_points": 7.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Fernando Alonso": {
+        "wins": 0,
+        "podiums": 1,
+        "entries": 22,
+        "starts": 22,
+        "race_points": 81.0,
+        "grid_firsts": 0,
+        "technical_status_count": 2
+      },
+      "Nikita Mazepin": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 22,
+        "starts": 22,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 3
+      },
+      "Robert Kubica": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 2,
+        "starts": 2,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 0
+      }
+    },
+    "appearances_by_team": {
+      "Mercedes": {
+        "Lewis Hamilton": {
+          "entries": 22,
+          "starts": 22,
+          "points": 385.5
+        },
+        "Valtteri Bottas": {
+          "entries": 22,
+          "starts": 22,
+          "points": 219.0
+        }
+      },
+      "Red Bull": {
+        "Max Verstappen": {
+          "entries": 22,
+          "starts": 22,
+          "points": 388.5
+        },
+        "Sergio Perez": {
+          "entries": 22,
+          "starts": 22,
+          "points": 190.0
+        }
+      },
+      "McLaren": {
+        "Lando Norris": {
+          "entries": 22,
+          "starts": 22,
+          "points": 160.0
+        },
+        "Daniel Ricciardo": {
+          "entries": 22,
+          "starts": 22,
+          "points": 114.0
+        }
+      },
+      "Ferrari": {
+        "Charles Leclerc": {
+          "entries": 22,
+          "starts": 22,
+          "points": 159.0
+        },
+        "Carlos Sainz": {
+          "entries": 22,
+          "starts": 22,
+          "points": 163.5
+        }
+      },
+      "AlphaTauri": {
+        "Yuki Tsunoda": {
+          "entries": 22,
+          "starts": 22,
+          "points": 32.0
+        },
+        "Pierre Gasly": {
+          "entries": 22,
+          "starts": 22,
+          "points": 110.0
+        }
+      },
+      "Aston Martin": {
+        "Lance Stroll": {
+          "entries": 22,
+          "starts": 22,
+          "points": 34.0
+        },
+        "Sebastian Vettel": {
+          "entries": 22,
+          "starts": 22,
+          "points": 43.0
+        }
+      },
+      "Alfa Romeo": {
+        "Kimi Raikkonen": {
+          "entries": 20,
+          "starts": 20,
+          "points": 10.0
+        },
+        "Antonio Giovinazzi": {
+          "entries": 22,
+          "starts": 22,
+          "points": 3.0
+        },
+        "Robert Kubica": {
+          "entries": 2,
+          "starts": 2,
+          "points": 0.0
+        }
+      },
+      "Alpine": {
+        "Esteban Ocon": {
+          "entries": 22,
+          "starts": 22,
+          "points": 74.0
+        },
+        "Fernando Alonso": {
+          "entries": 22,
+          "starts": 22,
+          "points": 81.0
+        }
+      },
+      "Williams": {
+        "George Russell": {
+          "entries": 22,
+          "starts": 22,
+          "points": 16.0
+        },
+        "Nicholas Latifi": {
+          "entries": 22,
+          "starts": 22,
+          "points": 7.0
+        }
+      },
+      "Haas": {
+        "Mick Schumacher": {
+          "entries": 22,
+          "starts": 22,
+          "points": 0.0
+        },
+        "Nikita Mazepin": {
+          "entries": 22,
+          "starts": 22,
+          "points": 0.0
+        }
+      }
+    },
+    "official_driver_standings": [
+      {
+        "position": "1",
+        "driver": "Max Verstappen",
+        "points": 395.5,
+        "wins": 10
+      },
+      {
+        "position": "2",
+        "driver": "Lewis Hamilton",
+        "points": 387.5,
+        "wins": 8
+      },
+      {
+        "position": "3",
+        "driver": "Valtteri Bottas",
+        "points": 226.0,
+        "wins": 1
+      },
+      {
+        "position": "4",
+        "driver": "Sergio Perez",
+        "points": 190.0,
+        "wins": 1
+      },
+      {
+        "position": "5",
+        "driver": "Carlos Sainz",
+        "points": 164.5,
+        "wins": 0
+      },
+      {
+        "position": "6",
+        "driver": "Lando Norris",
+        "points": 160.0,
+        "wins": 0
+      },
+      {
+        "position": "7",
+        "driver": "Charles Leclerc",
+        "points": 159.0,
+        "wins": 0
+      },
+      {
+        "position": "8",
+        "driver": "Daniel Ricciardo",
+        "points": 115.0,
+        "wins": 1
+      },
+      {
+        "position": "9",
+        "driver": "Pierre Gasly",
+        "points": 110.0,
+        "wins": 0
+      },
+      {
+        "position": "10",
+        "driver": "Fernando Alonso",
+        "points": 81.0,
+        "wins": 0
+      },
+      {
+        "position": "11",
+        "driver": "Esteban Ocon",
+        "points": 74.0,
+        "wins": 1
+      },
+      {
+        "position": "12",
+        "driver": "Sebastian Vettel",
+        "points": 43.0,
+        "wins": 0
+      },
+      {
+        "position": "13",
+        "driver": "Lance Stroll",
+        "points": 34.0,
+        "wins": 0
+      },
+      {
+        "position": "14",
+        "driver": "Yuki Tsunoda",
+        "points": 32.0,
+        "wins": 0
+      },
+      {
+        "position": "15",
+        "driver": "George Russell",
+        "points": 16.0,
+        "wins": 0
+      },
+      {
+        "position": "16",
+        "driver": "Kimi Raikkonen",
+        "points": 10.0,
+        "wins": 0
+      },
+      {
+        "position": "17",
+        "driver": "Nicholas Latifi",
+        "points": 7.0,
+        "wins": 0
+      },
+      {
+        "position": "18",
+        "driver": "Antonio Giovinazzi",
+        "points": 3.0,
+        "wins": 0
+      },
+      {
+        "position": "19",
+        "driver": "Mick Schumacher",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "20",
+        "driver": "Robert Kubica",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "21",
+        "driver": "Nikita Mazepin",
+        "points": 0.0,
+        "wins": 0
+      }
+    ],
+    "official_constructor_standings": [
+      {
+        "position": "1",
+        "team": "Mercedes",
+        "points": 613.5,
+        "wins": 9
+      },
+      {
+        "position": "2",
+        "team": "Red Bull",
+        "points": 585.5,
+        "wins": 11
+      },
+      {
+        "position": "3",
+        "team": "Ferrari",
+        "points": 323.5,
+        "wins": 0
+      },
+      {
+        "position": "4",
+        "team": "McLaren",
+        "points": 275.0,
+        "wins": 1
+      },
+      {
+        "position": "5",
+        "team": "Alpine F1 Team",
+        "points": 155.0,
+        "wins": 1
+      },
+      {
+        "position": "6",
+        "team": "AlphaTauri",
+        "points": 142.0,
+        "wins": 0
+      },
+      {
+        "position": "7",
+        "team": "Aston Martin",
+        "points": 77.0,
+        "wins": 0
+      },
+      {
+        "position": "8",
+        "team": "Williams",
+        "points": 23.0,
+        "wins": 0
+      },
+      {
+        "position": "9",
+        "team": "Alfa Romeo",
+        "points": 13.0,
+        "wins": 0
+      },
+      {
+        "position": "10",
+        "team": "Haas F1 Team",
+        "points": 0.0,
+        "wins": 0
+      }
+    ],
+    "sources": [
+      "https://www.formula1.com/en/results/2021/drivers",
+      "https://www.formula1.com/en/results/2021/team",
+      "https://www.formula1.com/en/results/2021/races",
+      "https://api.jolpi.ca/ergast/f1/2021/results/",
+      "https://www.formula1.com/en/results/2021/awards/pole-positions"
+    ],
+    "notes": "Race points exclude sprints; official standings include them. Grid firsts are not always official qualifying poles (penalties, sprint grids). Entries include DNS/DNQ. Technical status counts are estimates and exclude ambiguous Retired statuses.",
+    "official_poles": {
+      "Max Verstappen": 10,
+      "Lewis Hamilton": 5,
+      "Valtteri Bottas": 4,
+      "Charles Leclerc": 2,
+      "Lando Norris": 1
+    }
+  },
+  "2024": {
+    "races": 24,
+    "drivers": {
+      "Max Verstappen": {
+        "wins": 9,
+        "podiums": 14,
+        "entries": 24,
+        "starts": 24,
+        "race_points": 399.0,
+        "grid_firsts": 8,
+        "technical_status_count": 0
+      },
+      "Sergio Perez": {
+        "wins": 0,
+        "podiums": 4,
+        "entries": 24,
+        "starts": 24,
+        "race_points": 138.0,
+        "grid_firsts": 0,
+        "technical_status_count": 3
+      },
+      "Carlos Sainz": {
+        "wins": 2,
+        "podiums": 9,
+        "entries": 23,
+        "starts": 23,
+        "race_points": 262.0,
+        "grid_firsts": 1,
+        "technical_status_count": 0
+      },
+      "Charles Leclerc": {
+        "wins": 3,
+        "podiums": 13,
+        "entries": 24,
+        "starts": 24,
+        "race_points": 327.0,
+        "grid_firsts": 3,
+        "technical_status_count": 1
+      },
+      "George Russell": {
+        "wins": 2,
+        "podiums": 4,
+        "entries": 24,
+        "starts": 24,
+        "race_points": 226.0,
+        "grid_firsts": 4,
+        "technical_status_count": 0
+      },
+      "Lando Norris": {
+        "wins": 4,
+        "podiums": 13,
+        "entries": 24,
+        "starts": 24,
+        "race_points": 344.0,
+        "grid_firsts": 8,
+        "technical_status_count": 1
+      },
+      "Lewis Hamilton": {
+        "wins": 2,
+        "podiums": 5,
+        "entries": 24,
+        "starts": 24,
+        "race_points": 207.0,
+        "grid_firsts": 0,
+        "technical_status_count": 0
+      },
+      "Oscar Piastri": {
+        "wins": 2,
+        "podiums": 8,
+        "entries": 24,
+        "starts": 24,
+        "race_points": 265.0,
+        "grid_firsts": 0,
+        "technical_status_count": 0
+      },
+      "Fernando Alonso": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 24,
+        "starts": 24,
+        "race_points": 70.0,
+        "grid_firsts": 0,
+        "technical_status_count": 7
+      },
+      "Lance Stroll": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 24,
+        "starts": 23,
+        "race_points": 24.0,
+        "grid_firsts": 0,
+        "technical_status_count": 10
+      },
+      "Zhou Guanyu": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 24,
+        "starts": 24,
+        "race_points": 4.0,
+        "grid_firsts": 0,
+        "technical_status_count": 16
+      },
+      "Kevin Magnussen": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 22,
+        "starts": 22,
+        "race_points": 14.0,
+        "grid_firsts": 0,
+        "technical_status_count": 8
+      },
+      "Daniel Ricciardo": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 18,
+        "starts": 18,
+        "race_points": 7.0,
+        "grid_firsts": 0,
+        "technical_status_count": 10
+      },
+      "Yuki Tsunoda": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 24,
+        "starts": 24,
+        "race_points": 29.0,
+        "grid_firsts": 0,
+        "technical_status_count": 11
+      },
+      "Alexander Albon": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 24,
+        "starts": 23,
+        "race_points": 12.0,
+        "grid_firsts": 0,
+        "technical_status_count": 10
+      },
+      "Nico Hulkenberg": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 24,
+        "starts": 24,
+        "race_points": 36.0,
+        "grid_firsts": 0,
+        "technical_status_count": 8
+      },
+      "Esteban Ocon": {
+        "wins": 0,
+        "podiums": 1,
+        "entries": 23,
+        "starts": 23,
+        "race_points": 23.0,
+        "grid_firsts": 0,
+        "technical_status_count": 14
+      },
+      "Pierre Gasly": {
+        "wins": 0,
+        "podiums": 1,
+        "entries": 24,
+        "starts": 23,
+        "race_points": 40.0,
+        "grid_firsts": 0,
+        "technical_status_count": 9
+      },
+      "Valtteri Bottas": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 24,
+        "starts": 24,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 17
+      },
+      "Logan Sargeant": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 14,
+        "starts": 14,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 9
+      },
+      "Oliver Bearman": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 3,
+        "starts": 3,
+        "race_points": 7.0,
+        "grid_firsts": 0,
+        "technical_status_count": 0
+      },
+      "Franco Colapinto": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 9,
+        "starts": 9,
+        "race_points": 5.0,
+        "grid_firsts": 0,
+        "technical_status_count": 2
+      },
+      "Liam Lawson": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 6,
+        "starts": 6,
+        "race_points": 4.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      },
+      "Jack Doohan": {
+        "wins": 0,
+        "podiums": 0,
+        "entries": 1,
+        "starts": 1,
+        "race_points": 0.0,
+        "grid_firsts": 0,
+        "technical_status_count": 1
+      }
+    },
+    "appearances_by_team": {
+      "Red Bull": {
+        "Max Verstappen": {
+          "entries": 24,
+          "starts": 24,
+          "points": 399.0
+        },
+        "Sergio Perez": {
+          "entries": 24,
+          "starts": 24,
+          "points": 138.0
+        }
+      },
+      "Ferrari": {
+        "Carlos Sainz": {
+          "entries": 23,
+          "starts": 23,
+          "points": 262.0
+        },
+        "Charles Leclerc": {
+          "entries": 24,
+          "starts": 24,
+          "points": 327.0
+        },
+        "Oliver Bearman": {
+          "entries": 1,
+          "starts": 1,
+          "points": 6.0
+        }
+      },
+      "Mercedes": {
+        "George Russell": {
+          "entries": 24,
+          "starts": 24,
+          "points": 226.0
+        },
+        "Lewis Hamilton": {
+          "entries": 24,
+          "starts": 24,
+          "points": 207.0
+        }
+      },
+      "McLaren": {
+        "Lando Norris": {
+          "entries": 24,
+          "starts": 24,
+          "points": 344.0
+        },
+        "Oscar Piastri": {
+          "entries": 24,
+          "starts": 24,
+          "points": 265.0
+        }
+      },
+      "Aston Martin": {
+        "Fernando Alonso": {
+          "entries": 24,
+          "starts": 24,
+          "points": 70.0
+        },
+        "Lance Stroll": {
+          "entries": 24,
+          "starts": 23,
+          "points": 24.0
+        }
+      },
+      "Sauber": {
+        "Zhou Guanyu": {
+          "entries": 24,
+          "starts": 24,
+          "points": 4.0
+        },
+        "Valtteri Bottas": {
+          "entries": 24,
+          "starts": 24,
+          "points": 0.0
+        }
+      },
+      "Haas": {
+        "Kevin Magnussen": {
+          "entries": 22,
+          "starts": 22,
+          "points": 14.0
+        },
+        "Nico Hulkenberg": {
+          "entries": 24,
+          "starts": 24,
+          "points": 36.0
+        },
+        "Oliver Bearman": {
+          "entries": 2,
+          "starts": 2,
+          "points": 1.0
+        }
+      },
+      "RB": {
+        "Daniel Ricciardo": {
+          "entries": 18,
+          "starts": 18,
+          "points": 7.0
+        },
+        "Yuki Tsunoda": {
+          "entries": 24,
+          "starts": 24,
+          "points": 29.0
+        },
+        "Liam Lawson": {
+          "entries": 6,
+          "starts": 6,
+          "points": 4.0
+        }
+      },
+      "Williams": {
+        "Alexander Albon": {
+          "entries": 24,
+          "starts": 23,
+          "points": 12.0
+        },
+        "Logan Sargeant": {
+          "entries": 14,
+          "starts": 14,
+          "points": 0.0
+        },
+        "Franco Colapinto": {
+          "entries": 9,
+          "starts": 9,
+          "points": 5.0
+        }
+      },
+      "Alpine": {
+        "Esteban Ocon": {
+          "entries": 23,
+          "starts": 23,
+          "points": 23.0
+        },
+        "Pierre Gasly": {
+          "entries": 24,
+          "starts": 23,
+          "points": 40.0
+        },
+        "Jack Doohan": {
+          "entries": 1,
+          "starts": 1,
+          "points": 0.0
+        }
+      }
+    },
+    "official_driver_standings": [
+      {
+        "position": "1",
+        "driver": "Max Verstappen",
+        "points": 437.0,
+        "wins": 9
+      },
+      {
+        "position": "2",
+        "driver": "Lando Norris",
+        "points": 374.0,
+        "wins": 4
+      },
+      {
+        "position": "3",
+        "driver": "Charles Leclerc",
+        "points": 356.0,
+        "wins": 3
+      },
+      {
+        "position": "4",
+        "driver": "Oscar Piastri",
+        "points": 292.0,
+        "wins": 2
+      },
+      {
+        "position": "5",
+        "driver": "Carlos Sainz",
+        "points": 290.0,
+        "wins": 2
+      },
+      {
+        "position": "6",
+        "driver": "George Russell",
+        "points": 245.0,
+        "wins": 2
+      },
+      {
+        "position": "7",
+        "driver": "Lewis Hamilton",
+        "points": 223.0,
+        "wins": 2
+      },
+      {
+        "position": "8",
+        "driver": "Sergio Perez",
+        "points": 152.0,
+        "wins": 0
+      },
+      {
+        "position": "9",
+        "driver": "Fernando Alonso",
+        "points": 70.0,
+        "wins": 0
+      },
+      {
+        "position": "10",
+        "driver": "Pierre Gasly",
+        "points": 42.0,
+        "wins": 0
+      },
+      {
+        "position": "11",
+        "driver": "Nico Hulkenberg",
+        "points": 41.0,
+        "wins": 0
+      },
+      {
+        "position": "12",
+        "driver": "Yuki Tsunoda",
+        "points": 30.0,
+        "wins": 0
+      },
+      {
+        "position": "13",
+        "driver": "Lance Stroll",
+        "points": 24.0,
+        "wins": 0
+      },
+      {
+        "position": "14",
+        "driver": "Esteban Ocon",
+        "points": 23.0,
+        "wins": 0
+      },
+      {
+        "position": "15",
+        "driver": "Kevin Magnussen",
+        "points": 16.0,
+        "wins": 0
+      },
+      {
+        "position": "16",
+        "driver": "Alexander Albon",
+        "points": 12.0,
+        "wins": 0
+      },
+      {
+        "position": "17",
+        "driver": "Daniel Ricciardo",
+        "points": 12.0,
+        "wins": 0
+      },
+      {
+        "position": "18",
+        "driver": "Oliver Bearman",
+        "points": 7.0,
+        "wins": 0
+      },
+      {
+        "position": "19",
+        "driver": "Franco Colapinto",
+        "points": 5.0,
+        "wins": 0
+      },
+      {
+        "position": "20",
+        "driver": "Zhou Guanyu",
+        "points": 4.0,
+        "wins": 0
+      },
+      {
+        "position": "21",
+        "driver": "Liam Lawson",
+        "points": 4.0,
+        "wins": 0
+      },
+      {
+        "position": "22",
+        "driver": "Valtteri Bottas",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "23",
+        "driver": "Logan Sargeant",
+        "points": 0.0,
+        "wins": 0
+      },
+      {
+        "position": "24",
+        "driver": "Jack Doohan",
+        "points": 0.0,
+        "wins": 0
+      }
+    ],
+    "official_constructor_standings": [
+      {
+        "position": "1",
+        "team": "McLaren",
+        "points": 666.0,
+        "wins": 6
+      },
+      {
+        "position": "2",
+        "team": "Ferrari",
+        "points": 652.0,
+        "wins": 5
+      },
+      {
+        "position": "3",
+        "team": "Red Bull",
+        "points": 589.0,
+        "wins": 9
+      },
+      {
+        "position": "4",
+        "team": "Mercedes",
+        "points": 468.0,
+        "wins": 4
+      },
+      {
+        "position": "5",
+        "team": "Aston Martin",
+        "points": 94.0,
+        "wins": 0
+      },
+      {
+        "position": "6",
+        "team": "Alpine F1 Team",
+        "points": 65.0,
+        "wins": 0
+      },
+      {
+        "position": "7",
+        "team": "Haas F1 Team",
+        "points": 58.0,
+        "wins": 0
+      },
+      {
+        "position": "8",
+        "team": "RB F1 Team",
+        "points": 46.0,
+        "wins": 0
+      },
+      {
+        "position": "9",
+        "team": "Williams",
+        "points": 17.0,
+        "wins": 0
+      },
+      {
+        "position": "10",
+        "team": "Sauber",
+        "points": 4.0,
+        "wins": 0
+      }
+    ],
+    "sources": [
+      "https://www.formula1.com/en/results/2024/drivers",
+      "https://www.formula1.com/en/results/2024/team",
+      "https://www.formula1.com/en/results/2024/races",
+      "https://api.jolpi.ca/ergast/f1/2024/results/",
+      "https://www.formula1.com/en/results/2024/awards/pole-positions"
+    ],
+    "notes": "Race points exclude sprints; official standings include them. Grid firsts are not always official qualifying poles (penalties, sprint grids). Entries include DNS/DNQ. Technical status counts are estimates and exclude ambiguous Retired statuses.",
+    "official_poles": {
+      "Max Verstappen": 8,
+      "Lando Norris": 8,
+      "Charles Leclerc": 3,
+      "George Russell": 4,
+      "Carlos Sainz": 1
+    }
+  }
+}

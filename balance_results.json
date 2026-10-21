@@ -1,0 +1,1442 @@
+[
+  {
+    "year": 1999,
+    "simulations": 10000,
+    "seed": 8675309,
+    "drivers": {
+      "Eddie Irvine": {
+        "title_percent": 30.04,
+        "points": 75.2147,
+        "wins": 3.5663,
+        "podiums": 9.4073,
+        "poles": 2.4331,
+        "dnfs": 1.6117
+      },
+      "Michael Schumacher": {
+        "title_percent": 25.47,
+        "points": 73.6726,
+        "wins": 3.5116,
+        "podiums": 9.1718,
+        "poles": 4.5694,
+        "dnfs": 1.6882
+      },
+      "Heinz-Harald Frentzen": {
+        "title_percent": 1.11,
+        "points": 48.2243,
+        "wins": 1.603,
+        "podiums": 6.0331,
+        "poles": 0.6975,
+        "dnfs": 3.8118
+      },
+      "Damon Hill": {
+        "title_percent": 0.0,
+        "points": 5.3297,
+        "wins": 0.007,
+        "podiums": 0.264,
+        "poles": 0.0,
+        "dnfs": 3.8614
+      },
+      "Ralf Schumacher": {
+        "title_percent": 0.0,
+        "points": 31.7788,
+        "wins": 0.5917,
+        "podiums": 3.7446,
+        "poles": 0.0788,
+        "dnfs": 3.8338
+      },
+      "Alessandro Zanardi": {
+        "title_percent": 0.0,
+        "points": 1.7378,
+        "wins": 0.0002,
+        "podiums": 0.0403,
+        "poles": 0.0,
+        "dnfs": 3.8806
+      },
+      "Giancarlo Fisichella": {
+        "title_percent": 0.0,
+        "points": 10.6421,
+        "wins": 0.04,
+        "podiums": 0.7832,
+        "poles": 0.0,
+        "dnfs": 3.832
+      },
+      "Alexander Wurz": {
+        "title_percent": 0.0,
+        "points": 1.9459,
+        "wins": 0.0006,
+        "podiums": 0.0469,
+        "poles": 0.0,
+        "dnfs": 3.8641
+      },
+      "Rubens Barrichello": {
+        "title_percent": 0.0,
+        "points": 17.5839,
+        "wins": 0.1379,
+        "podiums": 1.6835,
+        "poles": 0.0013,
+        "dnfs": 3.8587
+      },
+      "Johnny Herbert": {
+        "title_percent": 0.0,
+        "points": 12.3959,
+        "wins": 0.058,
+        "podiums": 0.9923,
+        "poles": 0.0,
+        "dnfs": 3.8357
+      },
+      "Pedro de la Rosa": {
+        "title_percent": 0.0,
+        "points": 0.2303,
+        "wins": 0.0,
+        "podiums": 0.001,
+        "poles": 0.0,
+        "dnfs": 3.8313
+      },
+      "Toranosuke Takagi": {
+        "title_percent": 0.0,
+        "points": 0.0037,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 3.8964
+      },
+      "Jacques Villeneuve": {
+        "title_percent": 0.0,
+        "points": 0.0909,
+        "wins": 0.0,
+        "podiums": 0.0008,
+        "poles": 0.0,
+        "dnfs": 3.8709
+      },
+      "Ricardo Zonta": {
+        "title_percent": 0.0,
+        "points": 0.0015,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 3.8841
+      },
+      "Marc Gene": {
+        "title_percent": 0.0,
+        "points": 0.0062,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 3.8276
+      },
+      "Luca Badoer": {
+        "title_percent": 0.0,
+        "points": 0.0025,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 3.8728
+      },
+      "Pedro Diniz": {
+        "title_percent": 0.0,
+        "points": 2.5672,
+        "wins": 0.001,
+        "podiums": 0.0749,
+        "poles": 0.0,
+        "dnfs": 3.8247
+      },
+      "Jean Alesi": {
+        "title_percent": 0.0,
+        "points": 1.3617,
+        "wins": 0.0005,
+        "podiums": 0.0271,
+        "poles": 0.0,
+        "dnfs": 3.8954
+      },
+      "Jarno Trulli": {
+        "title_percent": 0.0,
+        "points": 6.3357,
+        "wins": 0.01,
+        "podiums": 0.3359,
+        "poles": 0.0,
+        "dnfs": 3.8415
+      },
+      "Olivier Panis": {
+        "title_percent": 0.0,
+        "points": 1.0197,
+        "wins": 0.0,
+        "podiums": 0.0152,
+        "poles": 0.0,
+        "dnfs": 3.8827
+      },
+      "Mika Hakkinen": {
+        "title_percent": 42.42,
+        "points": 78.7066,
+        "wins": 4.9019,
+        "podiums": 9.5282,
+        "poles": 6.2994,
+        "dnfs": 3.8606
+      },
+      "David Coulthard": {
+        "title_percent": 0.96,
+        "points": 47.1483,
+        "wins": 1.5703,
+        "podiums": 5.8499,
+        "poles": 1.9205,
+        "dnfs": 3.8387
+      }
+    },
+    "teams": {
+      "Ferrari": {
+        "title_percent": 76.21,
+        "points": 148.8873,
+        "points_share": 35.79021634615385
+      },
+      "Jordan": {
+        "title_percent": 0.0,
+        "points": 53.554,
+        "points_share": 12.873557692307692
+      },
+      "Williams": {
+        "title_percent": 0.0,
+        "points": 33.5166,
+        "points_share": 8.056875
+      },
+      "Benetton": {
+        "title_percent": 0.0,
+        "points": 12.588,
+        "points_share": 3.0259615384615386
+      },
+      "Stewart": {
+        "title_percent": 0.0,
+        "points": 29.9798,
+        "points_share": 7.206682692307692
+      },
+      "Arrows": {
+        "title_percent": 0.0,
+        "points": 0.234,
+        "points_share": 0.05625
+      },
+      "BAR": {
+        "title_percent": 0.0,
+        "points": 0.0924,
+        "points_share": 0.022211538461538463
+      },
+      "Minardi": {
+        "title_percent": 0.0,
+        "points": 0.0087,
+        "points_share": 0.0020913461538461537
+      },
+      "Sauber": {
+        "title_percent": 0.0,
+        "points": 3.9289,
+        "points_share": 0.9444471153846153
+      },
+      "Prost": {
+        "title_percent": 0.0,
+        "points": 7.3554,
+        "points_share": 1.768125
+      },
+      "McLaren": {
+        "title_percent": 23.79,
+        "points": 125.8549,
+        "points_share": 30.25358173076923
+      }
+    }
+  },
+  {
+    "year": 2007,
+    "simulations": 10000,
+    "seed": 8675309,
+    "drivers": {
+      "Kimi Raikkonen": {
+        "title_percent": 32.02,
+        "points": 113.3147,
+        "wins": 5.0878,
+        "podiums": 11.8086,
+        "poles": 6.2368,
+        "dnfs": 1.9081
+      },
+      "Felipe Massa": {
+        "title_percent": 5.89,
+        "points": 99.3342,
+        "wins": 2.9042,
+        "podiums": 9.6346,
+        "poles": 2.4748,
+        "dnfs": 1.9293
+      },
+      "Fernando Alonso": {
+        "title_percent": 30.21,
+        "points": 113.8731,
+        "wins": 4.2344,
+        "podiums": 11.5842,
+        "poles": 4.0427,
+        "dnfs": 0.9636
+      },
+      "Lewis Hamilton": {
+        "title_percent": 31.88,
+        "points": 114.253,
+        "wins": 4.3099,
+        "podiums": 11.6387,
+        "poles": 4.1996,
+        "dnfs": 0.9687
+      },
+      "Nick Heidfeld": {
+        "title_percent": 0.0,
+        "points": 59.7556,
+        "wins": 0.3658,
+        "podiums": 3.7675,
+        "poles": 0.0382,
+        "dnfs": 2.9702
+      },
+      "Robert Kubica": {
+        "title_percent": 0.0,
+        "points": 41.1346,
+        "wins": 0.0848,
+        "podiums": 1.6378,
+        "poles": 0.0079,
+        "dnfs": 3.0197
+      },
+      "Giancarlo Fisichella": {
+        "title_percent": 0.0,
+        "points": 17.9188,
+        "wins": 0.0023,
+        "podiums": 0.1588,
+        "poles": 0.0,
+        "dnfs": 1.4923
+      },
+      "Heikki Kovalainen": {
+        "title_percent": 0.0,
+        "points": 26.9123,
+        "wins": 0.0079,
+        "podiums": 0.4249,
+        "poles": 0.0,
+        "dnfs": 1.4355
+      },
+      "Nico Rosberg": {
+        "title_percent": 0.0,
+        "points": 17.1677,
+        "wins": 0.0017,
+        "podiums": 0.1508,
+        "poles": 0.0,
+        "dnfs": 2.4523
+      },
+      "Alexander Wurz": {
+        "title_percent": 0.0,
+        "points": 10.6618,
+        "wins": 0.0002,
+        "podiums": 0.0491,
+        "poles": 0.0,
+        "dnfs": 2.5131
+      },
+      "Ralf Schumacher": {
+        "title_percent": 0.0,
+        "points": 4.1299,
+        "wins": 0.0,
+        "podiums": 0.0039,
+        "poles": 0.0,
+        "dnfs": 2.4485
+      },
+      "Jarno Trulli": {
+        "title_percent": 0.0,
+        "points": 6.5469,
+        "wins": 0.0001,
+        "podiums": 0.0111,
+        "poles": 0.0,
+        "dnfs": 2.3906
+      },
+      "Rubens Barrichello": {
+        "title_percent": 0.0,
+        "points": 0.0001,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 3.4194
+      },
+      "Jenson Button": {
+        "title_percent": 0.0,
+        "points": 5.0211,
+        "wins": 0.0,
+        "podiums": 0.0069,
+        "poles": 0.0,
+        "dnfs": 3.3789
+      },
+      "Takuma Sato": {
+        "title_percent": 0.0,
+        "points": 3.495,
+        "wins": 0.0,
+        "podiums": 0.0037,
+        "poles": 0.0,
+        "dnfs": 2.9006
+      },
+      "Anthony Davidson": {
+        "title_percent": 0.0,
+        "points": 0.0004,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 2.9369
+      },
+      "Mark Webber": {
+        "title_percent": 0.0,
+        "points": 8.1991,
+        "wins": 0.0001,
+        "podiums": 0.0269,
+        "poles": 0.0,
+        "dnfs": 4.0542
+      },
+      "David Coulthard": {
+        "title_percent": 0.0,
+        "points": 11.6875,
+        "wins": 0.0006,
+        "podiums": 0.0688,
+        "poles": 0.0,
+        "dnfs": 4.0672
+      },
+      "Vitantonio Liuzzi": {
+        "title_percent": 0.0,
+        "points": 7.9733,
+        "wins": 0.0002,
+        "podiums": 0.0231,
+        "poles": 0.0,
+        "dnfs": 4.0761
+      },
+      "Scott Speed": {
+        "title_percent": 0.0,
+        "points": 0.969,
+        "wins": 0.0,
+        "podiums": 0.0004,
+        "poles": 0.0,
+        "dnfs": 4.1061
+      },
+      "Adrian Sutil": {
+        "title_percent": 0.0,
+        "points": 0.6519,
+        "wins": 0.0,
+        "podiums": 0.0002,
+        "poles": 0.0,
+        "dnfs": 4.0849
+      },
+      "Christijan Albers": {
+        "title_percent": 0.0,
+        "points": 0.0,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 4.0947
+      }
+    },
+    "teams": {
+      "Ferrari": {
+        "title_percent": 28.28,
+        "points": 212.6489,
+        "points_share": 32.073740573152335
+      },
+      "McLaren": {
+        "title_percent": 71.72,
+        "points": 228.1261,
+        "points_share": 34.40815987933635
+      },
+      "BMW Sauber": {
+        "title_percent": 0.0,
+        "points": 100.8902,
+        "points_share": 15.217224736048266
+      },
+      "Renault": {
+        "title_percent": 0.0,
+        "points": 44.8311,
+        "points_share": 6.761855203619909
+      },
+      "Williams": {
+        "title_percent": 0.0,
+        "points": 27.8295,
+        "points_share": 4.197511312217195
+      },
+      "Toyota": {
+        "title_percent": 0.0,
+        "points": 10.6768,
+        "points_share": 1.6103770739064858
+      },
+      "Honda": {
+        "title_percent": 0.0,
+        "points": 5.0212,
+        "points_share": 0.7573453996983409
+      },
+      "Super Aguri": {
+        "title_percent": 0.0,
+        "points": 3.4954,
+        "points_share": 0.5272096530920061
+      },
+      "Red Bull": {
+        "title_percent": 0.0,
+        "points": 19.8866,
+        "points_share": 2.9994871794871796
+      },
+      "Toro Rosso": {
+        "title_percent": 0.0,
+        "points": 8.9423,
+        "points_share": 1.348763197586727
+      },
+      "Spyker": {
+        "title_percent": 0.0,
+        "points": 0.6519,
+        "points_share": 0.09832579185520363
+      }
+    }
+  },
+  {
+    "year": 2010,
+    "simulations": 10000,
+    "seed": 8675309,
+    "drivers": {
+      "Fernando Alonso": {
+        "title_percent": 23.33,
+        "points": 266.7718,
+        "wins": 3.7094,
+        "podiums": 9.929,
+        "poles": 3.6291,
+        "dnfs": 1.0732
+      },
+      "Felipe Massa": {
+        "title_percent": 0.0,
+        "points": 139.9826,
+        "wins": 0.4271,
+        "podiums": 3.1404,
+        "poles": 0.3555,
+        "dnfs": 1.1295
+      },
+      "Lewis Hamilton": {
+        "title_percent": 15.3,
+        "points": 254.7598,
+        "wins": 3.6015,
+        "podiums": 9.5079,
+        "poles": 3.7818,
+        "dnfs": 1.9693
+      },
+      "Jenson Button": {
+        "title_percent": 3.14,
+        "points": 225.6399,
+        "wins": 2.3926,
+        "podiums": 7.8806,
+        "poles": 1.9823,
+        "dnfs": 1.9806
+      },
+      "Sebastian Vettel": {
+        "title_percent": 38.19,
+        "points": 279.2284,
+        "wins": 4.5563,
+        "podiums": 10.7209,
+        "poles": 5.1896,
+        "dnfs": 1.4607
+      },
+      "Mark Webber": {
+        "title_percent": 20.04,
+        "points": 262.3264,
+        "wins": 3.7246,
+        "podiums": 9.8143,
+        "poles": 3.9617,
+        "dnfs": 1.5066
+      },
+      "Nico Rosberg": {
+        "title_percent": 0.0,
+        "points": 127.2057,
+        "wins": 0.2957,
+        "podiums": 2.6631,
+        "poles": 0.052,
+        "dnfs": 1.9774
+      },
+      "Michael Schumacher": {
+        "title_percent": 0.0,
+        "points": 61.2455,
+        "wins": 0.0253,
+        "podiums": 0.521,
+        "poles": 0.0028,
+        "dnfs": 2.0423
+      },
+      "Vitantonio Liuzzi": {
+        "title_percent": 0.0,
+        "points": 16.3647,
+        "wins": 0.0001,
+        "podiums": 0.0122,
+        "poles": 0.0,
+        "dnfs": 2.5163
+      },
+      "Adrian Sutil": {
+        "title_percent": 0.0,
+        "points": 39.9565,
+        "wins": 0.0026,
+        "podiums": 0.1451,
+        "poles": 0.0,
+        "dnfs": 2.4611
+      },
+      "Rubens Barrichello": {
+        "title_percent": 0.0,
+        "points": 41.9132,
+        "wins": 0.0039,
+        "podiums": 0.1523,
+        "poles": 0.0,
+        "dnfs": 1.979
+      },
+      "Nico Hulkenberg": {
+        "title_percent": 0.0,
+        "points": 20.0164,
+        "wins": 0.0,
+        "podiums": 0.022,
+        "poles": 0.0,
+        "dnfs": 2.005
+      },
+      "Robert Kubica": {
+        "title_percent": 0.0,
+        "points": 117.395,
+        "wins": 0.2603,
+        "podiums": 2.4032,
+        "poles": 0.0452,
+        "dnfs": 2.9394
+      },
+      "Vitaly Petrov": {
+        "title_percent": 0.0,
+        "points": 20.6454,
+        "wins": 0.0005,
+        "podiums": 0.0295,
+        "poles": 0.0,
+        "dnfs": 3.0066
+      },
+      "Jaime Alguersuari": {
+        "title_percent": 0.0,
+        "points": 3.506,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 2.5317
+      },
+      "Sebastien Buemi": {
+        "title_percent": 0.0,
+        "points": 6.2422,
+        "wins": 0.0,
+        "podiums": 0.0005,
+        "poles": 0.0,
+        "dnfs": 2.4663
+      },
+      "Heikki Kovalainen": {
+        "title_percent": 0.0,
+        "points": 0.0006,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 4.571
+      },
+      "Jarno Trulli": {
+        "title_percent": 0.0,
+        "points": 0.0006,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 4.6073
+      },
+      "Kamui Kobayashi": {
+        "title_percent": 0.0,
+        "points": 26.2902,
+        "wins": 0.0001,
+        "podiums": 0.0557,
+        "poles": 0.0,
+        "dnfs": 4.5526
+      },
+      "Pedro de la Rosa": {
+        "title_percent": 0.0,
+        "points": 9.5083,
+        "wins": 0.0,
+        "podiums": 0.0023,
+        "poles": 0.0,
+        "dnfs": 4.6103
+      },
+      "Bruno Senna": {
+        "title_percent": 0.0,
+        "points": 0.0,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 4.6053
+      },
+      "Karun Chandhok": {
+        "title_percent": 0.0,
+        "points": 0.0002,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 4.6025
+      },
+      "Timo Glock": {
+        "title_percent": 0.0,
+        "points": 0.0004,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 4.5719
+      },
+      "Lucas di Grassi": {
+        "title_percent": 0.0,
+        "points": 0.0002,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 4.595
+      }
+    },
+    "teams": {
+      "Ferrari": {
+        "title_percent": 0.94,
+        "points": 406.7544,
+        "points_share": 21.19616466909849
+      },
+      "McLaren": {
+        "title_percent": 19.08,
+        "points": 480.3997,
+        "points_share": 25.033856175091195
+      },
+      "Red Bull": {
+        "title_percent": 79.98,
+        "points": 541.5548,
+        "points_share": 28.22067743616467
+      },
+      "Mercedes": {
+        "title_percent": 0.0,
+        "points": 188.4512,
+        "points_share": 9.82028139656071
+      },
+      "Force India": {
+        "title_percent": 0.0,
+        "points": 56.3212,
+        "points_share": 2.934924439812402
+      },
+      "Williams": {
+        "title_percent": 0.0,
+        "points": 61.9296,
+        "points_share": 3.2271808233454924
+      },
+      "Renault": {
+        "title_percent": 0.0,
+        "points": 138.0404,
+        "points_share": 7.193350703491402
+      },
+      "Toro Rosso": {
+        "title_percent": 0.0,
+        "points": 9.7482,
+        "points_share": 0.5079833246482544
+      },
+      "Lotus": {
+        "title_percent": 0.0,
+        "points": 0.0012,
+        "points_share": 6.253256904637833e-05
+      },
+      "Sauber": {
+        "title_percent": 0.0,
+        "points": 35.7985,
+        "points_share": 1.8654768108389785
+      },
+      "HRT": {
+        "title_percent": 0.0,
+        "points": 0.0002,
+        "points_share": 1.0422094841063054e-05
+      },
+      "Virgin": {
+        "title_percent": 0.0,
+        "points": 0.0006,
+        "points_share": 3.1266284523189163e-05
+      }
+    }
+  },
+  {
+    "year": 2012,
+    "simulations": 10000,
+    "seed": 8675309,
+    "drivers": {
+      "Jenson Button": {
+        "title_percent": 0.87,
+        "points": 200.0654,
+        "wins": 2.1793,
+        "podiums": 6.995,
+        "poles": 1.7186,
+        "dnfs": 2.9824
+      },
+      "Lewis Hamilton": {
+        "title_percent": 1.05,
+        "points": 201.711,
+        "wins": 2.2146,
+        "podiums": 7.0875,
+        "poles": 1.7535,
+        "dnfs": 2.9714
+      },
+      "Sebastian Vettel": {
+        "title_percent": 51.49,
+        "points": 296.3848,
+        "wins": 6.0187,
+        "podiums": 11.7575,
+        "poles": 7.5873,
+        "dnfs": 2.5011
+      },
+      "Mark Webber": {
+        "title_percent": 0.19,
+        "points": 180.2693,
+        "wins": 1.6301,
+        "podiums": 5.9259,
+        "poles": 2.4079,
+        "dnfs": 2.5422
+      },
+      "Fernando Alonso": {
+        "title_percent": 45.65,
+        "points": 292.1325,
+        "wins": 5.0662,
+        "podiums": 11.32,
+        "poles": 5.1053,
+        "dnfs": 1.1326
+      },
+      "Felipe Massa": {
+        "title_percent": 0.0,
+        "points": 116.2937,
+        "wins": 0.445,
+        "podiums": 2.8392,
+        "poles": 0.3142,
+        "dnfs": 1.1813
+      },
+      "Kamui Kobayashi": {
+        "title_percent": 0.0,
+        "points": 55.8576,
+        "wins": 0.0482,
+        "podiums": 0.7028,
+        "poles": 0.0008,
+        "dnfs": 1.123
+      },
+      "Sergio Perez": {
+        "title_percent": 0.0,
+        "points": 61.6522,
+        "wins": 0.0638,
+        "podiums": 0.8505,
+        "poles": 0.0015,
+        "dnfs": 1.1357
+      },
+      "Kimi Raikkonen": {
+        "title_percent": 0.75,
+        "points": 197.6952,
+        "wins": 1.7463,
+        "podiums": 6.5281,
+        "poles": 0.9837,
+        "dnfs": 1.1357
+      },
+      "Romain Grosjean": {
+        "title_percent": 0.0,
+        "points": 89.1985,
+        "wins": 0.2261,
+        "podiums": 1.7979,
+        "poles": 0.0963,
+        "dnfs": 1.1908
+      },
+      "Daniel Ricciardo": {
+        "title_percent": 0.0,
+        "points": 9.058,
+        "wins": 0.0002,
+        "podiums": 0.0131,
+        "poles": 0.0,
+        "dnfs": 1.5854
+      },
+      "Jean-Eric Vergne": {
+        "title_percent": 0.0,
+        "points": 14.8383,
+        "wins": 0.0008,
+        "podiums": 0.0318,
+        "poles": 0.0,
+        "dnfs": 1.5101
+      },
+      "Paul di Resta": {
+        "title_percent": 0.0,
+        "points": 43.0468,
+        "wins": 0.0197,
+        "podiums": 0.4027,
+        "poles": 0.0,
+        "dnfs": 1.1218
+      },
+      "Nico Hulkenberg": {
+        "title_percent": 0.0,
+        "points": 58.8038,
+        "wins": 0.0572,
+        "podiums": 0.7754,
+        "poles": 0.0022,
+        "dnfs": 1.1228
+      },
+      "Nico Rosberg": {
+        "title_percent": 0.0,
+        "points": 86.8676,
+        "wins": 0.2111,
+        "podiums": 1.7587,
+        "poles": 0.0227,
+        "dnfs": 2.4815
+      },
+      "Michael Schumacher": {
+        "title_percent": 0.0,
+        "points": 46.517,
+        "wins": 0.042,
+        "podiums": 0.5815,
+        "poles": 0.0055,
+        "dnfs": 2.543
+      },
+      "Pastor Maldonado": {
+        "title_percent": 0.0,
+        "points": 41.2902,
+        "wins": 0.0231,
+        "podiums": 0.4165,
+        "poles": 0.0003,
+        "dnfs": 2.4964
+      },
+      "Bruno Senna": {
+        "title_percent": 0.0,
+        "points": 28.3178,
+        "wins": 0.0076,
+        "podiums": 0.2159,
+        "poles": 0.0002,
+        "dnfs": 2.5295
+      },
+      "Timo Glock": {
+        "title_percent": 0.0,
+        "points": 0.0,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 2.5436
+      },
+      "Charles Pic": {
+        "title_percent": 0.0,
+        "points": 0.0,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 2.5363
+      },
+      "Heikki Kovalainen": {
+        "title_percent": 0.0,
+        "points": 0.0002,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 2.5359
+      },
+      "Vitaly Petrov": {
+        "title_percent": 0.0,
+        "points": 0.0001,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 2.542
+      },
+      "Narain Karthikeyan": {
+        "title_percent": 0.0,
+        "points": 0.0,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 3.6705
+      },
+      "Pedro de la Rosa": {
+        "title_percent": 0.0,
+        "points": 0.0,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 3.6758
+      }
+    },
+    "teams": {
+      "McLaren": {
+        "title_percent": 12.88,
+        "points": 401.7764,
+        "points_share": 19.88992079207921
+      },
+      "Red Bull": {
+        "title_percent": 72.57,
+        "points": 476.6541,
+        "points_share": 23.596737623762376
+      },
+      "Ferrari": {
+        "title_percent": 14.48,
+        "points": 408.4262,
+        "points_share": 20.219118811881188
+      },
+      "Sauber": {
+        "title_percent": 0.0,
+        "points": 117.5098,
+        "points_share": 5.8173168316831685
+      },
+      "Lotus": {
+        "title_percent": 0.07,
+        "points": 286.8937,
+        "points_share": 14.202658415841585
+      },
+      "Toro Rosso": {
+        "title_percent": 0.0,
+        "points": 23.8963,
+        "points_share": 1.1829851485148515
+      },
+      "Force India": {
+        "title_percent": 0.0,
+        "points": 101.8506,
+        "points_share": 5.0421089108910895
+      },
+      "Mercedes": {
+        "title_percent": 0.0,
+        "points": 133.3846,
+        "points_share": 6.60319801980198
+      },
+      "Williams": {
+        "title_percent": 0.0,
+        "points": 69.608,
+        "points_share": 3.445940594059406
+      },
+      "Marussia": {
+        "title_percent": 0.0,
+        "points": 0.0,
+        "points_share": 0.0
+      },
+      "Caterham": {
+        "title_percent": 0.0,
+        "points": 0.0003,
+        "points_share": 1.4851485148514851e-05
+      },
+      "HRT": {
+        "title_percent": 0.0,
+        "points": 0.0,
+        "points_share": 0.0
+      }
+    }
+  },
+  {
+    "year": 2021,
+    "simulations": 10000,
+    "seed": 8675309,
+    "drivers": {
+      "Lewis Hamilton": {
+        "title_percent": 51.69,
+        "points": 398.8848,
+        "wins": 9.2427,
+        "podiums": 17.1072,
+        "poles": 10.7397,
+        "dnfs": 1.5789
+      },
+      "Valtteri Bottas": {
+        "title_percent": 0.02,
+        "points": 235.658,
+        "wins": 1.6546,
+        "podiums": 8.1412,
+        "poles": 1.4869,
+        "dnfs": 1.64
+      },
+      "Max Verstappen": {
+        "title_percent": 48.29,
+        "points": 396.0848,
+        "wins": 8.626,
+        "podiums": 16.9539,
+        "poles": 9.0955,
+        "dnfs": 1.2185
+      },
+      "Sergio Perez": {
+        "title_percent": 0.0,
+        "points": 201.6176,
+        "wins": 0.9423,
+        "podiums": 6.1447,
+        "poles": 0.6174,
+        "dnfs": 1.2648
+      },
+      "Lando Norris": {
+        "title_percent": 0.0,
+        "points": 157.085,
+        "wins": 0.3859,
+        "podiums": 3.7975,
+        "poles": 0.0161,
+        "dnfs": 1.2327
+      },
+      "Daniel Ricciardo": {
+        "title_percent": 0.0,
+        "points": 108.7054,
+        "wins": 0.1007,
+        "podiums": 1.7466,
+        "poles": 0.0,
+        "dnfs": 1.2124
+      },
+      "Charles Leclerc": {
+        "title_percent": 0.0,
+        "points": 161.5164,
+        "wins": 0.4015,
+        "podiums": 4.0046,
+        "poles": 0.0197,
+        "dnfs": 1.2159
+      },
+      "Carlos Sainz": {
+        "title_percent": 0.0,
+        "points": 164.23,
+        "wins": 0.4491,
+        "podiums": 4.1486,
+        "poles": 0.0245,
+        "dnfs": 1.2205
+      },
+      "Yuki Tsunoda": {
+        "title_percent": 0.0,
+        "points": 30.5126,
+        "wins": 0.0015,
+        "podiums": 0.1008,
+        "poles": 0.0,
+        "dnfs": 3.064
+      },
+      "Pierre Gasly": {
+        "title_percent": 0.0,
+        "points": 107.296,
+        "wins": 0.1247,
+        "podiums": 1.8938,
+        "poles": 0.0002,
+        "dnfs": 3.0165
+      },
+      "Lance Stroll": {
+        "title_percent": 0.0,
+        "points": 33.2761,
+        "wins": 0.0008,
+        "podiums": 0.0897,
+        "poles": 0.0,
+        "dnfs": 1.2131
+      },
+      "Sebastian Vettel": {
+        "title_percent": 0.0,
+        "points": 41.9848,
+        "wins": 0.0026,
+        "podiums": 0.1797,
+        "poles": 0.0,
+        "dnfs": 1.217
+      },
+      "Antonio Giovinazzi": {
+        "title_percent": 0.0,
+        "points": 2.5098,
+        "wins": 0.0,
+        "podiums": 0.0001,
+        "poles": 0.0,
+        "dnfs": 1.6616
+      },
+      "Kimi Raikkonen": {
+        "title_percent": 0.0,
+        "points": 9.7545,
+        "wins": 0.0,
+        "podiums": 0.0029,
+        "poles": 0.0,
+        "dnfs": 1.61
+      },
+      "Esteban Ocon": {
+        "title_percent": 0.0,
+        "points": 72.7642,
+        "wins": 0.0296,
+        "podiums": 0.7645,
+        "poles": 0.0,
+        "dnfs": 2.5056
+      },
+      "Fernando Alonso": {
+        "title_percent": 0.0,
+        "points": 78.4568,
+        "wins": 0.038,
+        "podiums": 0.9103,
+        "poles": 0.0,
+        "dnfs": 2.523
+      },
+      "George Russell": {
+        "title_percent": 0.0,
+        "points": 15.4646,
+        "wins": 0.0,
+        "podiums": 0.0126,
+        "poles": 0.0,
+        "dnfs": 2.9823
+      },
+      "Nicholas Latifi": {
+        "title_percent": 0.0,
+        "points": 6.1985,
+        "wins": 0.0,
+        "podiums": 0.0013,
+        "poles": 0.0,
+        "dnfs": 3.0765
+      },
+      "Mick Schumacher": {
+        "title_percent": 0.0,
+        "points": 0.0001,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 2.6075
+      },
+      "Nikita Mazepin": {
+        "title_percent": 0.0,
+        "points": 0.0,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 2.5794
+      }
+    },
+    "teams": {
+      "Mercedes": {
+        "title_percent": 69.05,
+        "points": 634.5428,
+        "points_share": 28.557281728172818
+      },
+      "Red Bull": {
+        "title_percent": 30.95,
+        "points": 597.7024,
+        "points_share": 26.89929792979298
+      },
+      "McLaren": {
+        "title_percent": 0.0,
+        "points": 265.7904,
+        "points_share": 11.961764176417642
+      },
+      "Ferrari": {
+        "title_percent": 0.0,
+        "points": 325.7464,
+        "points_share": 14.66005400540054
+      },
+      "AlphaTauri": {
+        "title_percent": 0.0,
+        "points": 137.8086,
+        "points_share": 6.202007200720072
+      },
+      "Aston Martin": {
+        "title_percent": 0.0,
+        "points": 75.2609,
+        "points_share": 3.387079207920792
+      },
+      "Alfa Romeo": {
+        "title_percent": 0.0,
+        "points": 12.2643,
+        "points_share": 0.5519486948694869
+      },
+      "Alpine": {
+        "title_percent": 0.0,
+        "points": 151.221,
+        "points_share": 6.805625562556256
+      },
+      "Williams": {
+        "title_percent": 0.0,
+        "points": 21.6631,
+        "points_share": 0.9749369936993699
+      },
+      "Haas": {
+        "title_percent": 0.0,
+        "points": 0.0001,
+        "points_share": 4.500450045004501e-06
+      }
+    }
+  },
+  {
+    "year": 2024,
+    "simulations": 10000,
+    "seed": 8675309,
+    "drivers": {
+      "Max Verstappen": {
+        "title_percent": 64.16,
+        "points": 389.617,
+        "wins": 8.04,
+        "podiums": 15.535,
+        "poles": 10.7097,
+        "dnfs": 2.1183
+      },
+      "Sergio Perez": {
+        "title_percent": 0.0,
+        "points": 138.2685,
+        "wins": 0.1291,
+        "podiums": 1.8446,
+        "poles": 0.0508,
+        "dnfs": 2.1635
+      },
+      "Charles Leclerc": {
+        "title_percent": 9.67,
+        "points": 333.9228,
+        "wins": 4.3208,
+        "podiums": 12.1728,
+        "poles": 3.9692,
+        "dnfs": 1.3362
+      },
+      "Carlos Sainz": {
+        "title_percent": 0.27,
+        "points": 275.8824,
+        "wins": 2.0715,
+        "podiums": 8.7415,
+        "poles": 1.3042,
+        "dnfs": 1.3664
+      },
+      "George Russell": {
+        "title_percent": 0.0,
+        "points": 227.7718,
+        "wins": 0.9165,
+        "podiums": 5.8598,
+        "poles": 0.2756,
+        "dnfs": 1.3455
+      },
+      "Lewis Hamilton": {
+        "title_percent": 0.0,
+        "points": 208.6014,
+        "wins": 0.6041,
+        "podiums": 4.7988,
+        "poles": 0.1332,
+        "dnfs": 1.3679
+      },
+      "Lando Norris": {
+        "title_percent": 25.24,
+        "points": 357.683,
+        "wins": 5.5327,
+        "podiums": 13.5554,
+        "poles": 5.8619,
+        "dnfs": 1.3545
+      },
+      "Oscar Piastri": {
+        "title_percent": 0.66,
+        "points": 285.749,
+        "wins": 2.3829,
+        "podiums": 9.3075,
+        "poles": 1.6954,
+        "dnfs": 1.3498
+      },
+      "Fernando Alonso": {
+        "title_percent": 0.0,
+        "points": 55.7487,
+        "wins": 0.002,
+        "podiums": 0.1356,
+        "poles": 0.0,
+        "dnfs": 5.7311
+      },
+      "Lance Stroll": {
+        "title_percent": 0.0,
+        "points": 17.7625,
+        "wins": 0.0,
+        "podiums": 0.0022,
+        "poles": 0.0,
+        "dnfs": 5.7603
+      },
+      "Zhou Guanyu": {
+        "title_percent": 0.0,
+        "points": 0.896,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 5.7738
+      },
+      "Valtteri Bottas": {
+        "title_percent": 0.0,
+        "points": 1.111,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 5.8024
+      },
+      "Nico Hulkenberg": {
+        "title_percent": 0.0,
+        "points": 34.6644,
+        "wins": 0.0003,
+        "podiums": 0.0227,
+        "poles": 0.0,
+        "dnfs": 5.7574
+      },
+      "Kevin Magnussen": {
+        "title_percent": 0.0,
+        "points": 5.356,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 5.7731
+      },
+      "Yuki Tsunoda": {
+        "title_percent": 0.0,
+        "points": 22.0376,
+        "wins": 0.0,
+        "podiums": 0.004,
+        "poles": 0.0,
+        "dnfs": 5.7726
+      },
+      "Daniel Ricciardo": {
+        "title_percent": 0.0,
+        "points": 7.5622,
+        "wins": 0.0,
+        "podiums": 0.0001,
+        "poles": 0.0,
+        "dnfs": 5.7814
+      },
+      "Alexander Albon": {
+        "title_percent": 0.0,
+        "points": 9.2993,
+        "wins": 0.0,
+        "podiums": 0.0003,
+        "poles": 0.0,
+        "dnfs": 5.7581
+      },
+      "Logan Sargeant": {
+        "title_percent": 0.0,
+        "points": 2.9345,
+        "wins": 0.0,
+        "podiums": 0.0,
+        "poles": 0.0,
+        "dnfs": 5.7948
+      },
+      "Pierre Gasly": {
+        "title_percent": 0.0,
+        "points": 31.662,
+        "wins": 0.0001,
+        "podiums": 0.0168,
+        "poles": 0.0,
+        "dnfs": 5.767
+      },
+      "Esteban Ocon": {
+        "title_percent": 0.0,
+        "points": 17.4674,
+        "wins": 0.0,
+        "podiums": 0.0029,
+        "poles": 0.0,
+        "dnfs": 5.7586
+      }
+    },
+    "teams": {
+      "Red Bull": {
+        "title_percent": 2.37,
+        "points": 527.8855,
+        "points_share": 21.777477080731312
+      },
+      "Ferrari": {
+        "title_percent": 31.05,
+        "points": 609.8052,
+        "points_share": 25.157006143776965
+      },
+      "Mercedes": {
+        "title_percent": 0.01,
+        "points": 436.3732,
+        "points_share": 18.00221328611106
+      },
+      "McLaren": {
+        "title_percent": 66.57,
+        "points": 643.432,
+        "points_share": 26.544251798939563
+      },
+      "Aston Martin": {
+        "title_percent": 0.0,
+        "points": 73.5112,
+        "points_share": 3.032643391752673
+      },
+      "Sauber": {
+        "title_percent": 0.0,
+        "points": 2.007,
+        "points_share": 0.08279711509603455
+      },
+      "Haas": {
+        "title_percent": 0.0,
+        "points": 40.0204,
+        "points_share": 1.6510083034326561
+      },
+      "RB": {
+        "title_percent": 0.0,
+        "points": 29.5998,
+        "points_share": 1.221115120787047
+      },
+      "Williams": {
+        "title_percent": 0.0,
+        "points": 12.2338,
+        "points_share": 0.5046952399909653
+      },
+      "Alpine": {
+        "title_percent": 0.0,
+        "points": 49.1294,
+        "points_share": 2.026792519381724
+      }
+    }
+  }
+]

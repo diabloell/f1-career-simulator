@@ -1,0 +1,1491 @@
+[
+  {
+    "stage": "Exploratory initial presets (1999 mapping corrected afterwards)",
+    "iteration": null,
+    "year": 1999,
+    "simulations": 300,
+    "seed": 42,
+    "title_percent": {
+      "Eddie Irvine": 60.666666666666664,
+      "Michael Schumacher": 27.0,
+      "Heinz-Harald Frentzen": 12.333333333333334
+    },
+    "team_points": {
+      "Ferrari": 187.61,
+      "Jordan": 114.72333333333333,
+      "Williams": 49.74,
+      "Benetton": 19.876666666666665,
+      "Stewart": 34.46333333333333,
+      "Arrows": 3.0866666666666664,
+      "BAR": 0.12,
+      "Minardi": 0.56,
+      "Sauber": 2.4466666666666668,
+      "Prost": 1.1633333333333333,
+      "McLaren": 2.21
+    }
+  },
+  {
+    "stage": "Exploratory initial presets (1999 mapping corrected afterwards)",
+    "iteration": null,
+    "year": 2007,
+    "simulations": 300,
+    "seed": 42,
+    "title_percent": {
+      "Kimi Raikkonen": 16.666666666666668,
+      "Felipe Massa": 6.333333333333333,
+      "Fernando Alonso": 40.0,
+      "Lewis Hamilton": 37.0
+    },
+    "team_points": {
+      "Ferrari": 211.15333333333334,
+      "McLaren": 233.50666666666666,
+      "BMW Sauber": 101.05666666666667,
+      "Renault": 54.11666666666667,
+      "Williams": 30.8,
+      "Toyota": 7.5633333333333335,
+      "Honda": 2.25,
+      "Super Aguri": 1.2966666666666666,
+      "Red Bull": 18.923333333333332,
+      "Toro Rosso": 2.3066666666666666,
+      "Spyker": 0.02666666666666667
+    }
+  },
+  {
+    "stage": "Exploratory initial presets (1999 mapping corrected afterwards)",
+    "iteration": null,
+    "year": 2010,
+    "simulations": 300,
+    "seed": 42,
+    "title_percent": {
+      "Fernando Alonso": 20.0,
+      "Lewis Hamilton": 12.333333333333334,
+      "Jenson Button": 4.0,
+      "Sebastian Vettel": 36.0,
+      "Mark Webber": 27.666666666666668
+    },
+    "team_points": {
+      "Ferrari": 451.67333333333335,
+      "McLaren": 503.56,
+      "Red Bull": 575.7933333333333,
+      "Mercedes": 162.64666666666668,
+      "Force India": 35.11,
+      "Williams": 51.906666666666666,
+      "Renault": 116.18666666666667,
+      "Toro Rosso": 8.113333333333333,
+      "Lotus": 0.0,
+      "Sauber": 14.01,
+      "HRT": 0.0,
+      "Virgin": 0.0
+    }
+  },
+  {
+    "stage": "Exploratory initial presets (1999 mapping corrected afterwards)",
+    "iteration": null,
+    "year": 2012,
+    "simulations": 300,
+    "seed": 42,
+    "title_percent": {
+      "Jenson Button": 15.333333333333334,
+      "Lewis Hamilton": 15.666666666666666,
+      "Sebastian Vettel": 51.666666666666664,
+      "Mark Webber": 0.3333333333333333,
+      "Fernando Alonso": 17.0
+    },
+    "team_points": {
+      "McLaren": 541.6666666666666,
+      "Red Bull": 512.5166666666667,
+      "Ferrari": 409.89666666666665,
+      "Sauber": 109.03333333333333,
+      "Lotus": 253.88,
+      "Toro Rosso": 3.62,
+      "Force India": 66.57333333333334,
+      "Mercedes": 89.71333333333334,
+      "Williams": 33.1,
+      "Marussia": 0.0,
+      "Caterham": 0.0,
+      "HRT": 0.0
+    }
+  },
+  {
+    "stage": "Exploratory initial presets (1999 mapping corrected afterwards)",
+    "iteration": null,
+    "year": 2021,
+    "simulations": 300,
+    "seed": 42,
+    "title_percent": {
+      "Lewis Hamilton": 65.33333333333333,
+      "Valtteri Bottas": 0.3333333333333333,
+      "Max Verstappen": 34.333333333333336
+    },
+    "team_points": {
+      "Mercedes": 667.9833333333333,
+      "Red Bull": 611.15,
+      "McLaren": 281.9166666666667,
+      "Ferrari": 376.99333333333334,
+      "AlphaTauri": 114.91,
+      "Aston Martin": 55.766666666666666,
+      "Alfa Romeo": 1.7866666666666666,
+      "Alpine": 110.65333333333334,
+      "Williams": 0.84,
+      "Haas": 0.0
+    }
+  },
+  {
+    "stage": "Exploratory initial presets (1999 mapping corrected afterwards)",
+    "iteration": null,
+    "year": 2024,
+    "simulations": 300,
+    "seed": 42,
+    "title_percent": {
+      "Max Verstappen": 14.333333333333334,
+      "Charles Leclerc": 20.0,
+      "Carlos Sainz": 1.0,
+      "Lando Norris": 56.333333333333336,
+      "Oscar Piastri": 8.333333333333334
+    },
+    "team_points": {
+      "Red Bull": 493.83666666666664,
+      "Ferrari": 634.8466666666667,
+      "Mercedes": 461.9033333333333,
+      "McLaren": 688.56,
+      "Aston Martin": 61.49,
+      "Sauber": 0.65,
+      "Haas": 23.166666666666668,
+      "RB": 21.846666666666668,
+      "Williams": 5.213333333333333,
+      "Alpine": 32.486666666666665
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 0,
+    "year": 1999,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Eddie Irvine": 43.5,
+      "Michael Schumacher": 18.25,
+      "Mika Hakkinen": 36.25,
+      "David Coulthard": 2.0
+    },
+    "team_points": {
+      "Ferrari": 166.8625,
+      "Jordan": 46.5825,
+      "Williams": 14.7975,
+      "Benetton": 12.075,
+      "Stewart": 29.86,
+      "Arrows": 0.2175,
+      "BAR": 0.0175,
+      "Minardi": 0.0325,
+      "Sauber": 1.765,
+      "Prost": 2.4725,
+      "McLaren": 141.3175
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 0,
+    "year": 2007,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Kimi Raikkonen": 17.75,
+      "Felipe Massa": 7.25,
+      "Fernando Alonso": 39.0,
+      "Lewis Hamilton": 36.0
+    },
+    "team_points": {
+      "Ferrari": 211.4275,
+      "McLaren": 233.615,
+      "BMW Sauber": 101.06,
+      "Renault": 54.075,
+      "Williams": 30.7275,
+      "Toyota": 7.545,
+      "Honda": 2.285,
+      "Super Aguri": 1.3,
+      "Red Bull": 18.66,
+      "Toro Rosso": 2.2825,
+      "Spyker": 0.0225
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 0,
+    "year": 2010,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Fernando Alonso": 19.75,
+      "Lewis Hamilton": 11.5,
+      "Jenson Button": 4.0,
+      "Sebastian Vettel": 39.5,
+      "Mark Webber": 25.25
+    },
+    "team_points": {
+      "Ferrari": 450.2875,
+      "McLaren": 502.845,
+      "Red Bull": 577.205,
+      "Mercedes": 163.515,
+      "Force India": 35.225,
+      "Williams": 52.585,
+      "Renault": 115.1975,
+      "Toro Rosso": 8.055,
+      "Lotus": 0.0,
+      "Sauber": 14.085,
+      "HRT": 0.0,
+      "Virgin": 0.0
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 0,
+    "year": 2012,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Jenson Button": 14.5,
+      "Lewis Hamilton": 16.5,
+      "Sebastian Vettel": 52.0,
+      "Mark Webber": 0.25,
+      "Fernando Alonso": 16.75
+    },
+    "team_points": {
+      "McLaren": 541.115,
+      "Red Bull": 513.5175,
+      "Ferrari": 409.93,
+      "Sauber": 109.59,
+      "Lotus": 253.5625,
+      "Toro Rosso": 3.875,
+      "Force India": 65.9975,
+      "Mercedes": 89.5225,
+      "Williams": 32.89,
+      "Marussia": 0.0,
+      "Caterham": 0.0,
+      "HRT": 0.0
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 0,
+    "year": 2021,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Lewis Hamilton": 63.5,
+      "Valtteri Bottas": 0.25,
+      "Max Verstappen": 36.25
+    },
+    "team_points": {
+      "Mercedes": 668.63,
+      "Red Bull": 610.47,
+      "McLaren": 281.4975,
+      "Ferrari": 377.3775,
+      "AlphaTauri": 114.6075,
+      "Aston Martin": 55.15,
+      "Alfa Romeo": 1.8925,
+      "Alpine": 111.485,
+      "Williams": 0.89,
+      "Haas": 0.0
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 0,
+    "year": 2024,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Max Verstappen": 12.75,
+      "Charles Leclerc": 21.75,
+      "Carlos Sainz": 2.5,
+      "Lando Norris": 54.5,
+      "Oscar Piastri": 8.5
+    },
+    "team_points": {
+      "Red Bull": 491.5675,
+      "Ferrari": 636.005,
+      "Mercedes": 461.71,
+      "McLaren": 688.5075,
+      "Aston Martin": 62.0525,
+      "Sauber": 0.77,
+      "Haas": 23.0875,
+      "RB": 22.4425,
+      "Williams": 5.2475,
+      "Alpine": 32.61
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 1,
+    "year": 1999,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Eddie Irvine": 40.0,
+      "Michael Schumacher": 18.75,
+      "Mika Hakkinen": 39.25,
+      "David Coulthard": 2.0
+    },
+    "team_points": {
+      "Ferrari": 164.0775,
+      "Jordan": 47.1025,
+      "Williams": 19.395,
+      "Benetton": 11.51,
+      "Stewart": 28.58,
+      "Arrows": 0.2375,
+      "BAR": 0.0625,
+      "Minardi": 0.0525,
+      "Sauber": 2.4125,
+      "Prost": 4.24,
+      "McLaren": 138.33
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 1,
+    "year": 2007,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Kimi Raikkonen": 19.25,
+      "Felipe Massa": 6.75,
+      "Fernando Alonso": 39.0,
+      "Lewis Hamilton": 35.0
+    },
+    "team_points": {
+      "Ferrari": 211.6975,
+      "McLaren": 233.0275,
+      "BMW Sauber": 101.99,
+      "Renault": 50.435,
+      "Williams": 29.2625,
+      "Toyota": 8.5675,
+      "Honda": 3.9225,
+      "Super Aguri": 2.44,
+      "Red Bull": 18.655,
+      "Toro Rosso": 2.9625,
+      "Spyker": 0.04
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 1,
+    "year": 2010,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Fernando Alonso": 20.5,
+      "Lewis Hamilton": 12.75,
+      "Jenson Button": 4.0,
+      "Sebastian Vettel": 38.0,
+      "Mark Webber": 24.75
+    },
+    "team_points": {
+      "Ferrari": 442.855,
+      "McLaren": 500.9275,
+      "Red Bull": 572.2975,
+      "Mercedes": 167.315,
+      "Force India": 40.77,
+      "Williams": 49.48,
+      "Renault": 118.3075,
+      "Toro Rosso": 6.595,
+      "Lotus": 0.0,
+      "Sauber": 20.4525,
+      "HRT": 0.0,
+      "Virgin": 0.0
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 1,
+    "year": 2012,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Jenson Button": 10.25,
+      "Lewis Hamilton": 10.5,
+      "Sebastian Vettel": 57.25,
+      "Fernando Alonso": 22.0
+    },
+    "team_points": {
+      "McLaren": 515.655,
+      "Red Bull": 510.4025,
+      "Ferrari": 406.3525,
+      "Sauber": 98.95,
+      "Lotus": 261.4725,
+      "Toro Rosso": 6.5325,
+      "Force India": 72.56,
+      "Mercedes": 101.29,
+      "Williams": 46.785,
+      "Marussia": 0.0,
+      "Caterham": 0.0,
+      "HRT": 0.0
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 1,
+    "year": 2021,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Lewis Hamilton": 61.0,
+      "Valtteri Bottas": 0.25,
+      "Max Verstappen": 38.75
+    },
+    "team_points": {
+      "Mercedes": 663.06,
+      "Red Bull": 607.9775,
+      "McLaren": 276.3575,
+      "Ferrari": 360.9025,
+      "AlphaTauri": 122.96,
+      "Aston Martin": 60.59,
+      "Alfa Romeo": 4.275,
+      "Alpine": 123.705,
+      "Williams": 2.1725,
+      "Haas": 0.0
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 1,
+    "year": 2024,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Max Verstappen": 22.5,
+      "Charles Leclerc": 20.25,
+      "Carlos Sainz": 2.25,
+      "Lando Norris": 51.25,
+      "Oscar Piastri": 3.75
+    },
+    "team_points": {
+      "Red Bull": 500.55,
+      "Ferrari": 633.5675,
+      "Mercedes": 459.2975,
+      "McLaren": 678.1725,
+      "Aston Martin": 62.355,
+      "Sauber": 1.195,
+      "Haas": 26.5425,
+      "RB": 21.7525,
+      "Williams": 6.16,
+      "Alpine": 34.4075
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 2,
+    "year": 1999,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Eddie Irvine": 37.75,
+      "Michael Schumacher": 19.75,
+      "Mika Hakkinen": 40.75,
+      "David Coulthard": 1.75
+    },
+    "team_points": {
+      "Ferrari": 161.0525,
+      "Jordan": 48.2925,
+      "Williams": 22.8275,
+      "Benetton": 11.47,
+      "Stewart": 28.0975,
+      "Arrows": 0.3325,
+      "BAR": 0.335,
+      "Minardi": 0.0725,
+      "Sauber": 2.68,
+      "Prost": 5.205,
+      "McLaren": 135.635
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 2,
+    "year": 2007,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Kimi Raikkonen": 20.0,
+      "Felipe Massa": 7.0,
+      "Fernando Alonso": 37.75,
+      "Lewis Hamilton": 35.25
+    },
+    "team_points": {
+      "Ferrari": 211.835,
+      "McLaren": 232.3575,
+      "BMW Sauber": 102.3475,
+      "Renault": 48.0325,
+      "Williams": 28.525,
+      "Toyota": 9.4975,
+      "Honda": 4.6025,
+      "Super Aguri": 2.8875,
+      "Red Bull": 19.1275,
+      "Toro Rosso": 3.7075,
+      "Spyker": 0.08
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 2,
+    "year": 2010,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Fernando Alonso": 21.5,
+      "Lewis Hamilton": 14.25,
+      "Jenson Button": 3.0,
+      "Sebastian Vettel": 38.0,
+      "Mark Webber": 23.25
+    },
+    "team_points": {
+      "Ferrari": 435.3475,
+      "McLaren": 497.955,
+      "Red Bull": 567.0925,
+      "Mercedes": 170.975,
+      "Force India": 44.17,
+      "Williams": 48.02,
+      "Renault": 122.545,
+      "Toro Rosso": 7.3025,
+      "Lotus": 0.0,
+      "Sauber": 25.5925,
+      "HRT": 0.0,
+      "Virgin": 0.0
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 2,
+    "year": 2012,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Jenson Button": 6.25,
+      "Lewis Hamilton": 6.5,
+      "Sebastian Vettel": 60.75,
+      "Mark Webber": 0.25,
+      "Fernando Alonso": 26.25
+    },
+    "team_points": {
+      "McLaren": 488.0325,
+      "Red Bull": 505.48,
+      "Ferrari": 402.8575,
+      "Sauber": 97.81,
+      "Lotus": 267.4325,
+      "Toro Rosso": 14.23,
+      "Force India": 79.7575,
+      "Mercedes": 110.0,
+      "Williams": 54.4,
+      "Marussia": 0.0,
+      "Caterham": 0.0,
+      "HRT": 0.0
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 2,
+    "year": 2021,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Lewis Hamilton": 60.75,
+      "Max Verstappen": 39.25
+    },
+    "team_points": {
+      "Mercedes": 656.815,
+      "Red Bull": 604.4875,
+      "McLaren": 273.0375,
+      "Ferrari": 348.31,
+      "AlphaTauri": 128.5,
+      "Aston Martin": 64.0675,
+      "Alfa Romeo": 8.255,
+      "Alpine": 133.1375,
+      "Williams": 5.39,
+      "Haas": 0.0
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 2,
+    "year": 2024,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Max Verstappen": 28.75,
+      "Charles Leclerc": 19.5,
+      "Carlos Sainz": 2.0,
+      "Lando Norris": 47.5,
+      "Oscar Piastri": 2.25
+    },
+    "team_points": {
+      "Red Bull": 505.9425,
+      "Ferrari": 631.33,
+      "Mercedes": 456.385,
+      "McLaren": 669.7075,
+      "Aston Martin": 63.225,
+      "Sauber": 1.6475,
+      "Haas": 30.4225,
+      "RB": 22.1175,
+      "Williams": 7.0475,
+      "Alpine": 36.175
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 3,
+    "year": 1999,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Eddie Irvine": 34.25,
+      "Michael Schumacher": 23.25,
+      "Mika Hakkinen": 40.5,
+      "David Coulthard": 2.0
+    },
+    "team_points": {
+      "Ferrari": 158.2475,
+      "Jordan": 49.71,
+      "Williams": 25.155,
+      "Benetton": 11.62,
+      "Stewart": 28.0975,
+      "Arrows": 0.34,
+      "BAR": 1.3975,
+      "Minardi": 0.1,
+      "Sauber": 2.895,
+      "Prost": 5.675,
+      "McLaren": 132.7625
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 3,
+    "year": 2007,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Kimi Raikkonen": 22.0,
+      "Felipe Massa": 6.25,
+      "Fernando Alonso": 36.0,
+      "Lewis Hamilton": 35.75
+    },
+    "team_points": {
+      "Ferrari": 211.795,
+      "McLaren": 231.78,
+      "BMW Sauber": 102.4075,
+      "Renault": 46.1825,
+      "Williams": 28.095,
+      "Toyota": 10.0025,
+      "Honda": 4.785,
+      "Super Aguri": 3.1025,
+      "Red Bull": 19.4525,
+      "Toro Rosso": 5.205,
+      "Spyker": 0.1925
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 3,
+    "year": 2010,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Fernando Alonso": 21.0,
+      "Lewis Hamilton": 15.25,
+      "Jenson Button": 4.5,
+      "Sebastian Vettel": 36.75,
+      "Mark Webber": 22.5
+    },
+    "team_points": {
+      "Ferrari": 427.985,
+      "McLaren": 494.7275,
+      "Red Bull": 561.3075,
+      "Mercedes": 174.2875,
+      "Force India": 46.93,
+      "Williams": 49.095,
+      "Renault": 127.13,
+      "Toro Rosso": 7.9925,
+      "Lotus": 0.0,
+      "Sauber": 29.545,
+      "HRT": 0.0,
+      "Virgin": 0.0
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 3,
+    "year": 2012,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Jenson Button": 4.75,
+      "Lewis Hamilton": 4.25,
+      "Sebastian Vettel": 61.5,
+      "Mark Webber": 0.5,
+      "Fernando Alonso": 29.0
+    },
+    "team_points": {
+      "McLaren": 461.5775,
+      "Red Bull": 498.2,
+      "Ferrari": 399.545,
+      "Sauber": 102.1525,
+      "Lotus": 273.1475,
+      "Toro Rosso": 20.285,
+      "Force India": 87.2275,
+      "Mercedes": 117.18,
+      "Williams": 60.685,
+      "Marussia": 0.0,
+      "Caterham": 0.0,
+      "HRT": 0.0
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 3,
+    "year": 2021,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Lewis Hamilton": 59.25,
+      "Max Verstappen": 40.75
+    },
+    "team_points": {
+      "Mercedes": 651.4925,
+      "Red Bull": 601.1525,
+      "McLaren": 270.6725,
+      "Ferrari": 338.7375,
+      "AlphaTauri": 132.23,
+      "Aston Martin": 67.0675,
+      "Alfa Romeo": 9.1525,
+      "Alpine": 138.93,
+      "Williams": 12.565,
+      "Haas": 0.0
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 3,
+    "year": 2024,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Max Verstappen": 36.75,
+      "Charles Leclerc": 19.0,
+      "Carlos Sainz": 1.5,
+      "Lando Norris": 41.25,
+      "Oscar Piastri": 1.5
+    },
+    "team_points": {
+      "Red Bull": 510.0675,
+      "Ferrari": 628.5,
+      "Mercedes": 452.775,
+      "McLaren": 662.3475,
+      "Aston Martin": 64.7525,
+      "Sauber": 1.97,
+      "Haas": 33.57,
+      "RB": 23.25,
+      "Williams": 8.0,
+      "Alpine": 38.7675
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 4,
+    "year": 1999,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Eddie Irvine": 32.25,
+      "Michael Schumacher": 24.5,
+      "Mika Hakkinen": 41.5,
+      "David Coulthard": 1.75
+    },
+    "team_points": {
+      "Ferrari": 155.4125,
+      "Jordan": 50.6275,
+      "Williams": 26.6675,
+      "Benetton": 11.5375,
+      "Stewart": 28.0025,
+      "Arrows": 0.3925,
+      "BAR": 3.9575,
+      "Minardi": 0.15,
+      "Sauber": 3.0275,
+      "Prost": 5.745,
+      "McLaren": 130.48
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 4,
+    "year": 2007,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Kimi Raikkonen": 22.0,
+      "Felipe Massa": 7.25,
+      "Fernando Alonso": 35.0,
+      "Lewis Hamilton": 35.75
+    },
+    "team_points": {
+      "Ferrari": 211.665,
+      "McLaren": 231.1275,
+      "BMW Sauber": 101.96,
+      "Renault": 45.1925,
+      "Williams": 27.805,
+      "Toyota": 10.4,
+      "Honda": 4.9075,
+      "Super Aguri": 3.1675,
+      "Red Bull": 19.615,
+      "Toro Rosso": 6.8,
+      "Spyker": 0.36
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 4,
+    "year": 2010,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Fernando Alonso": 22.25,
+      "Lewis Hamilton": 15.5,
+      "Jenson Button": 3.25,
+      "Sebastian Vettel": 38.25,
+      "Mark Webber": 20.75
+    },
+    "team_points": {
+      "Ferrari": 420.98,
+      "McLaren": 490.0025,
+      "Red Bull": 555.1125,
+      "Mercedes": 179.005,
+      "Force India": 50.14,
+      "Williams": 51.045,
+      "Renault": 132.0,
+      "Toro Rosso": 8.855,
+      "Lotus": 0.0,
+      "Sauber": 31.86,
+      "HRT": 0.0,
+      "Virgin": 0.0
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 4,
+    "year": 2012,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Jenson Button": 2.0,
+      "Lewis Hamilton": 3.0,
+      "Sebastian Vettel": 61.75,
+      "Mark Webber": 0.25,
+      "Fernando Alonso": 32.75,
+      "Kimi Raikkonen": 0.25
+    },
+    "team_points": {
+      "McLaren": 436.45,
+      "Red Bull": 491.15,
+      "Ferrari": 398.175,
+      "Sauber": 108.5375,
+      "Lotus": 279.6325,
+      "Toro Rosso": 22.125,
+      "Force India": 93.8,
+      "Mercedes": 124.14,
+      "Williams": 65.99,
+      "Marussia": 0.0,
+      "Caterham": 0.0,
+      "HRT": 0.0
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 4,
+    "year": 2021,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Lewis Hamilton": 58.25,
+      "Max Verstappen": 41.75
+    },
+    "team_points": {
+      "Mercedes": 645.7,
+      "Red Bull": 598.1875,
+      "McLaren": 270.2125,
+      "Ferrari": 332.4725,
+      "AlphaTauri": 134.5625,
+      "Aston Martin": 69.1025,
+      "Alfa Romeo": 10.17,
+      "Alpine": 143.205,
+      "Williams": 18.3875,
+      "Haas": 0.0
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 4,
+    "year": 2024,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Max Verstappen": 44.0,
+      "Charles Leclerc": 16.0,
+      "Carlos Sainz": 1.0,
+      "Lando Norris": 38.0,
+      "Oscar Piastri": 1.0
+    },
+    "team_points": {
+      "Red Bull": 513.16,
+      "Ferrari": 625.35,
+      "Mercedes": 448.7725,
+      "McLaren": 655.4275,
+      "Aston Martin": 66.71,
+      "Sauber": 2.16,
+      "Haas": 36.6025,
+      "RB": 25.2325,
+      "Williams": 9.0925,
+      "Alpine": 41.4925
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 5,
+    "year": 1999,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Eddie Irvine": 30.0,
+      "Michael Schumacher": 26.0,
+      "Heinz-Harald Frentzen": 0.5,
+      "Mika Hakkinen": 42.5,
+      "David Coulthard": 1.0
+    },
+    "team_points": {
+      "Ferrari": 152.555,
+      "Jordan": 51.6375,
+      "Williams": 27.7525,
+      "Benetton": 11.715,
+      "Stewart": 28.05,
+      "Arrows": 0.465,
+      "BAR": 6.5675,
+      "Minardi": 0.2225,
+      "Sauber": 3.105,
+      "Prost": 5.985,
+      "McLaren": 127.945
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 5,
+    "year": 2007,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Kimi Raikkonen": 23.75,
+      "Felipe Massa": 6.75,
+      "Fernando Alonso": 35.25,
+      "Lewis Hamilton": 34.25
+    },
+    "team_points": {
+      "Ferrari": 211.435,
+      "McLaren": 230.3925,
+      "BMW Sauber": 101.46,
+      "Renault": 44.6225,
+      "Williams": 28.0125,
+      "Toyota": 10.7325,
+      "Honda": 5.025,
+      "Super Aguri": 3.3325,
+      "Red Bull": 20.1075,
+      "Toro Rosso": 7.335,
+      "Spyker": 0.545
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 5,
+    "year": 2010,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Fernando Alonso": 22.75,
+      "Lewis Hamilton": 16.0,
+      "Jenson Button": 4.0,
+      "Sebastian Vettel": 37.0,
+      "Mark Webber": 20.25
+    },
+    "team_points": {
+      "Ferrari": 414.395,
+      "McLaren": 485.2475,
+      "Red Bull": 548.245,
+      "Mercedes": 183.3,
+      "Force India": 53.0475,
+      "Williams": 54.015,
+      "Renault": 137.2225,
+      "Toro Rosso": 9.58,
+      "Lotus": 0.0,
+      "Sauber": 33.9475,
+      "HRT": 0.0,
+      "Virgin": 0.0
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 5,
+    "year": 2012,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Jenson Button": 1.5,
+      "Lewis Hamilton": 1.75,
+      "Sebastian Vettel": 61.25,
+      "Mark Webber": 0.5,
+      "Fernando Alonso": 34.5,
+      "Kimi Raikkonen": 0.5
+    },
+    "team_points": {
+      "McLaren": 416.97,
+      "Red Bull": 484.965,
+      "Ferrari": 398.2925,
+      "Sauber": 113.92,
+      "Lotus": 285.72,
+      "Toro Rosso": 23.5925,
+      "Force India": 98.5275,
+      "Mercedes": 129.295,
+      "Williams": 68.7175,
+      "Marussia": 0.0,
+      "Caterham": 0.0,
+      "HRT": 0.0
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 5,
+    "year": 2021,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Lewis Hamilton": 57.25,
+      "Max Verstappen": 42.75
+    },
+    "team_points": {
+      "Mercedes": 640.705,
+      "Red Bull": 595.4725,
+      "McLaren": 270.2025,
+      "Ferrari": 328.3025,
+      "AlphaTauri": 136.4575,
+      "Aston Martin": 71.6225,
+      "Alfa Romeo": 11.5525,
+      "Alpine": 146.5775,
+      "Williams": 21.1075,
+      "Haas": 0.0
+    }
+  },
+  {
+    "stage": "Calibration",
+    "iteration": 5,
+    "year": 2024,
+    "simulations": 400,
+    "seed": 42,
+    "title_percent": {
+      "Max Verstappen": 47.75,
+      "Charles Leclerc": 15.0,
+      "Carlos Sainz": 1.0,
+      "Lando Norris": 35.25,
+      "Oscar Piastri": 1.0
+    },
+    "team_points": {
+      "Red Bull": 514.8675,
+      "Ferrari": 622.4175,
+      "Mercedes": 444.3675,
+      "McLaren": 648.91,
+      "Aston Martin": 69.92,
+      "Sauber": 2.4575,
+      "Haas": 39.35,
+      "RB": 26.98,
+      "Williams": 10.4125,
+      "Alpine": 44.3175
+    }
+  },
+  {
+    "stage": "Candidate review",
+    "iteration": null,
+    "year": 1999,
+    "simulations": 1000,
+    "seed": 31415,
+    "title_percent": {
+      "Eddie Irvine": 28.8,
+      "Michael Schumacher": 23.4,
+      "Heinz-Harald Frentzen": 0.8,
+      "Mika Hakkinen": 46.1,
+      "David Coulthard": 0.9
+    },
+    "team_points": {
+      "Ferrari": 148.127,
+      "Jordan": 53.442,
+      "Williams": 28.143,
+      "Benetton": 11.607,
+      "Stewart": 28.691,
+      "Arrows": 0.668,
+      "BAR": 7.576,
+      "Minardi": 0.459,
+      "Sauber": 3.237,
+      "Prost": 6.805,
+      "McLaren": 127.245
+    }
+  },
+  {
+    "stage": "Candidate review",
+    "iteration": null,
+    "year": 2007,
+    "simulations": 1000,
+    "seed": 31415,
+    "title_percent": {
+      "Kimi Raikkonen": 31.8,
+      "Felipe Massa": 5.8,
+      "Fernando Alonso": 28.3,
+      "Lewis Hamilton": 34.1
+    },
+    "team_points": {
+      "Ferrari": 212.586,
+      "McLaren": 229.226,
+      "BMW Sauber": 100.941,
+      "Renault": 45.057,
+      "Williams": 28.163,
+      "Toyota": 10.516,
+      "Honda": 4.994,
+      "Super Aguri": 3.372,
+      "Red Bull": 20.143,
+      "Toro Rosso": 7.329,
+      "Spyker": 0.673
+    }
+  },
+  {
+    "stage": "Candidate review",
+    "iteration": null,
+    "year": 2010,
+    "simulations": 1000,
+    "seed": 31415,
+    "title_percent": {
+      "Fernando Alonso": 23.3,
+      "Lewis Hamilton": 16.3,
+      "Jenson Button": 2.5,
+      "Sebastian Vettel": 37.8,
+      "Mark Webber": 20.1
+    },
+    "team_points": {
+      "Ferrari": 406.913,
+      "McLaren": 479.992,
+      "Red Bull": 542.676,
+      "Mercedes": 191.349,
+      "Force India": 56.98,
+      "Williams": 55.815,
+      "Renault": 139.353,
+      "Toro Rosso": 9.846,
+      "Lotus": 0.0,
+      "Sauber": 36.076,
+      "HRT": 0.0,
+      "Virgin": 0.0
+    }
+  },
+  {
+    "stage": "Candidate review",
+    "iteration": null,
+    "year": 2012,
+    "simulations": 1000,
+    "seed": 31415,
+    "title_percent": {
+      "Jenson Button": 0.9,
+      "Lewis Hamilton": 1.4,
+      "Sebastian Vettel": 53.8,
+      "Mark Webber": 0.3,
+      "Fernando Alonso": 43.1,
+      "Kimi Raikkonen": 0.5
+    },
+    "team_points": {
+      "McLaren": 403.928,
+      "Red Bull": 477.288,
+      "Ferrari": 405.082,
+      "Sauber": 116.709,
+      "Lotus": 286.361,
+      "Toro Rosso": 24.154,
+      "Force India": 102.659,
+      "Mercedes": 133.64,
+      "Williams": 70.179,
+      "Marussia": 0.0,
+      "Caterham": 0.0,
+      "HRT": 0.0
+    }
+  },
+  {
+    "stage": "Candidate review",
+    "iteration": null,
+    "year": 2021,
+    "simulations": 1000,
+    "seed": 31415,
+    "title_percent": {
+      "Lewis Hamilton": 53.0,
+      "Max Verstappen": 47.0
+    },
+    "team_points": {
+      "Mercedes": 635.327,
+      "Red Bull": 595.9,
+      "McLaren": 267.318,
+      "Ferrari": 324.069,
+      "AlphaTauri": 139.68,
+      "Aston Martin": 74.915,
+      "Alfa Romeo": 12.108,
+      "Alpine": 150.603,
+      "Williams": 22.08,
+      "Haas": 0.0
+    }
+  },
+  {
+    "stage": "Candidate review",
+    "iteration": null,
+    "year": 2024,
+    "simulations": 1000,
+    "seed": 31415,
+    "title_percent": {
+      "Max Verstappen": 54.5,
+      "Charles Leclerc": 12.1,
+      "Carlos Sainz": 1.1,
+      "Lando Norris": 31.5,
+      "Oscar Piastri": 0.8
+    },
+    "team_points": {
+      "Red Bull": 516.895,
+      "Ferrari": 614.745,
+      "Mercedes": 437.833,
+      "McLaren": 648.734,
+      "Aston Martin": 72.138,
+      "Sauber": 2.649,
+      "Haas": 42.519,
+      "RB": 28.801,
+      "Williams": 11.785,
+      "Alpine": 47.9
+    }
+  },
+  {
+    "stage": "Manual rating review",
+    "iteration": null,
+    "year": 1999,
+    "simulations": 500,
+    "seed": 42,
+    "title_percent": {
+      "Eddie Irvine": 27.4,
+      "Michael Schumacher": 25.6,
+      "Heinz-Harald Frentzen": 1.4,
+      "Mika Hakkinen": 44.6,
+      "David Coulthard": 1.0
+    },
+    "team_points": {
+      "Ferrari": 151.828,
+      "Jordan": 54.876,
+      "Williams": 23.842,
+      "Benetton": 13.902,
+      "Stewart": 31.71,
+      "Arrows": 0.208,
+      "BAR": 0.13,
+      "Minardi": 0.006,
+      "Sauber": 4.462,
+      "Prost": 7.94,
+      "McLaren": 127.096
+    }
+  },
+  {
+    "stage": "Manual rating review",
+    "iteration": null,
+    "year": 2007,
+    "simulations": 500,
+    "seed": 42,
+    "title_percent": {
+      "Kimi Raikkonen": 31.4,
+      "Felipe Massa": 4.8,
+      "Fernando Alonso": 31.0,
+      "Lewis Hamilton": 32.8
+    },
+    "team_points": {
+      "Ferrari": 212.182,
+      "McLaren": 228.754,
+      "BMW Sauber": 100.958,
+      "Renault": 44.732,
+      "Williams": 28.304,
+      "Toyota": 10.872,
+      "Honda": 5.23,
+      "Super Aguri": 3.526,
+      "Red Bull": 20.272,
+      "Toro Rosso": 7.498,
+      "Spyker": 0.672
+    }
+  },
+  {
+    "stage": "Manual rating review",
+    "iteration": null,
+    "year": 2010,
+    "simulations": 500,
+    "seed": 42,
+    "title_percent": {
+      "Fernando Alonso": 23.4,
+      "Lewis Hamilton": 16.8,
+      "Jenson Button": 3.8,
+      "Sebastian Vettel": 38.2,
+      "Mark Webber": 17.8
+    },
+    "team_points": {
+      "Ferrari": 407.318,
+      "McLaren": 481.454,
+      "Red Bull": 541.27,
+      "Mercedes": 187.948,
+      "Force India": 56.44,
+      "Williams": 56.332,
+      "Renault": 141.768,
+      "Toro Rosso": 10.074,
+      "Lotus": 0.0,
+      "Sauber": 36.396,
+      "HRT": 0.0,
+      "Virgin": 0.0
+    }
+  },
+  {
+    "stage": "Manual rating review",
+    "iteration": null,
+    "year": 2012,
+    "simulations": 500,
+    "seed": 42,
+    "title_percent": {
+      "Jenson Button": 0.6,
+      "Lewis Hamilton": 0.8,
+      "Sebastian Vettel": 50.8,
+      "Mark Webber": 0.2,
+      "Fernando Alonso": 47.2,
+      "Kimi Raikkonen": 0.4
+    },
+    "team_points": {
+      "McLaren": 398.762,
+      "Red Bull": 476.092,
+      "Ferrari": 408.43,
+      "Sauber": 117.744,
+      "Lotus": 289.704,
+      "Toro Rosso": 23.716,
+      "Force India": 101.346,
+      "Mercedes": 133.376,
+      "Williams": 70.83,
+      "Marussia": 0.0,
+      "Caterham": 0.0,
+      "HRT": 0.0
+    }
+  },
+  {
+    "stage": "Manual rating review",
+    "iteration": null,
+    "year": 2021,
+    "simulations": 500,
+    "seed": 42,
+    "title_percent": {
+      "Lewis Hamilton": 54.0,
+      "Max Verstappen": 46.0
+    },
+    "team_points": {
+      "Mercedes": 634.178,
+      "Red Bull": 596.434,
+      "McLaren": 268.464,
+      "Ferrari": 324.408,
+      "AlphaTauri": 139.15,
+      "Aston Martin": 74.678,
+      "Alfa Romeo": 12.168,
+      "Alpine": 150.558,
+      "Williams": 21.962,
+      "Haas": 0.0
+    }
+  },
+  {
+    "stage": "Manual rating review",
+    "iteration": null,
+    "year": 2024,
+    "simulations": 500,
+    "seed": 42,
+    "title_percent": {
+      "Max Verstappen": 64.0,
+      "Charles Leclerc": 10.2,
+      "Carlos Sainz": 0.4,
+      "Lando Norris": 25.0,
+      "Oscar Piastri": 0.4
+    },
+    "team_points": {
+      "Red Bull": 527.856,
+      "Ferrari": 615.37,
+      "Mercedes": 437.356,
+      "McLaren": 639.152,
+      "Aston Martin": 75.536,
+      "Sauber": 0.74,
+      "Haas": 33.29,
+      "RB": 31.406,
+      "Williams": 12.842,
+      "Alpine": 50.452
+    }
+  },
+  {
+    "stage": "2007 teammate review",
+    "iteration": null,
+    "year": 2007,
+    "simulations": 1000,
+    "seed": 42,
+    "title_percent": {
+      "Kimi Raikkonen": 31.0,
+      "Felipe Massa": 4.7,
+      "Fernando Alonso": 31.9,
+      "Lewis Hamilton": 32.4
+    },
+    "team_points": {
+      "Ferrari": 211.783,
+      "McLaren": 228.866,
+      "BMW Sauber": 100.327,
+      "Renault": 44.071,
+      "Williams": 27.736,
+      "Toyota": 10.379,
+      "Honda": 5.049,
+      "Super Aguri": 3.395,
+      "Red Bull": 19.58,
+      "Toro Rosso": 11.174,
+      "Spyker": 0.64
+    }
+  },
+  {
+    "stage": "Superseded 2007 final sample before teammate correction",
+    "year": 2007,
+    "simulations": 10000,
+    "seed": 8675309
+  },
+  {
+    "stage": "Final",
+    "year": 1999,
+    "simulations": 10000,
+    "seed": 8675309
+  },
+  {
+    "stage": "Final",
+    "year": 2007,
+    "simulations": 10000,
+    "seed": 8675309
+  },
+  {
+    "stage": "Final",
+    "year": 2010,
+    "simulations": 10000,
+    "seed": 8675309
+  },
+  {
+    "stage": "Final",
+    "year": 2012,
+    "simulations": 10000,
+    "seed": 8675309
+  },
+  {
+    "stage": "Final",
+    "year": 2021,
+    "simulations": 10000,
+    "seed": 8675309
+  },
+  {
+    "stage": "Final",
+    "year": 2024,
+    "simulations": 10000,
+    "seed": 8675309
+  }
+]

@@ -81,12 +81,26 @@ def award_points(race_results, drivers, race_points_list):
             drivers[pilot]["total_score"] += race_points_list[place]
 
 
+def standings_key(pilot):
+    finishes = [0] * len(drivers)
+    for results in race_history.values():
+        if pilot in results and results[pilot] > 0:
+            finishes[list(results).index(pilot)] += 1
+    return (drivers[pilot]['total_score'], *finishes)
+
+
 def constructor_standings(teams, drivers):
     teams_total_score = {x: 0 for x in teams}
     for team in teams:
         for pilot in teams[team]:
             teams_total_score[team] += drivers[pilot]['total_score']
-    return dict(sorted(teams_total_score.items(), key=lambda item: item[1], reverse=True))
+    finish_counts = {pilot: standings_key(pilot)[1:] for pilot in drivers}
+    def team_key(item):
+        team, score = item
+        counts = [sum(finish_counts[pilot][place] for pilot in teams[team])
+                  for place in range(len(drivers))]
+        return (score, *counts)
+    return dict(sorted(teams_total_score.items(), key=team_key, reverse=True))
 
 
 def podiums_of_each_race(race_history):
@@ -97,18 +111,18 @@ def podiums_of_each_race(race_history):
     race_width = max(18, max(len(race.removesuffix(' Grand Prix')) for race in race_history))
     driver_width = max(20, max(len(pilot) for results in race_history.values() for pilot in list(results)[:3]))
 
-    header = f'{"#":>2}  {"GRAND PRIX":<{race_width}} │ {"1ST PLACE":<{driver_width}} │ {"2ND PLACE":<{driver_width}} │ {"3RD PLACE":<{driver_width}}'
-    print('─' * len(header))
+    header = f'{"#":>2}  {"GRAND PRIX":<{race_width}} | {"1ST PLACE":<{driver_width}} | {"2ND PLACE":<{driver_width}} | {"3RD PLACE":<{driver_width}}'
+    print('-' * len(header))
     print(header)
-    print('─' * len(header))
+    print('-' * len(header))
 
     for number, (race, results) in enumerate(race_history.items(), 1):
         race_name = race.removesuffix(' Grand Prix')
         podium = list(results)[:3]
         print(
-            f'{number:>2}  {race_name:<{race_width}} │ {podium[0]:<{driver_width}} │ {podium[1]:<{driver_width}} │ {podium[2]:<{driver_width}}')
+            f'{number:>2}  {race_name:<{race_width}} | {podium[0]:<{driver_width}} | {podium[1]:<{driver_width}} | {podium[2]:<{driver_width}}')
 
-    print('─' * len(header))
+    print('-' * len(header))
     print()
 
 
@@ -150,7 +164,7 @@ def simulate_championship(drivers, car_performance, GrandPrix_list):
 
     championship = sorted(
         drivers.items(),
-        key=lambda item: item[1]["total_score"],
+        key=lambda item: standings_key(item[0]),
         reverse=True
     )
     return championship
@@ -240,7 +254,7 @@ def count_wins(race_history, driver_names):
     for pilot in driver_names:
         wins = 0
         for race in race_history:
-            if pilot == list(race_history[race])[0]:
+            if pilot == list(race_history[race])[0] and race_history[race][pilot] > 0:
                 wins += 1
         counter[pilot] = wins
     return dict(sorted(counter.items(), key=lambda item: item[1], reverse=True))
@@ -261,9 +275,10 @@ def count_pole_to_win(race_history, qualifying_history):
     counter = 0
     total_races = len(race_history)
     for race in race_history:
-        if list(race_history[race])[0] == list(qualifying_history[race])[0]:
+        winner = next(iter(race_history[race]))
+        if race_history[race][winner] > 0 and winner == next(iter(qualifying_history[race])):
             counter += 1
-    print(f'Pole-to-win conversions: {counter} / {total_races} ({round(counter * 100 / total_races, 1)}%)')
+    print(f'Pole-to-win conversions: {counter} / {total_races} ({round(counter * 100 / total_races, 1) if total_races else 0}%)')
 
 
 def driver_mistake(consistency, skill, name_of_track, is_rainy):
@@ -382,9 +397,12 @@ def show_race_weekend(name_of_track, player_name=None):
     winner = next(iter(race))
     pole = next(iter(qualifying))
 
-    print(f'{winner} wins the {name_of_track}!')
+    if race[winner] > 0:
+        print(f'{winner} wins the {name_of_track}!')
+    else:
+        print('No drivers finished this race.')
 
-    if winner == pole:
+    if race[winner] > 0 and winner == pole:
         print(f'{winner} converts pole position into victory!')
     else:
         print(f'{pole} fails to convert pole position into victory.')
@@ -395,8 +413,8 @@ def show_race_weekend(name_of_track, player_name=None):
         if race[pilot] > 0
     }
 
-    best_driver = max(position_gains, key=position_gains.get)
-    best_gain = position_gains[best_driver]
+    best_driver = max(position_gains, key=position_gains.get) if position_gains else None
+    best_gain = position_gains.get(best_driver, 0)
 
     if best_gain > 0:
         print(f'{best_driver} gains {best_gain} positions!')
@@ -542,7 +560,7 @@ def show_player_statistics(player_name):
 
     championship_position = sorted(
         drivers,
-        key=lambda pilot: drivers[pilot]["total_score"],
+        key=standings_key,
         reverse=True
     ).index(player_name) + 1
 
@@ -684,7 +702,7 @@ def create_driver():
     }
 
     for stat in ["pace", "consistency", "aggression", "skill"]:
-        options = [(f'{pilot} — {drivers[pilot][stat]}', drivers[pilot][stat]) for pilot in drivers]
+        options = [(f'{pilot} - {drivers[pilot][stat]}', drivers[pilot][stat]) for pilot in drivers]
         options.append(("Enter custom value (0-100)", None))
 
         value = choose_option(options, f'Choose your {stat.upper()}:')
@@ -742,6 +760,11 @@ def setup_season(year):
     global car_performance, car_reliability, race_points_list
     global drivers, driver_names, pilot_stats
 
+    race_history.clear()
+    championship_history.clear()
+    qualifying_history.clear()
+    weather_history.clear()
+    race_events_history.clear()
     season = load_season(year)
     teams = season["teams"]
     race_points_list = season["race_points_list"]
@@ -760,15 +783,101 @@ def setup_season(year):
                            "crash_dnfs": 0} for pilot in driver_names}
 
 
+def saves_directory():
+    from pathlib import Path
+    import sys
+    if getattr(sys, 'frozen', False):
+        return Path(sys.executable).parent / 'saves'
+    return Path(__file__).parent / 'saves'
+
+
+def save_championship(player_name=None):
+    from pathlib import Path
+    import json
+    saves_folder = saves_directory()
+    saves_folder.mkdir(exist_ok=True)
+    file_path = saves_folder / f'championship_{season["year"]}.json'
+    championship_name = input('Enter championship name (Enter to skip): ').strip()
+    if not championship_name:
+        championship_name = f'Championship {season["year"]}'
+    save_data = {
+        "year": season["year"],
+        "drivers": drivers,
+        "race_history": race_history,
+        "qualifying_history": qualifying_history,
+        "weather_history": weather_history,
+        "player_name": player_name,
+        "championship_history": championship_history,
+        "race_events_history": race_events_history,
+        "pilot_stats": pilot_stats,
+        "teams": teams,
+        "name": championship_name,
+    }
+    counter = 1
+    while file_path.exists():
+        file_path = saves_folder / f'championship_{season["year"]}_{counter}.json'
+        counter += 1
+
+    with open(file_path, 'w', encoding='utf-8') as file:
+        json.dump(save_data, file, indent=4, ensure_ascii=False)
+
+
+def load_championship():
+    from pathlib import Path
+    import json
+
+    global drivers, teams, driver_names, pilot_stats
+    global race_history, qualifying_history, championship_history
+    global weather_history, race_events_history
+    saves_folder = saves_directory()
+    save_files = sorted(saves_folder.glob('*.json'))
+    if len(save_files) == 0:
+        print('No saved championships.')
+        return
+    print('Select a championship')
+    for position, name in enumerate(save_files, 1):
+        with open(name, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+        championship_name = data.get('name', f'Championship {data["year"]}')
+        print(f'{position}. {championship_name} | {data["year"]}')
+
+    chemp = input('\n> ')
+    while not chemp.isdigit() or int(chemp) not in range(1, len(save_files) + 1):
+        print('Invalid option. Try again.')
+        chemp = input('\n> ')
+    selected_file = save_files[int(chemp) - 1]
+    with open(selected_file, 'r', encoding='utf-8') as file:
+        save_data = json.load(file)
+    setup_season(save_data['year'])
+    drivers = save_data['drivers']
+    teams = save_data['teams']
+    pilot_stats = save_data['pilot_stats']
+    driver_names = list(drivers)
+    race_history = save_data['race_history']
+    qualifying_history = save_data['qualifying_history']
+    championship_history = save_data['championship_history']
+    weather_history = save_data['weather_history']
+    race_events_history = save_data['race_events_history']
+    print(f'Loaded: {save_data.get("name", "Championship " + str(save_data["year"]))}')
+    post_season_menu(save_data['player_name'])
+
+
+
+
+
 def main():
     print('\n========== F1 CHAMPIONSHIP GENERATOR ==========')
     print('1. Generate Championship')
     print('2. Create Your Driver')
-    print('3. Exit')
+    print('3. Load Championship')
+    print('4. Exit')
     mode = input('\n> ')
-    while mode not in ('1', '2', '3'):
+    while mode not in ('1', '2', '3', '4'):
         mode = input('Invalid option. Try again: ')
+    if mode == '4':
+        return
     if mode == '3':
+        load_championship()
         return
     year = choose_season()
     setup_season(year)
@@ -788,6 +897,7 @@ def main():
         print(f'Points: {drivers[player_name]["total_score"]}')
         print(f'Team: {drivers[player_name]["team_name"]}')
         print(f'DNFs: {pilot_stats[player_name]["dnfs"]}')
+    save_championship(player_name)
     post_season_menu(player_name)
 
 

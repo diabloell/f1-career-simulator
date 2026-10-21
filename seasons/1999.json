@@ -1,0 +1,365 @@
+{
+  "year": 1999,
+  "teams": {
+    "Ferrari": [
+      "Eddie Irvine",
+      "Michael Schumacher"
+    ],
+    "Jordan": [
+      "Heinz-Harald Frentzen",
+      "Damon Hill"
+    ],
+    "Williams": [
+      "Ralf Schumacher",
+      "Alessandro Zanardi"
+    ],
+    "Benetton": [
+      "Giancarlo Fisichella",
+      "Alexander Wurz"
+    ],
+    "Stewart": [
+      "Rubens Barrichello",
+      "Johnny Herbert"
+    ],
+    "Arrows": [
+      "Pedro de la Rosa",
+      "Toranosuke Takagi"
+    ],
+    "BAR": [
+      "Jacques Villeneuve",
+      "Ricardo Zonta"
+    ],
+    "Minardi": [
+      "Marc Gene",
+      "Luca Badoer"
+    ],
+    "Sauber": [
+      "Pedro Diniz",
+      "Jean Alesi"
+    ],
+    "Prost": [
+      "Jarno Trulli",
+      "Olivier Panis"
+    ],
+    "McLaren": [
+      "Mika Hakkinen",
+      "David Coulthard"
+    ]
+  },
+  "skills": {
+    "Eddie Irvine": {
+      "pace": 94.121,
+      "consistency": 94,
+      "aggression": 78,
+      "skill": 96
+    },
+    "Michael Schumacher": {
+      "pace": 96.918,
+      "consistency": 88,
+      "aggression": 78,
+      "skill": 89
+    },
+    "Heinz-Harald Frentzen": {
+      "pace": 96.363,
+      "consistency": 94,
+      "aggression": 78,
+      "skill": 96
+    },
+    "Damon Hill": {
+      "pace": 85.68,
+      "consistency": 88,
+      "aggression": 78,
+      "skill": 89
+    },
+    "Ralf Schumacher": {
+      "pace": 96.728,
+      "consistency": 94,
+      "aggression": 78,
+      "skill": 96
+    },
+    "Alessandro Zanardi": {
+      "pace": 86,
+      "consistency": 88,
+      "aggression": 78,
+      "skill": 89
+    },
+    "Giancarlo Fisichella": {
+      "pace": 95.119,
+      "consistency": 94,
+      "aggression": 78,
+      "skill": 96
+    },
+    "Alexander Wurz": {
+      "pace": 91.286,
+      "consistency": 88,
+      "aggression": 78,
+      "skill": 89
+    },
+    "Rubens Barrichello": {
+      "pace": 95.593,
+      "consistency": 94,
+      "aggression": 78,
+      "skill": 96
+    },
+    "Johnny Herbert": {
+      "pace": 93.709,
+      "consistency": 94,
+      "aggression": 78,
+      "skill": 96
+    },
+    "Pedro de la Rosa": {
+      "pace": 88,
+      "consistency": 94,
+      "aggression": 78,
+      "skill": 96
+    },
+    "Toranosuke Takagi": {
+      "pace": 83,
+      "consistency": 88,
+      "aggression": 78,
+      "skill": 89
+    },
+    "Jacques Villeneuve": {
+      "pace": 94,
+      "consistency": 88,
+      "aggression": 78,
+      "skill": 89
+    },
+    "Ricardo Zonta": {
+      "pace": 86,
+      "consistency": 88,
+      "aggression": 78,
+      "skill": 89
+    },
+    "Marc Gene": {
+      "pace": 83,
+      "consistency": 94,
+      "aggression": 78,
+      "skill": 96
+    },
+    "Luca Badoer": {
+      "pace": 84,
+      "consistency": 88,
+      "aggression": 78,
+      "skill": 89
+    },
+    "Pedro Diniz": {
+      "pace": 94.371,
+      "consistency": 94,
+      "aggression": 78,
+      "skill": 96
+    },
+    "Jean Alesi": {
+      "pace": 94.964,
+      "consistency": 88,
+      "aggression": 78,
+      "skill": 89
+    },
+    "Jarno Trulli": {
+      "pace": 94.941,
+      "consistency": 94,
+      "aggression": 78,
+      "skill": 96
+    },
+    "Olivier Panis": {
+      "pace": 91.594,
+      "consistency": 88,
+      "aggression": 78,
+      "skill": 89
+    },
+    "Mika Hakkinen": {
+      "pace": 95.902,
+      "consistency": 94,
+      "aggression": 78,
+      "skill": 96
+    },
+    "David Coulthard": {
+      "pace": 92.473,
+      "consistency": 88,
+      "aggression": 78,
+      "skill": 89
+    }
+  },
+  "tracks": {
+    "Australian Grand Prix": {
+      "length_km": 5.302,
+      "difficulty": 75,
+      "overtaking": 70,
+      "skill_importance": 75,
+      "crash_risk": 70,
+      "rain_chance": 0.2
+    },
+    "Brazilian Grand Prix": {
+      "length_km": 4.292,
+      "difficulty": 87,
+      "overtaking": 85,
+      "skill_importance": 87,
+      "crash_risk": 75,
+      "rain_chance": 0.42
+    },
+    "San Marino Grand Prix": {
+      "length_km": 4.93,
+      "difficulty": 65,
+      "overtaking": 88,
+      "skill_importance": 65,
+      "crash_risk": 65,
+      "rain_chance": 0.2
+    },
+    "Monaco Grand Prix": {
+      "length_km": 3.367,
+      "difficulty": 98,
+      "overtaking": 8,
+      "skill_importance": 95,
+      "crash_risk": 90,
+      "rain_chance": 0.18
+    },
+    "Spanish Grand Prix": {
+      "length_km": 4.728,
+      "difficulty": 85,
+      "overtaking": 55,
+      "skill_importance": 85,
+      "crash_risk": 60,
+      "rain_chance": 0.15
+    },
+    "Canadian Grand Prix": {
+      "length_km": 4.421,
+      "difficulty": 80,
+      "overtaking": 80,
+      "skill_importance": 82,
+      "crash_risk": 80,
+      "rain_chance": 0.3
+    },
+    "French Grand Prix": {
+      "length_km": 4.25,
+      "difficulty": 82,
+      "overtaking": 60,
+      "skill_importance": 83,
+      "crash_risk": 70,
+      "rain_chance": 0.25
+    },
+    "British Grand Prix": {
+      "length_km": 5.14,
+      "difficulty": 92,
+      "overtaking": 75,
+      "skill_importance": 90,
+      "crash_risk": 72,
+      "rain_chance": 0.35
+    },
+    "Austrian Grand Prix": {
+      "length_km": 4.326,
+      "difficulty": 72,
+      "overtaking": 85,
+      "skill_importance": 75,
+      "crash_risk": 65,
+      "rain_chance": 0.28
+    },
+    "German Grand Prix": {
+      "length_km": 6.823,
+      "difficulty": 82,
+      "overtaking": 60,
+      "skill_importance": 83,
+      "crash_risk": 70,
+      "rain_chance": 0.25
+    },
+    "Hungarian Grand Prix": {
+      "length_km": 3.975,
+      "difficulty": 83,
+      "overtaking": 30,
+      "skill_importance": 88,
+      "crash_risk": 60,
+      "rain_chance": 0.18
+    },
+    "Belgian Grand Prix": {
+      "length_km": 6.968,
+      "difficulty": 96,
+      "overtaking": 80,
+      "skill_importance": 96,
+      "crash_risk": 80,
+      "rain_chance": 0.43
+    },
+    "Italian Grand Prix": {
+      "length_km": 5.77,
+      "difficulty": 65,
+      "overtaking": 88,
+      "skill_importance": 65,
+      "crash_risk": 65,
+      "rain_chance": 0.2
+    },
+    "European Grand Prix": {
+      "length_km": 4.556,
+      "difficulty": 82,
+      "overtaking": 60,
+      "skill_importance": 83,
+      "crash_risk": 70,
+      "rain_chance": 0.25
+    },
+    "Malaysian Grand Prix": {
+      "length_km": 5.543,
+      "difficulty": 82,
+      "overtaking": 60,
+      "skill_importance": 83,
+      "crash_risk": 70,
+      "rain_chance": 0.25
+    },
+    "Japanese Grand Prix": {
+      "length_km": 5.864,
+      "difficulty": 95,
+      "overtaking": 50,
+      "skill_importance": 95,
+      "crash_risk": 82,
+      "rain_chance": 0.25
+    }
+  },
+  "car_performance": {
+    "Ferrari": 95.489,
+    "McLaren": 96.373,
+    "Jordan": 92.569,
+    "Stewart": 88.715,
+    "Williams": 90.3,
+    "Benetton": 87.461,
+    "Prost": 86.313,
+    "Sauber": 84.826,
+    "Arrows": 85,
+    "Minardi": 84,
+    "BAR": 82
+  },
+  "car_reliability": {
+    "Ferrari": 75.5,
+    "Jordan": 5,
+    "Williams": 5,
+    "Benetton": 5,
+    "Stewart": 5,
+    "Arrows": 5,
+    "BAR": 5,
+    "Minardi": 5,
+    "Sauber": 5,
+    "Prost": 5,
+    "McLaren": 5
+  },
+  "GrandPrix_list": [
+    "Australian Grand Prix",
+    "Brazilian Grand Prix",
+    "San Marino Grand Prix",
+    "Monaco Grand Prix",
+    "Spanish Grand Prix",
+    "Canadian Grand Prix",
+    "French Grand Prix",
+    "British Grand Prix",
+    "Austrian Grand Prix",
+    "German Grand Prix",
+    "Hungarian Grand Prix",
+    "Belgian Grand Prix",
+    "Italian Grand Prix",
+    "European Grand Prix",
+    "Malaysian Grand Prix",
+    "Japanese Grand Prix"
+  ],
+  "race_points_list": [
+    10,
+    6,
+    4,
+    3,
+    2,
+    1
+  ]
+}
